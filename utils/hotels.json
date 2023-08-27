@@ -1,0 +1,2041 @@
+{"intents":[
+        { "tag":"greetings",
+        "patterns":["hey","hello","hi","what's up ?","good day","good morning"],
+        "responses":["Hi , would you like some suggestions about hotels ?","Hey, can i recommamd you some hotels ?"]}
+    ,{ "tag":"goodbyes",
+        "patterns":["see you ","goodbye","bye","bye bye","by"],
+        "responses":["alright !!","have  a nice day !!","take care","goodbye !!"]
+        },{ "tag":"goodbyes1",
+            "patterns":["thanks ","thank you","ok","okay","get it"],
+            "responses":["alright !!","you welcome","take care","anytime :)"]
+    
+    },{ "tag":"accept",
+        "patterns":["yes","yes i want some suggestions about hotels","i want some suggestions about hotels ","i want to know some hotels ","best places to sleep"],
+        "responses":["Tell me the direction where you want the hotel : North , South , West , Centre of Morocco "]
+    },{ "tag":"North",
+        "patterns":["North of Morocco","North","near Tangier","near fes","near meknes","near asilah  ","near chefchaouen","near ouarzazate","near Rose Valley"],
+        "responses":["Okay , let me show you a list of places : Tangier \nFes\nMeknes\nChefchaouen\nOuarzazate\ntell me the city where you want the hotel and how much stars ( the stars  4 stars  3 stars   5 stars)"]
+    },{ "tag":"Central",
+        "patterns":["Central Morocco","centre of Morocco","near High Atlas","near Tinghir","near Dades Valley"],
+        "responses":["Okay , let me show you a list of places : \nTinghir\ntell me the city where you want the hotel and how much stars ( the stars  4 stars  3 stars   5 stars)"]
+    },{ "tag":"West",
+        "patterns":["West of Morocco","West","near Casablanca","near Rabat","near Oudaias Kasbah","near Essaouira","near Marrakech"],
+        "responses":["Okay , let me show you a list of places : Casablanca \nRabat\nEssaouira\nMarrakech\ntell me the city where you want the hotel and how much stars ( the stars  4 stars  3 stars   5 stars)"]
+    },{ "tag":"South",
+        "patterns":["south of Morocco","South","near Ait BenHaddou","near Agadir","near Saharah"],
+        "responses":["Okay , let me show you a list of places : Ait BenHaddou \nAgadir\nDakhla\ntell me the city where you want the hotel and how much stars ( the stars  4 stars  3 stars   5 stars)"]
+    },{ "tag":"best month",
+        "patterns":["What is the best month to travel to Morocco","best time to travel to Morocco"],
+        "responses":[" Although the weather in Morocco is amazing throughout the year but if you want to save some money then the best time to visit Morocco is during the shoulder season - April to May or September to November."]
+    },{ "tag":"Hijab",
+        "patterns":["Should I wear a hijab in Morocco","Hijab","scarf"],
+        "responses":[" No, it is not necessary to wear a hijab in Morocco and this is valid for both Muslims and non-Muslim women. Wearing a hijab totally depends on your comfortability."]
+    },{ "tag":"Alcohol",
+        "patterns":["Can you drink alcohol in Morocco?","alcohol","beer"],
+        "responses":[" Despite being a Muslim country, Morocco is not a dry place and liquor is easily available in bars, stores, hotels, clubs, and discos. However, drinking in public places is prohibited so you might want to avoid that."]
+    },{ "tag":" error",
+            "patterns":["4 stars","5 stars","casa","casablanca","2 stars","3 stars","3","4","5","Marrakech","agadir","fes","fez","esseouira","saouira","swira","saouira","essaouira","chefchaoune","Meknes ","Asilah","chefchaouen","raba","rbat","rabat","Ouarzazate","ouarzazat","warsasate","warzazat","tanger","tangier","tange","Tinghir","tinrir"," dakhla ","Aït Ben Haddou "],
+            "responses":["please choose the city plus how much stars of the hotel "]
+    
+    } ,{ "tag":"5 stars  in casablanca ",
+        "patterns":["i want a hotel with 5 stars in casablanca ","describe casablanca with 5 stars ", "5 casablanca","5 in casa","5 in casablanca","5 stars in casablanca","the hotel 5 stars in casablanca"],
+        "responses":["Alright I see , here are some suggestions choose your favorite :Movenpick Hotel Casablanca , Farah Casablanca ,Le Casablanca Hotel"]
+    
+    },{ "tag":"casablanca_hotels_Movenpick_Hotel_Casablanca",
+            "patterns":["What about Movenpick Hotel Casablanca","i think imma go with Movenpick Hotel Casablanca", "Movenpick Hotel Casablanca seems like a good choice", "Movenpick Hotel Casablanca"],
+            "responses":["Movenpick Hotel Casablanca Excellent 8.4 !!, well Hotel Movenpick combining lifestyle and design, for business & leisure. Centrally located within the business district and a short distance from the Old Medina, the 184-room Movenpick Hotel Casablanca offers the very best in contemporary comfort and convenience.\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+        
+    
+    },{ "tag":"casablanca_Movenpick_Hotel_Casablanca_PHONE",
+        "patterns":["Phone number of Movenpick Hotel Casablanca","call Movenpick Hotel Casablanca","reach Movenpick Hotel Casablanca"],
+        "responses":[" Movenpick Hotel Casablanca phone number : +212 5224-88000"]  
+    },{ "tag":"casablanca_Movenpick_Hotel_Casablanca_LINK",
+        "patterns":["link of Movenpick Hotel","website of Movenpick Hotel"],
+        "responses":["https://www.movenpick.com/fr/africa/morocco/casablanca/hotel-casablanca/overview/"]
+    
+    },{ "tag":"casablanca_Movenpick_Hotel_Casablanca_localisation",
+            "patterns":["location of Movenpick Hotel","location of Movenpick Hotel"],
+            "responses":["location : Rond Point Hassan II Casablanca, Casablanca 20070, Morocco"]
+    
+    },{ "tag":"casablanca_Movenpick_Hotel_Casablanca_price",
+            "patterns":["price of Movenpick Hotel","price of Movenpick Hotel","Nightly base price of Movenpick Hotel"],
+            "responses":[" Nightly base price for 1 night : $97"]
+    
+     },{ "tag":"casablanca_hotels_Farah_Casablanca",
+            "patterns":["What about Farah  Casablanca","i think imma go with Farah Casablanca", "Farah Casablanca seems like a good choice", "Farah  Casablanca"],
+            "responses":["Farah  Casablanca  Good 7.2 !! The hotel completely renovated in 2007,features 279 rooms including 26 suites (Ambassador,junior, Presidential and Royal )enjoys a convenient location in the heart of Casablanca, it is situated in lovely spot close to the business district and shopping centers, the hotel overlooks the harbor and the main square of the city.\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]  
+    
+            
+    
+    },{ "tag":"casablanca_hotels_Farah_Casablanca_PHONE",
+                    "patterns":["Phone number of Farah  Casablanca","call Farah  Casablanca","reach Farah  Casablanca"],
+                    "responses":[" Farah  Casablanca phone number : +212 5224-58100"]  
+    },{ "tag":"casablanca_hotels_Farah_Casablanca_LINK",
+                    "patterns":["link of Farah  Casablanca","website of Farah  Casablanca"],
+                    "responses":["https://www.farahcasablanca.com"]
+                
+    },{ "tag":"casablanca_hotels_Farah_Casablanca_location",
+                        "patterns":["location of Farah  Casablanca","location of Farah  Casablanca"],
+                        "responses":["location : 160 Avenue Des Far, Casablanca 20000, Morocco"]
+     },{ "tag":"casablanca_hotels_Farah_Casablanca_price",
+                        "patterns":["price of Farah  Casablanca","price of Farah  Casablanca","Nightly base price of Farah  Casablanca"],
+                        "responses":[" Nightly base price for 1 night : 77$ - $92"]
+                
+    
+    
+},{ "tag":"casablanca_Le Casablanca_Hotel",
+              "patterns":["What about Le Casablanca Hotel","i think imma go with Le Casablanca Hotel ", "Le Casablanca Hotel seems like a good choice", "Le Casablanca Hotel"],
+           "responses":["Le Casablanca Hotel  Excellent 8.6 !! With a stay at Le Casablanca Hotel, you'll be centrally located in Casablanca, a 4-minute drive from Casablanca Twin Center and 9 minutes from Ain Diab Beach. Featured amenities include a business center, express check-out, and complimentary newspapers in the lobby.\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                    
+            
+},{ "tag":"casablanca_Le Casablanca_Hotel_PHONE",
+       "patterns":["Phone number of Le Casablanca Hotel","call Le Casablanca Hotel","reach Le Casablanca Hotel"],
+          "responses":[" Le Casablanca Hotel phone number : +212 5226-49797"]  
+},{ "tag":"casablanca_Le Casablanca_Hotel_LINK",
+           "patterns":["link of Le Casablanca Hotel","website of Le Casablanca Hotel"],
+               "responses":["https://www.lecasablanca-hotel.com"]
+                        
+},{ "tag":"casablanca_Le Casablanca_Hotel_location",
+          "patterns":["location of Le Casablanca Hotel","location of Le Casablanca Hotel"],
+          "responses":["location : 19 Boulevard Moulay Rachid, Casablanca 20660"]
+},{ "tag":"casablanca_Le Casablanca_Hotel_price",
+         "patterns":["price of Le Casablanca Hotel","price of Le Casablanca Hotel","Nightly base price of Le Casablanca Hotel"],
+            "responses":[" Nightly base price for 1 night : 148$ - $203"]   
+           
+    } ,{ "tag":"4 stars  in casablanca ",
+        "patterns":["i want a hotel with 4 stars in casablanca ","describe casablanca with 4 stars ", "4 casablanca","4 in casa","4 in casablanca","4 stars in casablanca","the hotel 4 stars in casablanca"],
+        "responses":["Alright I see , here are some suggestions choose your favorite :Club Val D Anfa , Park Suites Hotel & Spa ,Idou Anfa Hotel "]
+    
+    },{ "tag":"casablanca_hotels_Club_Val_D_Anfa",
+            "patterns":["What about Club Val D Anfa","i think imma go with Club Val D Anfa", "Club Val D Anfa seems like a good choice", "Club Val D Anfa"],
+            "responses":["Club Val D Anfa Excellent 8.1 !!, Club Val D Anfa is within a 10-minute drive of Morocco Mall and Marina Casablanca. Featured amenities include complimentary wired Internet access, a business center, and express check-in. Free valet parking is available onsite .\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+        
+    
+    },{ "tag":"casablanca_Club_Val_D_Anfa_PHONE",
+        "patterns":["Phone number of Club Val D Anfa","call Club Val D Anfa","reach Club Val D Anfa"],
+        "responses":[" Club Val D Anfa phone number : +212 5227-97070"]  
+    },{ "tag":"casablanca_Club_Val_D_Anfa_LINK",
+        "patterns":["link of Club Val D Anfa","website of Club Val D Anfa"],
+        "responses":["https://valdanfahotel.com/fr/"]
+    
+    },{ "tag":"casablanca_Club_Val_D_Anfa_localisation",
+            "patterns":["location of Club Val D Anfa","location of Club Val D Anfa"],
+            "responses":["location : Angle Boulevard De L'océan Atlantique et، Boulevard De La Corniche Ain Diab، Casablanca 20180"]
+    
+    },{ "tag":"casablanca_Club_Val_D_Anfa_price",
+            "patterns":["price of Club Val D Anfa","price of Club Val D Anfa","Nightly base price of Club Val D Anfa"],
+            "responses":[" Nightly base price for 1 night : $88-$120"]
+    
+     },{ "tag":"casablanca_Park_Suites_Hotel_&_Spa",
+            "patterns":["What about Park Suites Hotel & Spa","i think imma go with Suites Hotel & Spa ", "Suites Hotel & Spa seems like a good choice", "Park Suites Hotel & Spa"],
+            "responses":["Park Suites Hotel & Spa  Good 7.5 !! Located in Casablanca (Casablanca City Center), Park Suites Hotel & Spa is within a 10-minute drive of Central Market of Casablanca and Casablanca Twin Center. Featured amenities include limo/town car service, express check-in, and dry cleaning/laundry services. For a surcharge, guests may use a roundtrip airport shuttle (available 24 hours) and a train station pick-up service. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+            
+    
+    },{ "tag":"casablanca__Park_Suites_Hotel_&_Spa_PHONE",
+                    "patterns":["Phone number of Park Suites Hotel & Spa","call Park Suites Hotel & Spa","reach Park Suites Hotel & Spa"],
+                    "responses":[" Park Suites Hotel & Spa phone number : +212 5224-23360"]  
+    },{ "tag":"casablanca__Park_Suites_Hotel_&_Spa_LINK",
+                    "patterns":["link of Park Suites Hotel & Spa","website of Park Suites Hotel & Spa"],
+                    "responses":["http://www.parksuiteshotel.com"]
+                
+},{ "tag":"casablanca__Park_Suites_Hotel_&_Spa_location",
+                        "patterns":["location of Park Suites Hotel & Spa","location of Park Suites Hotel & Spa"],
+                        "responses":["location : 29 Rue de Terves, Casablanca 20250"]
+},{ "tag":"casablanca__Park_Suites_Hotel_&_Spa_price",
+                        "patterns":["price of Park Suites Hotel & Spa","price of Park Suites Hotel & Spa","Nightly base price of Park Suites Hotel & Spa"],
+                        "responses":[" Nightly base price for 1 night : $62-$84"]
+                
+    
+    
+},{ "tag":"casablanca_Idou_Anfa_Hotel ",
+        "patterns":["What about Idou Anfa Hotel","i think imma go with Idou Anfa Hotel", "Idou Anfa Hotel seems like a good choice", "Idou Anfa Hotel"],
+         "responses":["Idou Anfa Hotel  Good 7.9 !! Benefit from a tremendous location, close to the city centre and an unforgettable panoramicview over the ocean and the Hassan II Mosque. Everything has been designed for your comfort and well-being. Idou Anfa Htel & Spa features a gym and a spa with a sauna, a hammam and a range of body and beauty treatments.\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                    
+            
+},{ "tag":"casablanca_Idou_Anfa_Hotel_PHONE",
+        "patterns":["Phone number of Idou Anfa Hotel ","call Idou Anfa Hotel ","reach Idou Anfa Hotel "],
+         "responses":[" Idou Anfa Hotel  phone number : +212 5222-00235"]  
+},{ "tag":"casablanca_Idou_Anfa_Hotel_LINK",
+    "patterns":["link of Idou Anfa Hotel ","website of Idou Anfa Hotel "],
+        "responses":["http://www.hotelidouanfa.com"]
+                        
+},{ "tag":"casablanca_Idou_Anfa_Hotel_location",
+        "patterns":["location of Idou Anfa Hotel ","location of Idou Anfa Hotel "],
+        "responses":["location : 85 Boulevard d'Anfa, Casablanca 20000, Morocco"]
+},{ "tag":"casablanca_Idou_Anfa_Hotel_price",
+        "patterns":["price of Idou Anfa Hotel ","price of Idou Anfa Hotel ","Nightly base price of Idou Anfa Hotel "],
+         "responses":[" Nightly base price for 1 night : 512$ - $681"]
+                        
+    
+          
+} ,{ "tag":"3 stars  in casablanca ",
+          "patterns":["i want a hotel with 3 stars in casablanca ","describe casablanca with 3 stars ", "3 casablanca","3 in casa","3 in casablanca","3 stars in casablanca","the hotel 3 stars in casablanca"],
+          "responses":["Alright I see , here are some suggestions choose your favorite :Pestana Casablanca , Hotel Colisee ,Ibis Casa Sidi Maarouf  "]
+                
+},{ "tag":"casablanca_hotels_Pestana_Casablanca",
+           "patterns":["What about Pestana Casablanca","i think imma go with Pestana Casablanca", "Pestana Casablanca seems like a good choice", "Pestana Casablanca"],
+           "responses":["Pestana Casablanca Excellent 8.3 !! Featured amenities include a business center, dry cleaning/laundry services, and a 24-hour front desk. This aparthotel has 4 meeting rooms available for events. Free self parking is available onsite.\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                    
+                
+},{ "tag":"casablanca_Pestana_Casablanca_PHONE",
+                    "patterns":["Phone number of Pestana Casablanca","call Pestana Casablanca","reach Pestana Casablanca"],
+                    "responses":[" Pestana Casablanca phone number : +212 5227-95700"]  
+},{ "tag":"casablanca_Pestana_Casablanca_LINK",
+         "patterns":["link of Pestana Casablanca","website of Pestana Casablanca"],
+        "responses":["https://www.pestana.com/fr/hotel/pestana-casablanca/reviews"]
+                
+},{ "tag":"casablanca_Pestana_Casablanca_localisation",
+        "patterns":["location of Pestana Casablanca","location of Pestana Casablanca"],
+        "responses":["location : Anfa Place Living Resort, Boulevard de La Corniche, Casablanca 20200, Morocco"]
+                
+ },{ "tag":"casablanca_Pestana_Casablanca_price",
+       "patterns":["price of Pestana Casablanca","price of Pestana Casablanca","Nightly base price of Pestana Casablanca"],
+        "responses":[" Nightly base price for 1 night : $107-$136"]
+                
+},{ "tag":"casablanca_Hotel_Colisee",
+        "patterns":["What about Park Hotel Colisee","i think imma go with Farah Casablanca", "Farah Casablanca seems like a good choice", "Park Hotel Colisee"],
+        "responses":["Park Hotel Colisee  Okay 5.9 !! With a stay at Hotel Colisee in Casablanca (Casablanca City Center), you'll be a 5-minute drive from Central Market of Casablanca and 9 minutes from Port of Casablanca. Featured amenities include dry cleaning/laundry services, a 24-hour front desk, and multilingual staff. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]         
+                
+},{ "tag":"casablanca__Hotel_Colisee_PHONE",
+        "patterns":["Phone number of Park Hotel Colisee","call Park Hotel Colisee","reach Park Hotel Colisee"],
+        "responses":[" Park Hotel Colisee phone number : +212 5224-50225"]  
+},{ "tag":"casablanca__Hotel_Colisee_LINK",
+                                
+       "patterns":["link of Park Hotel Colisee","website of Park Hotel Colisee"],
+        "responses":["https://fr.hotels.com/ho575631/hotel-colisee-casablanca-maroc/?modal=dp"]
+                            
+ },{ "tag":"casablanca__Hotel_Colisee_location",
+         "patterns":["location of Park Hotel Colisee","location of Park Hotel Colisee"],
+        "responses":["location : 28, Rue Du Yémen, Casablanca 20010, Morocco"]
+},{ "tag":"casablanca__Hotel_Colisee_price",
+        "patterns":["price of Park Hotel Colisee","price of Park Hotel Colisee","Nightly base price of Park Hotel Colisee"],
+         "responses":[" Nightly base price for 1 night : $25-$36"]
+                            
+                
+                
+ },{ "tag":"casablanca_Ibis_Casa_Sidi_Maarouf   ",
+        "patterns":["What about Ibis Casa Sidi Maarouf ","i think imma go with Ibis Casa Sidi Maarouf ", "Ibis Casa Sidi Maarouf  seems like a good choice", "Ibis Casa Sidi Maarouf "],
+        "responses":["Ibis Casa Sidi Maarouf   Good 6.5 !! The hotel has 85 air-conditioned rooms with free WIFI, including 6 spacious suites equipped with a sofa bed, which can accommodate up to 3 people. The hotel is near to the Technoparc business district as well as some of Casablanca's large multinationals.\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                
+                        
+},{ "tag":"casablanca_Ibis_Casa_Sidi_Maarouf _PHONE",
+         "patterns":["Phone number ofIbis Casa Sidi Maarouf Ibis Casa Sidi Maarouf  ","call Ibis Casa Sidi Maarouf Ibis Casa Sidi Maarouf  ","reachIbis Casa Sidi Maarouf Ibis Casa Sidi Maarouf  "],
+          "responses":["Ibis Casa Sidi Maarouf Ibis Casa Sidi Maarouf   phone number : +212 5225-82370"]  
+},{ "tag":"casablanca_Ibis_Casa_Sidi_Maarouf_LINK",
+         "patterns":["link ofIbis Casa Sidi Maarouf Ibis Casa Sidi Maarouf  ","website ofIbis Casa Sidi Maarouf Ibis Casa Sidi Maarouf  "],
+         "responses":["https://all.accor.com/hotel/6289/index.fr.shtml"]
+                                    
+ },{ "tag":"casablanca_Ibis_Casa_Sidi_Maarouf_location",
+         "patterns":["location ofIbis Casa Sidi Maarouf Ibis Casa Sidi Maarouf  ","location ofIbis Casa Sidi Maarouf Ibis Casa Sidi Maarouf  "],
+         "responses":["location : La Colline II Sidi Maarouf, Casablanca 20190, Morocco"]
+},{ "tag":"casablanca_Ibis_Casa_Sidi_Maarouf  _price",
+        "patterns":["price ofIbis Casa Sidi Maarouf Ibis Casa Sidi Maarouf  ","price ofIbis Casa Sidi Maarouf Ibis Casa Sidi Maarouf  ","Nightly base price ofIbis Casa Sidi Maarouf Ibis Casa Sidi Maarouf  "],
+           "responses":[" Nightly base price for 1 night : 60$ - $61"]
+                                    
+                     
+},{ "tag":"5 stars  in Marrakech ",
+        "patterns":["i want a hotel with 5 stars in Marrakech ","describe Marrakech with 5 stars ", "5 Marrakech","5 in Marrakech","5 in Marrakesh","5 stars in Marrakech","the hotel 5 stars in Marrakech"],
+         "responses":["Alright I see , here are some suggestions choose your favorite :Eden Andalou Suites, Aquapark & Spa  , La Maison Arabe Hotel ,Les Jardins de la Koutoubia  "]
+        
+      
+    
+         },{ "tag":"Marrakech_hotels_Eden Andalou Suites, Aquapark & Spa ",
+            "patterns":["What about Eden Andalou Suites, Aquapark & Spa Marrakech","i think imma go with Eden Andalou Suites, Aquapark & Spa Marrakech", "Eden Andalou Suites, Aquapark & Spa Marrakech seems like a good choice", "Eden Andalou Suites, Aquapark & Spa Marrakech"],
+            "responses":["Eden Andalou Suites, Aquapark & Spa Marrakech Excellent 9.0 !!, Planning an event in Tameslouht? This hotel has facilities measuring 12917 square feet (1200 square meters), including a conference center. A roundtrip airport shuttle is provided for a surcharge (available 24 hours), and free self parking is available onsite.\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+        
+    
+    },{ "tag":"Marrakech_Eden Andalou Suites, Aquapark & Spa _PHONE",
+        "patterns":["Phone number of Eden Andalou Suites, Aquapark & Spa Marrakech","call Eden Andalou Suites, Aquapark & Spa Marrakech","reach Eden Andalou Suites, Aquapark & Spa Marrakech"],
+        "responses":[" Eden Andalou Suites, Aquapark & Spa Marrakech phone number : +212 5244-59400"]  
+    },{ "tag":"Marrakech_Eden Andalou Suites, Aquapark & Spa _LINK",
+        "patterns":["link of Eden Andalou Suites, Aquapark & Spa","website of Eden Andalou Suites, Aquapark & Spa"],
+        "responses":["https://www.edenandalou.com/nveden/"]
+    
+    },{ "tag":"Marrakech_Eden Andalou Suites, Aquapark & Spa _localisation",
+            "patterns":["location of Eden Andalou Suites, Aquapark & Spa","location of Eden Andalou Suites, Aquapark & Spa"],
+            "responses":["location : Km 4, Route d'Amezmiz, Marrakech 40000, Morocco"]
+    
+    },{ "tag":"Marrakech_Eden Andalou Suites, Aquapark & Spa _price",
+            "patterns":["price of Eden Andalou Suites, Aquapark & Spa","price of Eden Andalou Suites, Aquapark & Spa","Nightly base price of Eden Andalou Suites, Aquapark & Spa"],
+            "responses":[" Nightly base price for 1 night : $219 - $234"]
+    
+     },{ "tag":"Marrakech_hotels_La_Maison_Arabe_Hotel",
+            "patterns":["What about La Maison Arabe Hotel","i think imma go with La Maison Arabe Hotel", "La Maison Arabe Hotel seems like a good choice", "La Maison Arabe Hotel"],
+            "responses":["La Maison Arabe Hotel  Excellent 9.4 !! A stay at La Maison Arabe Hotel, Spa and Cooking Workshops places you in the heart of Marrakech, within a 15-minute walk of Jemaa el-Fnaa and Le Jardin Secret. Featured amenities include a 24-hour business center, express check-out, and complimentary newspapers in the lobby. A shuttle from the hotel to the airport is provided for a surcharge (available 24 hours).\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+            
+    
+    },{ "tag":"Marrakech_hotels_La_Maison_Arabe_Hotel_PHONE",
+                    "patterns":["Phone number of La Maison Arabe Hotel","call La Maison Arabe Hotel","reach La Maison Arabe Hotel"],
+                    "responses":[" La Maison Arabe Hotel phone number : +212 5243-87010"]  
+    },{ "tag":"Marrakech_hotels_La_Maison_Arabe_Hotel_LINK",
+                    "patterns":["link of La Maison Arabe Hotel","website of La Maison Arabe Hotel"],
+                    "responses":["https://www.cenizaro.com/lamaisonarabe/marrakech"]
+                
+    },{ "tag":"Marrakech_hotels_La_Maison_Arabe_Hotel_location",
+                        "patterns":["location of La Maison Arabe Hotel","location of La Maison Arabe Hotel"],
+                        "responses":["location : Derb Assehbi, Marrakesh 40000"]
+     },{ "tag":"Marrakech_hotels_La_Maison_Arabe_Hotel_price",
+                        "patterns":["price of La Maison Arabe Hotel","price of La Maison Arabe Hotel","Nightly base price of La Maison Arabe Hotel"],
+                        "responses":[" Nightly base price for 1 night : 157$ - $175"]
+                
+    
+    
+    },{ "tag":"Marrakech_Les Jardins de la Koutoubia_Hotel",
+           "patterns":["What about Les Jardins de la Koutoubia","i think imma go with Les Jardins de la Koutoubia", "Les Jardins de la Koutoubia seems like a good choice", "Les Jardins de la Koutoubia"],
+            "responses":["Les Jardins de la Koutoubia  Excellent 9.0 !! Featured amenities include complimentary newspapers in the lobby, dry cleaning/laundry services, and a 24-hour front desk. Event facilities at this hotel consist of conference space and a meeting room.\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                    
+            
+    },{ "tag":"Marrakech_Les Jardins de la Koutoubia_Hotel_PHONE",
+            "patterns":["Phone number of Les Jardins de la Koutoubia","call Les Jardins de la Koutoubia","reach Les Jardins de la Koutoubia"],
+            "responses":[" Les Jardins de la Koutoubia phone number : +212 5243-88800"]  
+    },{ "tag":"Marrakech_Les Jardins de la Koutoubia_Hotel_LINK",
+             "patterns":["link of Les Jardins de la Koutoubia","website of Les Jardins de la Koutoubia"],
+             "responses":["http://www.lesjardinsdelakoutoubia.com/fr/hotel-luxe-marrakech"]
+                        
+    },{ "tag":"Marrakech_Les Jardins de la Koutoubia_Hotel_location",
+             "patterns":["location of Les Jardins de la Koutoubia","location of Les Jardins de la Koutoubia"],
+          "responses":["location :26 Rue De La Koutoubia, Marrakech 40000, Morocco"]
+    },{ "tag":"Marrakech_Les Jardins de la Koutoubia_Hotel_price",
+           "patterns":["price of Les Jardins de la Koutoubia","price of Les Jardins de la Koutoubia","Nightly base price of Les Jardins de la Koutoubia"],
+             "responses":[" Nightly base price for 1 night : 194$ - $201"]
+                        
+    
+     
+    
+        
+    },{ "tag":"4 stars  in Marrakech ",
+           "patterns":["i want a hotel with 4 stars in Marrakech ","describe Marrakech with 4 stars ", "4 Marrakech","4 in Marrakech","4 in Marrakesh","4 stars in Marrakech","the hotel 4 stars in Marrakech"],
+             "responses":["Alright I see , here are some suggestions choose your favorite :Labranda Targa Aqua Parc , Novotel Marrakech Hivernage ,Aqua Mirage Club  "]
+                    
+                  
+                
+    },{ "tag":"Marrakech_hotels_Labranda Targa Aqua Parc ",
+             "patterns":["What about Labranda Targa Aqua Parc Marrakech","i think imma go with Labranda Targa Aqua Parc Marrakech", "Labranda Targa Aqua Parc Marrakech seems like a good choice", "Labranda Targa Aqua Parc Marrakech"],
+             "responses":["Labranda Targa Aqua Parc Marrakech Good 7.4 !! When visiting the land of colors and contrast where do you stay? The enchanting country of Morocco has a lot to offer and see. From its attractive cities, wild beaches, exotic dessert and jaw-dropping snow-capped mountains. LABRANDA Targa Club Aqua Parc is a comfortable hotel located in enchanting Marrakech and the perfect place to explore this fascinating country.\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                    
+                
+    },{ "tag":"Marrakech_Labranda Targa Aqua Parc _PHONE",
+             "patterns":["Phone number of Labranda Targa Aqua Parc Marrakech","call Labranda Targa Aqua Parc Marrakech","reach Labranda Targa Aqua Parc Marrakech"],
+            "responses":[" Labranda Targa Aqua Parc Marrakech phone number : +212 5244-99950"]  
+     },{ "tag":"Marrakech_Labranda Targa Aqua Parc _LINK",
+            "patterns":["link of Labranda Targa Aqua Parc","website of Labranda Targa Aqua Parc"],
+            "responses":["https://www.labranda.com/targa-aqua-parc/"]
+                
+    },{ "tag":"Marrakech_Labranda Targa Aqua Parc _localisation",
+             "patterns":["location of Labranda Targa Aqua Parc","location of Labranda Targa Aqua Parc"],
+            "responses":["location :Douar Bouchareb Targa, Marrakech, Maroc, 40000, Maroc, Marrakech, Morocco"]
+                
+     },{ "tag":"Marrakech_Labranda Targa Aqua Parc _price",
+           "patterns":["price of Labranda Targa Aqua Parc","price of Labranda Targa Aqua Parc","Nightly base price of Labranda Targa Aqua Parc"],
+            "responses":[" Nightly base price for 1 night : $102-$134"]
+                
+    },{ "tag":"Marrakech_hotels_Novotel Marrakech Hivernage",
+          "patterns":["What about Novotel Marrakech Hivernage","i think imma go with Novotel Marrakech Hivernage", "Novotel Marrakech Hivernage seems like a good choice", "Novotel Marrakech Hivernage"],
+          "responses":["Novotel Marrakech Hivernage  Good 7.3 !!  You will love our cozy yet refined rooms. Take a stroll and discover the Koutoubia Mosque and the famous Jemaa el-Fna square. After a walk through the souks, relax in our outdoor swimming pool, and savor local delicacies in our casual, one-of-a-kind restaurant, Bazz'art.\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                        
+                
+    },{ "tag":"Marrakech_hotels_Novotel Marrakech Hivernage_PHONE",
+          "patterns":["Phone number of Novotel Marrakech Hivernage","call Novotel Marrakech Hivernage","reach Novotel Marrakech Hivernage"],
+             "responses":[" Novotel Marrakech Hivernage phone number : +212 5244-24540"]  
+    },{ "tag":"Marrakech_hotels_Novotel Marrakech Hivernage_LINK",
+           "patterns":["link of Novotel Marrakech Hivernage","website of Novotel Marrakech Hivernage"],
+            "responses":["https://all.accor.com/hotel/6218/index.fr.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps"]
+                            
+     },{ "tag":"Marrakech_hotels_Novotel Marrakech Hivernage_location",
+             "patterns":["location of Novotel Marrakech Hivernage","location of Novotel Marrakech Hivernage"],
+            "responses":["location :  Rue Haroun Errachid, Marrakech 40020, Morocco"]
+    },{ "tag":"Marrakech_hotels_Novotel Marrakech Hivernage_price",
+            "patterns":["price of Novotel Marrakech Hivernage","price of Novotel Marrakech Hivernage","Nightly base price of Novotel Marrakech Hivernage"],
+            "responses":[" Nightly base price for 1 night : $57-$91"]
+                            
+    
+                
+    },{ "tag":"Marrakech_Aqua Mirage Club",
+           "patterns":["What about Aqua Mirage Club","i think imma go with Aqua Mirage Club", "Aqua Mirage Club seems like a good choice", "Aqua Mirage Club"],
+             "responses":["Aqua Mirage Club  Excellent 9.3 !! Set in Marrakech, this family-friendly property is within 9 mi (15 km) of Agdal Gardens, Menara Gardens, and Menara Mall. Jemaa el-Fnaa and Koutoubia Minaret are also within 9 mi (15 km)\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                
+                        
+    },{ "tag":"Marrakech_Aqua Mirage Club_PHONE",
+             "patterns":["Phone number of Aqua Mirage Club","call Aqua Mirage Club","reach Aqua Mirage Club"],
+             "responses":[" Aqua Mirage Club phone number : +212 525-078000"]  
+},{ "tag":"Marrakech_Aqua Mirage Club_LINK",
+            "patterns":["link of Aqua Mirage Club","website of Aqua Mirage Club"],
+            "responses":["https://www.aquamiragemarrakech.com"]
+                                    
+},{ "tag":"Marrakech_Aqua Mirage Club_location",
+             "patterns":["location of Aqua Mirage Club","location of Aqua Mirage Club"],
+            "responses":["location :Km 5, Route de Tahanaout, Marrakech 40065, Morocco"]
+},{ "tag":"Marrakech_Aqua Mirage Club_price",
+            "patterns":["price of Aqua Mirage Club","price of Aqua Mirage Club","Nightly base price of Aqua Mirage Club"],
+             "responses":[" Nightly base price for 1 night : $142 - $172"]
+        
+},{ "tag":"3 stars  in Marrakech ",
+        "patterns":["i want a hotel with 3 stars in Marrakech ","describe Marrakech with 3 stars ", "3 Marrakech","3 in Marrakech","3 in Marrakesh","3 stars in Marrakech","the hotel 3 stars in Marrakech"],
+        "responses":["Alright I see , here are some suggestions choose your favorite :Almas Hotel , Novotel Marrakech Hivernage ,Aqua Mirage Club  "]
+                             
+                           
+                         
+},{ "tag":"Marrakech_hotels_Almas Hotel ",
+         "patterns":["What about Almas Hotel Marrakech","i think imma go with Almas Hotel Marrakech", "Almas Hotel Marrakech seems like a good choice", "Almas Hotel Marrakech"],
+        "responses":["Almas Hotel Marrakech Excellent 8.1 !!  Planning an event in Marrakech? This hotel has facilities measuring 646 square feet (60 square meters), including a meeting room. A roundtrip airport shuttle is provided for a surcharge (available 24 hours), and self parking (subject to charges) is available onsite .\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                             
+                         
+},{ "tag":"Marrakech_Almas Hotel _PHONE",
+        "patterns":["Phone number of Almas Hotel Marrakech","call Almas Hotel Marrakech","reach Almas Hotel Marrakech"],
+        "responses":[" Almas Hotel Marrakech phone number : +212 5244-25540"]  
+},{ "tag":"Marrakech_Almas Hotel _LINK",
+        "patterns":["link of Almas Hotel","website of Almas Hotel"],
+        "responses":["https://www.hotelalmasmarrakech.com"]
+                         
+},{ "tag":"Marrakech_Almas Hotel _localisation",
+         "patterns":["location of Almas Hotel","location of Almas Hotel"],
+        "responses":["location :79, Avenue Moulay Rachid Gueliz, Marrakech 40000, Morocco"]
+                         
+},{ "tag":"Marrakech_Almas Hotel _price",
+        "patterns":["price of Almas Hotel","price of Almas Hotel","Nightly base price of Almas Hotel"],
+         "responses":[" Nightly base price for 1 night : $41-$55"]
+                         
+},{ "tag":"Marrakech_Riad Andalla",
+        "patterns":["What about Riad Andalla","i think imma go with Riad Andalla", "Riad Andalla seems like a good choice", "Riad Andalla"],
+        "responses":["Riad Andalla  Excellent 8.9 !!  Featured amenities include dry cleaning/laundry services, a 24-hour front desk, and luggage storage. Guests may use a roundtrip airport shuttle for a surcharge, and free self parking is available onsite. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                 
+                         
+},{ "tag":"Marrakech_Riad Andalla_PHONE",
+        "patterns":["Phone number of Riad Andalla","call Riad Andalla","reach Riad Andalla"],
+        "responses":[" Riad Andalla phone number : +212 602-399106"]  
+},{ "tag":"Marrakech_Riad Andalla_LINK",
+        "patterns":["link of Riad Andalla","website of Riad Andalla"],
+        "responses":["https://riadandalla.com/fr/accueil/"]
+                                     
+},{ "tag":"Marrakech_Riad Andalla_location",
+         "patterns":["location of Riad Andalla","location of Riad Andalla"],
+        "responses":["location :  15 derb Zaari, Marrakech 40000, Morocco"]
+},{ "tag":"Marrakech_Riad Andalla_price",
+        "patterns":["price of Riad Andalla","price of Riad Andalla","Nightly base price of Riad Andalla"],
+        "responses":[" Nightly base price for 1 night : $68-$71"]
+                                     
+    
+                         
+},{ "tag":"Marrakech_Ibis Marrakech Centre Gare",
+         "patterns":["What about Ibis Marrakech Centre Gare","i think imma go with Ibis Marrakech Centre Gare", "Ibis Marrakech Centre Gare seems like a good choice", "Ibis Marrakech Centre Gare"],
+         "responses":["Ibis Marrakech Centre Gare  Good 6.8 !! ibis Marrakech Centre Gare offers 109 comfortable rooms with A/C, private bathroom, desk area, flat-screen TV and unlimited free WiFi. Its international restaurant serves an all-you-can-eat breakfast buffet, and its 24-hour bar .\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                         
+                                 
+},{ "tag":"Marrakech_Ibis Marrakech Centre Gare_PHONE",
+        "patterns":["Phone number of Ibis Marrakech Centre Gare","call Ibis Marrakech Centre Gare","reach Ibis Marrakech Centre Gare"],
+        "responses":[" Ibis Marrakech Centre Gare phone number : +212 5244-35929"]  
+},{ "tag":"Marrakech_Ibis Marrakech Centre Gare_LINK",
+        "patterns":["link of Ibis Marrakech Centre Gare","website of Ibis Marrakech Centre Gare"],
+        "responses":["https://all.accor.com/hotel/2034/index.fr.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps"]
+                                             
+},{ "tag":"Marrakech_Ibis Marrakech Centre Gare_location",
+        "patterns":["location of Ibis Marrakech Centre Gare","location of Ibis Marrakech Centre Gare"],
+        "responses":["location :Avenue Hassan II, Marrakech 40000, Morocco"]
+},{ "tag":"Marrakech_Ibis Marrakech Centre Gare_price",
+         "patterns":["price of Ibis Marrakech Centre Gare","price of Ibis Marrakech Centre Gare","Nightly base price of Ibis Marrakech Centre Gare"],
+        "responses":[" Nightly base price for 1 night :  $56 - $61"]
+                                             
+            
+                         
+},{ "tag":"5 stars  in Agadir ",
+         "patterns":["i want a hotel with 5 stars in agadir ","describe agadir with 5 stars ", "5 agadir","5 in agadir","5 in agadir","5 stars in agadir","the hotel 5 stars in agadir"],
+         "responses":["Alright I see , here are some suggestions choose your favorite :Tikida Golf Palace , Riu Palace Tikida Agadir ,SRiad Myra Hotel  "]
+                                                                  
+                                                                
+                                                              
+},{ "tag":"agadir_hotels_Tikida Golf Palace ",
+         "patterns":["What about Tikida Golf Palace agadir","i think imma go with Tikida Golf Palace agadir", "Tikida Golf Palace agadir seems like a good choice", "Tikida Golf Palace agadir"],
+        "responses":["Tikida Golf Palace agadir Excellent 8.7 !!   Planning an event in Inezgane? This hotel has facilities measuring 4950 square feet (460 square meters), including a meeting room. A roundtrip airport shuttle is provided for a surcharge (available 24 hours), and free self parking is available onsite .\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                 
+                                                             
+},{ "tag":"agadir_Tikida Golf Palace _PHONE",
+         "patterns":["Phone number of Tikida Golf Palace agadir","call Tikida Golf Palace agadir","reach Tikida Golf Palace agadir"],
+        "responses":[" Tikida Golf Palace agadir phone number : +212 5288-32727"]  
+},{ "tag":"agadir_Tikida Golf Palace _LINK",
+         "patterns":["link of Tikida Golf Palace","website of Tikida Golf Palace"],
+        "responses":["https://tikidagolfpalace.com"]
+                                                             
+},{ "tag":"agadir_Tikida Golf Palace _localisation",
+         "patterns":["location of Tikida Golf Palace","location of Tikida Golf Palace"],
+        "responses":["location :Km 7 Route Ben Sergaou, Agadir, Morocco"]
+                                                             
+},{ "tag":"agadir_Tikida Golf Palace _price",
+         "patterns":["price of Tikida Golf Palace","price of Tikida Golf Palace","Nightly base price of Tikida Golf Palace"],
+        "responses":[" Nightly base price for 1 night : $162"]
+                                                             
+ },{ "tag":"agadir_Riu Palace Tikida Agadir",
+         "patterns":["What about Riu Palace Tikida Agadir","i think imma go with Riu Palace Tikida Agadir", "Riu Palace Tikida Agadir seems like a good choice", "Riu Palace Tikida Agadir"],
+        "responses":["Riu Palace Tikida Agadir  Excellent 10.0 !!  This family-friendly Agadir resort is located by the ocean, within a 10-minute walk of Casino Le Mirage and Agadir Beach. Royal Palace and Souk El Had are also within 2 mi (3 km)  \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                                                     
+                                                             
+ },{ "tag":"agadir_Riu Palace Tikida Agadir_PHONE",
+        "patterns":["Phone number of Riu Palace Tikida Agadir","call Riu Palace Tikida Agadir","reach Riu Palace Tikida Agadir"],
+         "responses":[" Riu Palace Tikida Agadir phone number : +212 5283-88484"]  
+},{ "tag":"agadir_Riu Palace Tikida Agadir_LINK",
+         "patterns":["link of Riu Palace Tikida Agadir","website of Riu Palace Tikida Agadir"],
+        "responses":["https://www.riu.com/en/hotel/morocco/agadir/hotel-riu-palace-tikida-agadir/index.jsp?utm_source=google&utm_medium=organic&utm_campaign=my_business&utm_content=XTA"]
+                                                                         
+},{ "tag":"agadir_Riu Palace Tikida Agadir_location",
+        "patterns":["location of Riu Palace Tikida Agadir","location of Riu Palace Tikida Agadir"],
+        "responses":["location :  Chemin des Dunes, Agadir 80000, Morocco"]
+},{ "tag":"agadir_Riu Palace Tikida Agadir_price",
+         "patterns":["price of Riu Palace Tikida Agadir","price of Riu Palace Tikida Agadir","Nightly base price of Riu Palace Tikida Agadir"],
+        "responses":[" Nightly base price for 1 night :  $178 - $194"]
+                                                                         
+                                                  
+                                                             
+},{ "tag":"Agadir_Sofitel Agadir Thalassa Sea & Spa ",
+         "patterns":["What about Sofitel Agadir Thalassa Sea & Spa ","i think imma go with Sofitel Agadir Thalassa Sea & Spa ", "Sofitel Agadir Thalassa Sea & Spa  seems like a good choice", "Sofitel Agadir Thalassa Sea & Spa "],
+        "responses":["Sofitel Agadir Thalassa Sea & Spa  Good 7.8 !! abysitting or child care, Business center, Car rental, Wake-up service, Fax/photocopying, Concierge service, Currency exchange on-site, Hammam (Turkish bath), Laundry service, Meeting/Banquet facilities, Tour desk, Face masks for guests available .\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                                                             
+                                                                     
+},{ "tag":"Agadir_Sofitel Agadir Thalassa Sea & Spa _PHONE",
+         "patterns":["Phone number of Sofitel Agadir Thalassa Sea & Spa ","call Sofitel Agadir Thalassa Sea & Spa ","reach Sofitel Agadir Thalassa Sea & Spa "],
+        "responses":[" Sofitel Agadir Thalassa Sea & Spa  phone number : +212 5283-88000"]  
+ },{ "tag":"Agadir_Sofitel Agadir Thalassa Sea & Spa _LINK",
+        "patterns":["link of Sofitel Agadir Thalassa Sea & Spa ","website of Sofitel Agadir Thalassa Sea & Spa "],
+        "responses":["https://all.accor.com/hotel/5242/index.fr.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps"]
+                                                                                 
+},{ "tag":"Agadir_Sofitel Agadir Thalassa Sea & Spa _location",
+         "patterns":["location of Sofitel Agadir Thalassa Sea & Spa ","location of Sofitel Agadir Thalassa Sea & Spa "],
+           "responses":["location :Baie des Palmiers, Agadir 80010, Morocco"]
+ },{ "tag":"Agadir_Sofitel Agadir Thalassa Sea & Spa _price",
+        "patterns":["price of Sofitel Agadir Thalassa Sea & Spa ","price of Sofitel Agadir Thalassa Sea & Spa ","Nightly base price of Sofitel Agadir Thalassa Sea & Spa "],
+         "responses":[" Nightly base price for 1 night :  $224 - $266 "]
+                                                                                 
+                                                          
+                                         
+                            
+      
+            
+    },{ "tag":"4 stars  in Agadir ",
+            "patterns":["i want a hotel with 4 stars in agadir ","describe agadir with 4 stars ", "4 agadir","4 in agadir","4 in agadir","4 stars in agadir","the hotel 4 stars in agadir"],
+             "responses":["Alright I see , here are some suggestions choose your favorite :Hotel Riu Tikida Dunas  , Timoulay Hotel ,Kenzi Europa  "]
+                                             
+                                           
+                                         
+     },{ "tag":"agadir_hotels_Hotel Riu Tikida Dunas  ",
+             "patterns":["What about Hotel Riu Tikida Dunas  agadir","i think imma go with Hotel Riu Tikida Dunas  agadir", "Hotel Riu Tikida Dunas  agadir seems like a good choice", "Hotel Riu Tikida Dunas  agadir"],
+             "responses":["Hotel Riu Tikida Dunas  agadir Good 7.6 !! This family-friendly Agadir property is located by the ocean, within 1 mi (2 km) of Casino Le Mirage and Agadir Beach. Royal Palace and Souk El Had are also within 2 mi (3 km).\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                            
+    },{ "tag":"agadir_Hotel Riu Tikida Dunas  _PHONE",
+            "patterns":["Phone number of Hotel Riu Tikida Dunas  agadir","call Hotel Riu Tikida Dunas  agadir","reach Hotel Riu Tikida Dunas  agadir"],
+             "responses":[" Hotel Riu Tikida Dunas  agadir phone number : +212 5288-49090"]  
+    },{ "tag":"agadir_Hotel Riu Tikida Dunas  _LINK",
+            "patterns":["link of Hotel Riu Tikida Dunas ","website of Hotel Riu Tikida Dunas "],
+              "responses":["https://www.riu.com/en/hotel/morocco/agadir/clubhotel-riu-tikida-dunas/index.jsp?utm_source=google&utm_medium=organic&utm_campaign=my_business&utm_content=TDU"]
+                                        
+     },{ "tag":"agadir_Hotel Riu Tikida Dunas  _localisation",
+              "patterns":["location of Hotel Riu Tikida Dunas ","location of Hotel Riu Tikida Dunas "],
+              "responses":["location :Chemin Des Dunes B.P. 901, Agadir 80000, Morocco"]
+                                        
+    },{ "tag":"agadir_Hotel Riu Tikida Dunas  _price",
+             "patterns":["price of Hotel Riu Tikida Dunas ","price of Hotel Riu Tikida Dunas ","Nightly base price of Hotel Riu Tikida Dunas "],
+              "responses":[" Nightly base price for 1 night : $130 - $148"]
+                                        
+    },{ "tag":"agadir_Timoulay Hotel",
+             "patterns":["What about Timoulay Hotel","i think imma go with Timoulay Hotel", "Timoulay Hotel seems like a good choice", "Timoulay Hotel"],
+            "responses":["Timoulay Hotel  Excellent 8.5 !!  Babysitting or child care, Business center, Car rental, Wake-up service, Daily housekeeping, Fax/photocopying, Concierge service, Currency exchange on-site, Hammam (Turkish bath), Laundry service, Meeting/Banquet facilities,  \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                                
+                                        
+    },{ "tag":"agadir_Timoulay Hotel_PHONE",
+             "patterns":["Phone number of Timoulay Hotel","call Timoulay Hotel","reach Timoulay Hotel"],
+              "responses":[" Timoulay Hotel phone number : +212 5282-34220"]  
+    },{ "tag":"agadir_Timoulay Hotel_LINK",
+            "patterns":["link of Timoulay Hotel","website of Timoulay Hotel"],
+            "responses":["https://www.timoulayhotel.com"]
+                                                    
+     },{ "tag":"agadir_Timoulay Hotel_location",
+             "patterns":["location of Timoulay Hotel","location of Timoulay Hotel"],
+            "responses":["location :  Cité Founty F6 Baie Des Palmiers, Agadir, Morocco"]
+    },{ "tag":"agadir_Timoulay Hotel_price",
+            "patterns":["price of Timoulay Hotel","price of Timoulay Hotel","Nightly base price of Timoulay Hotel"],
+            "responses":[" Nightly base price for 1 night :  $88 - $113"]
+                                                    
+    
+                                        
+    },{ "tag":"Agadir_Kenzi Europa ",
+            "patterns":["What about Kenzi Europa ","i think imma go with Kenzi Europa ", "Kenzi Europa  seems like a good choice", "Kenzi Europa "],
+            "responses":["Kenzi Europa  Good 7.8 !! Babysitting or child care, Business center, Car rental, Wake-up service, Daily housekeeping, Fax/photocopying, Concierge service, Entertainment staff.\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                                        
+                                                
+    },{ "tag":"Agadir_Kenzi Europa _PHONE",
+            "patterns":["Phone number of Kenzi Europa ","call Kenzi Europa ","reach Kenzi Europa "],
+             "responses":[" Kenzi Europa  phone number : +212 5288-21212"]  
+    },{ "tag":"Agadir_Kenzi Europa _LINK",
+            "patterns":["link of Kenzi Europa ","website of Kenzi Europa "],
+            "responses":["https://www.kenzi-hotels.com/kenzi-europa"]
+                                                            
+    },{ "tag":"Agadir_Kenzi Europa _location",
+             "patterns":["location of Kenzi Europa ","location of Kenzi Europa "],
+              "responses":["location : Boulevard 20 Aout B P 808, Agadir BP 808, Morocco"]
+    },{ "tag":"Agadir_Kenzi Europa _price",
+            "patterns":["price of Kenzi Europa ","price of Kenzi Europa ","Nightly base price of Kenzi Europa "],
+             "responses":[" Nightly base price for 1 night :  $66 - $75  "]
+                                                            
+       
+    
+    
+     },{ "tag":"3 stars  in Agadir ",
+             "patterns":["i want a hotel with 3 stars in agadir ","describe agadir with 3 stars ", "3 agadir","3 in agadir","3 in agadir","3 stars in agadir","the hotel 3 stars in agadir"],
+              "responses":["Alright I see , here are some suggestions choose your favorite :Tagadirt Appart-Hotel  ,Hôtel Club Al Moggar ,Kenzi Europa  "]
+                                                     
+                                                   
+                                                 
+    },{ "tag":"agadir_hotels_Tagadirt Appart-Hotel  ",
+                     "patterns":["What about Tagadirt Appart-Hotel  agadir","i think imma go with Tagadirt Appart-Hotel  agadir", "Tagadirt Appart-Hotel  agadir seems like a good choice", "Tagadirt Appart-Hotel  agadir"],
+                     "responses":["Tagadirt Appart-Hotel  agadir Good 6.5 !! Featured amenities include express check-in, express check-out, and dry cleaning/laundry services. Guests may use a roundtrip airport shuttle for a surcharge, and limited parking is available onsite. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                    
+    },{ "tag":"agadir_Tagadirt Appart-Hotel  _PHONE",
+                    "patterns":["Phone number of Tagadirt Appart-Hotel  agadir","call Tagadirt Appart-Hotel  agadir","reach Tagadirt Appart-Hotel  agadir"],
+                     "responses":[" Tagadirt Appart-Hotel  agadir phone number : +212 5288-40630"]  
+    },{ "tag":"agadir_Tagadirt Appart-Hotel  _LINK",
+                    "patterns":["link of Tagadirt Appart-Hotel ","website of Tagadirt Appart-Hotel "],
+                      "responses":["https://www.tripadvisor.fr/Hotel_Review-g293731-d317359-Reviews-Tagadirt_Hotel-Agadir_Souss_Massa.html"]
+                                                
+    },{ "tag":"agadir_Tagadirt Appart-Hotel  _localisation",
+                      "patterns":["location of Tagadirt Appart-Hotel ","location of Tagadirt Appart-Hotel "],
+                      "responses":["location :Blvd Du 20 Aout, Agadir 80000, Morocco"]
+                                                
+    },{ "tag":"agadir_Tagadirt Appart-Hotel  _price",
+                     "patterns":["price of Tagadirt Appart-Hotel ","price of Tagadirt Appart-Hotel ","Nightly base price of Tagadirt Appart-Hotel "],
+                      "responses":[" Nightly base price for 1 night :  $38 - $48 "]
+                                                
+    },{ "tag":"agadir_Hôtel Club Al Moggar",
+                     "patterns":["What about Hôtel Club Al Moggar","i think imma go with Hôtel Club Al Moggar", "Hôtel Club Al Moggar seems like a good choice", "Hôtel Club Al Moggar"],
+                    "responses":["Hôtel Club Al Moggar  Good 7.0 !!  With a stay at Hôtel Club Al Moggar in Agadir, you'll be within a 5-minute drive of Agadir Beach and Agadir Marina. Featured amenities include express check-out, a 24-hour front desk, and multilingual staff. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                                        
+                                                
+    },{ "tag":"agadir_Hôtel Club Al Moggar_PHONE",
+                     "patterns":["Phone number of Hôtel Club Al Moggar","call Hôtel Club Al Moggar","reach Hôtel Club Al Moggar"],
+                      "responses":[" Hôtel Club Al Moggar phone number : +212 5288-42270"]  
+    },{ "tag":"agadir_Hôtel Club Al Moggar_LINK",
+                    "patterns":["link of Hôtel Club Al Moggar","website of Hôtel Club Al Moggar"],
+                    "responses":["https://hotelclubalmoggar.com"]
+                                                            
+     },{ "tag":"agadir_Hôtel Club Al Moggar_location",
+                     "patterns":["location of Hôtel Club Al Moggar","location of Hôtel Club Al Moggar"],
+                    "responses":["location :  Boulevard Mohamed V, Agadir 80000, Morocco"]
+    },{ "tag":"agadir_Hôtel Club Al Moggar_price",
+                    "patterns":["price of Hôtel Club Al Moggar","price of Hôtel Club Al Moggar","Nightly base price of Hôtel Club Al Moggar"],
+                    "responses":[" Nightly base price for 1 night :  $67- $84 "]
+                                                            
+     
+                                                
+          },{ "tag":"Agadir_Résidence Hotelière Fleuriea ",
+                    "patterns":["What about Kenzi Europa ","i think imma go with Kenzi Europa ", "Kenzi Europa  seems like a good choice", "Kenzi Europa "],
+                    "responses":["Kenzi Europa  Excellent 8.6 !! With a stay at Résidence Hôtelière Fleurie, you'll be centrally located in Agadir, a 4-minute drive from Royal Palace and 8 minutes from Agadir Beach. Featured amenities include a 24-hour front desk, multilingual staff, and luggage storage.\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                                                
+                                                        
+            },{ "tag":"Agadir_Kenzi Europa _PHONE",
+                    "patterns":["Phone number of Kenzi Europa ","call Kenzi Europa ","reach Kenzi Europa "],
+                     "responses":[" Kenzi Europa  phone number : +212 5288-43624"]  
+            },{ "tag":"Agadir_Kenzi Europa _LINK",
+                    "patterns":["link of Kenzi Europa ","website of Kenzi Europa "],
+                    "responses":["http://www.residence-fleurie.com"]
+                                                                    
+            },{ "tag":"Agadir_Kenzi Europa _location",
+                     "patterns":["location of Kenzi Europa ","location of Kenzi Europa "],
+                      "responses":["location :Rue de la Roire, Agadir 80000, Morocco"]
+            },{ "tag":"Agadir_Kenzi Europa _price",
+                    "patterns":["price of Kenzi Europa ","price of Kenzi Europa ","Nightly base price of Kenzi Europa "],
+                     "responses":[" Nightly base price for 1 night :  $48  "]                                                         
+            
+    
+    
+           
+    },{ "tag":"5 stars  in fes ",
+              "patterns":["i want a hotel with 5 stars in fes ","describe fes with 5 stars ", "5 fes","5 in fes","5 in fes","5 stars in fes","the hotel 5 stars in fes"],
+                "responses":["Alright I see , here are some suggestions choose your favorite :Palais Faraj Suites & Spa , Riad Fes ,SRiad Myra Hotel  "]
+                                             
+                                           
+                                         
+     },{ "tag":"fes_hotels_Palais Faraj Suites & Spa ",
+             "patterns":["What about Palais Faraj Suites & Spa fes","i think imma go with Palais Faraj Suites & Spa fes", "Palais Faraj Suites & Spa fes seems like a good choice", "Palais Faraj Suites & Spa fes"],
+              "responses":["Palais Faraj Suites & Spa fes Excellent 9.1 !!   Ticket service, Babysitting or child care, Car rental, Fax/photocopying, Currency exchange on-site, Hammam (Turkish bath), Laundry service, Meeting/Banquet facilities, Special diet menus (on request), Contactless check-in/check-out, Tour desk, Face masks for guests available.\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                            
+                                        
+     },{ "tag":"fes_Palais Faraj Suites & Spa _PHONE",
+            "patterns":["Phone number of Palais Faraj Suites & Spa fes","call Palais Faraj Suites & Spa fes","reach Palais Faraj Suites & Spa fes"],
+              "responses":[" Palais Faraj Suites & Spa fes phone number : +212 5356-35356"]  
+       },{ "tag":"fes_Palais Faraj Suites & Spa _LINK",
+                    "patterns":["link of Palais Faraj Suites & Spa","website of Palais Faraj Suites & Spa"],
+                     "responses":["https://www.palaisfaraj.com"]
+                                        
+    },{ "tag":"fes_Palais Faraj Suites & Spa _localisation",
+                                     "patterns":["location of Palais Faraj Suites & Spa","location of Palais Faraj Suites & Spa"],
+                                    "responses":["location :Bab Ziat, Quartier Ziat, Fès Médina, Fez 30000, Morocco"]
+                                        
+                     },{ "tag":"fes_Palais Faraj Suites & Spa _price",
+                                   "patterns":["price of Palais Faraj Suites & Spa","price of Palais Faraj Suites & Spa","Nightly base price of Palais Faraj Suites & Spa"],
+                                    "responses":[" Nightly base price for 1 night :$199 - $201"]
+                                        
+                    },{ "tag":"fes_Riad Fes",
+                                  "patterns":["What about Riad Fes","i think imma go with Riad Fes", "Riad Fes seems like a good choice", "Riad Fes"],
+                                  "responses":["Riad Fes  Excellent 9.1 !!  Planning an event in Fes? This riad has 388 square feet (36 square meters) of space consisting of conference space and a meeting room. For a surcharge, guests may use a roundtrip airport shuttle (available 24 hours) and a train station pick-up service \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                                
+                                        
+                    },{ "tag":"fes_Riad Fes_PHONE",
+                                  "patterns":["Phone number of Riad Fes","call Riad Fes","reach Riad Fes"],
+                                     "responses":[" Riad Fes phone number : +212 5357-41206"]  
+                            },{ "tag":"fes_Riad Fes_LINK",
+                                   "patterns":["link of Riad Fes","website of Riad Fes"],
+                                    "responses":["https://www.riu.com/en/hotel/morocco/fes/hotel-riu-palace-tikida-fes/index.jsp?utm_source=google&utm_medium=organic&utm_campaign=my_business&utm_content=XTA"]
+                                                    
+                             },{ "tag":"fes_Riad Fes_location",
+                                     "patterns":["location of Riad Fes","location of Riad Fes"],
+                                    "responses":["location : 5 Derb Ben Slimane Zerbtana, Fez 30110, Morocco"]
+                            },{ "tag":"fes_Riad Fes_price",
+                                    "patterns":["price of Riad Fes","price of Riad Fes","Nightly base price of Riad Fes"],
+                                    "responses":[" Nightly base price for 1 night : $195 - $214"]
+                                                    
+                             
+                                        
+                            },{ "tag":"fes_SRiad Myra Hotel ",
+                                   "patterns":["What about SRiad Myra Hotel ","i think imma go with SRiad Myra Hotel ", "SRiad Myra Hotel  seems like a good choice", "SRiad Myra Hotel "],
+                                     "responses":["SRiad Myra Hotel Excellent 9.4 !! Featured amenities include a business center, express check-in, and express check-out. A roundtrip airport shuttle is provided for a surcharge (available 24 hours).\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                                        
+                                                
+                            },{ "tag":"fes_SRiad Myra Hotel _PHONE",
+                                     "patterns":["Phone number of SRiad Myra Hotel ","call SRiad Myra Hotel ","reach SRiad Myra Hotel "],
+                                     "responses":[" SRiad Myra Hotel  phone number : +212 5357-40000"]  
+                            },{ "tag":"fes_SRiad Myra Hotel _LINK",
+                                    "patterns":["link of SRiad Myra Hotel ","website of SRiad Myra Hotel "],
+                                    "responses":["https://www.riadmyra.com"]
+                                                            
+                             },{ "tag":"fes_SRiad Myra Hotel _location",
+                                     "patterns":["location of SRiad Myra Hotel ","location of SRiad Myra Hotel "],
+                                    "responses":["location :13 Rue Salaj, Fez 30200, Morocco "]
+                             },{ "tag":"fes_SRiad Myra Hotel _price",
+                                    "patterns":["price of SRiad Myra Hotel ","price of SRiad Myra Hotel ","Nightly base price of SRiad Myra Hotel "],
+                                     "responses":[" Nightly base price for 1 night :  $68 - $83"]
+                                                            
+                                     
+                         
+                    },{ "tag":"4 stars  in fes ",
+                            "patterns":["i want a hotel with 4 stars in fes ","describe fes with 4 stars ", "4 fes","4 in fes","4 in fes","4 stars in fes","the hotel 4 stars in fes"],
+                             "responses":["Alright I see , here are some suggestions choose your favorite :Barceló Fès Medina  , Dar Bensouda  ,Hôtel Volubilis  "]
+                                                             
+                                                           
+                                                         
+                     },{ "tag":"fes_hotels_Barceló Fès Medina  ",
+                             "patterns":["What about Barceló Fès Medina  fes","i think imma go with Barceló Fès Medina  fes", "Barceló Fès Medina  fes seems like a good choice", "Barceló Fès Medina  fes"],
+                             "responses":["Barceló Fès Medina  fes Good 7.7 !! The hotel is 5 minutes from the train station and 20 minutes from Fez - Saïss International Airport. The City of Fez is the first imperial city of Morocco, and is a UNESCO World Heritage Site. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                            
+                    },{ "tag":"fes_Barceló Fès Medina  _PHONE",
+                            "patterns":["Phone number of Barceló Fès Medina  fes","call Barceló Fès Medina  fes","reach Barceló Fès Medina  fes"],
+                             "responses":[" Barceló Fès Medina  fes phone number : sorry we can't find the the number \n check the link for more informations : https://www.booking.com/hotel/ma/barcela3-fa-s-medina.fr.html"]  
+                    },{ "tag":"fes_Barceló Fès Medina  _LINK",
+                            "patterns":["link of Barceló Fès Medina ","website of Barceló Fès Medina "],
+                              "responses":["https://www.booking.com/hotel/ma/barcela3-fa-s-medina.fr.html"]
+                                                        
+                     },{ "tag":"fes_Barceló Fès Medina  _localisation",
+                              "patterns":["location of Barceló Fès Medina ","location of Barceló Fès Medina "],
+                              "responses":["location :53 Av. Hassan II, Fez 30000, Morocco"]
+                                                        
+                    },{ "tag":"fes_Barceló Fès Medina  _price",
+                             "patterns":["price of Barceló Fès Medina ","price of Barceló Fès Medina ","Nightly base price of Barceló Fès Medina "],
+                              "responses":[" Nightly base price for 1 night : $64 - $72"]
+                                                        
+                    },{ "tag":"fes_Dar Bensouda ",
+                             "patterns":["What about Dar Bensouda ","i think imma go with Dar Bensouda ", "Dar Bensouda  seems like a good choice", "Dar Bensouda "],
+                            "responses":["Dar Bensouda   Excellent 9.1 !!  Featured amenities include a 24-hour front desk, luggage storage, and laundry facilities. A roundtrip airport shuttle is provided for a surcharge (available 24 hours)  \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                                                
+                                                        
+                    },{ "tag":"fes_Dar Bensouda _PHONE",
+                             "patterns":["Phone number of Dar Bensouda ","call Dar Bensouda ","reach Dar Bensouda "],
+                              "responses":[" Dar Bensouda  phone number : +212 5244-26463"]  
+                    },{ "tag":"fes_Dar Bensouda _LINK",
+                            "patterns":["link of Dar Bensouda ","website of Dar Bensouda "],
+                            "responses":["https://www.tripadvisor.fr/Hotel_Review-g293733-d1633299-Reviews-Hotel_Spa_Riad_Dar_Bensouda-Fes_Fes_Meknes.html"]
+                                                                    
+                     },{ "tag":"fes_Dar Bensouda _location",
+                             "patterns":["location of Dar Bensouda ","location of Dar Bensouda "],
+                            "responses":["location :  14 Zkak El Bghel, Elquettanine, Fez 30000, Morocco"]
+                    },{ "tag":"fes_Dar Bensouda _price",
+                            "patterns":["price of Dar Bensouda ","price of Dar Bensouda ","Nightly base price of Dar Bensouda "],
+                            "responses":[" Nightly base price for 1 night :  $52 - $66"]
+                                                                    
+                  
+                                                        
+                    },{ "tag":"fes_Hôtel Volubilis ",
+                            "patterns":["What about Hôtel Volubilis ","i think imma go with Hôtel Volubilis ", "Hôtel Volubilis  seems like a good choice", "Hôtel Volubilis "],
+                            "responses":["Hôtel Volubilis  Good 7.5 !!This 4-star hotel is located in the heart of Fs, just 2.1 km from the train station. The hotel's outdoor pool is surrounded by landscaped gardens and a sun terrace with loungers and parasols.All air-conditioned rooms and suites come with a flat-screen TV and a wardrobe. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                                                        
+                                                                
+                    },{ "tag":"fes_Hôtel Volubilis _PHONE",
+                            "patterns":["Phone number of Hôtel Volubilis ","call Hôtel Volubilis ","reach Hôtel Volubilis "],
+                             "responses":[" Hôtel Volubilis  phone number : +212 5356-21126"]  
+                    },{ "tag":"fes_Hôtel Volubilis _LINK",
+                            "patterns":["link of Hôtel Volubilis ","website of Hôtel Volubilis "],
+                            "responses":["https://www.tripadvisor.fr/Hotel_Review-g293733-d581147-Reviews-Hotel_Atlas_Volubilis-Fes_Fes_Meknes.html"]
+                                                                            
+                    },{ "tag":"fes_Hôtel Volubilis _location",
+                             "patterns":["location of Hôtel Volubilis ","location of Hôtel Volubilis "],
+                              "responses":["location : Avenue Allal Ben abdellah, Fez 30000, Morocco"]
+                    },{ "tag":"fes_Hôtel Volubilis _price",
+                            "patterns":["price of Hôtel Volubilis ","price of Hôtel Volubilis ","Nightly base price of Hôtel Volubilis "],
+                             "responses":[" Nightly base price for 1 night : $42 - $53 "]
+                                                                            
+                       
+                    
+                    
+                     },{ "tag":"3 stars  in fes ",
+                             "patterns":["i want a hotel with 3 stars in fes ","describe fes with 3 stars ", "3 fes","3 in fes","3 in fes","3 stars in fes","the hotel 3 stars in fes"],
+                              "responses":["Alright I see , here are some suggestions choose your favorite :Ibis Fes  ,Dar Hafsa ,Riad Ahlam  "]
+                                                                     
+                                                                   
+                                                                 
+                    },{ "tag":"fes_hotels_Ibis Fes  ",
+                                     "patterns":["What about Ibis Fes  ","i think imma go with Ibis Fes  ", "Ibis  fes seems like a good choice", "Ibis Fes  fes"],
+                                     "responses":["Ibis Fes   Good 7.2 !!  123 economy rooms have all the comfort you need, thanks to a private bathroom, desk, air conditioning and unlimited WiFi. To relax, our property has an international restaurant, a 24-hour bar, and a garden with swimming pool. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                    
+                    },{ "tag":"fes_Ibis Fes  _PHONE",
+                                    "patterns":["Phone number of Ibis   fes","call Ibis   fes","reach Ibis  fes"],
+                                     "responses":[" Ibis Fes   phone number : +212 5356-51902"]  
+                    },{ "tag":"fes_Ibis Fes  _LINK",
+                                    "patterns":["link of Ibis Fes ","website of Ibis Fes "],
+                                      "responses":["https://all.accor.com/errors/session-expired/index.fr.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps"]
+                                                                
+                    },{ "tag":"fes_Ibis Fes  _localisation",
+                                      "patterns":["location of Ibis Fes ","location of Ibis Fes "],
+                                      "responses":["location :Avenue Des Almohades Place De La Gare, Fez 30000, Morocco"]
+                                                                
+                    },{ "tag":"fes_Ibis Fes  _price",
+                                     "patterns":["price of Ibis Fes ","price of Ibis Fes ","Nightly base price of Ibis Fes "],
+                                      "responses":[" Nightly base price for 1 night :  $22 - $48 "]
+                                                                
+                    },{ "tag":"fes_Dar Hafsa",
+                                     "patterns":["What about Dar Hafsa","i think imma go with Dar Hafsa", "Dar Hafsa seems like a good choice", "Dar Hafsa"],
+                                    "responses":["Dar Hafsa  Excellent 9.4 !!  Featured amenities include a 24-hour front desk, multilingual staff, and luggage storage. A roundtrip airport shuttle is provided for a surcharge (available 24 hours). \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                                                        
+                                                                
+                    },{ "tag":"fes_Dar Hafsa_PHONE",
+                                     "patterns":["Phone number of Dar Hafsa","call Dar Hafsa","reach Dar Hafsa"],
+                                      "responses":[" Dar Hafsa phone number : +212 664-650780"]  
+                    },{ "tag":"fes_Dar Hafsa_LINK",
+                                    "patterns":["link of Dar Hafsa","website of Dar Hafsa"],
+                                    "responses":["https://www.trivago.fr/fes-85717/hotel/dar-hafsa-2233814"]
+                                                                            
+                     },{ "tag":"fes_Dar Hafsa_location",
+                                     "patterns":["location of Dar Hafsa","location of Dar Hafsa"],
+                                    "responses":["location :  34 Derb Sidi Safi, Souiket Ben Safi, Fez 30000, Morocco"]
+                    },{ "tag":"fes_Dar Hafsa_price",
+                                    "patterns":["price of Dar Hafsa","price of Dar Hafsa","Nightly base price of Dar Hafsa"],
+                                    "responses":[" Nightly base price for 1 night :  $37 "]
+                                                                            
+                     
+                                                                
+                          },{ "tag":"fes_Résidence Hotelière Fleuriea ",
+                                    "patterns":["What about Riad Ahlam ","i think imma go with Riad Ahlam ", "Riad Ahlam  seems like a good choice", "Riad Ahlam "],
+                                    "responses":["Riad Ahlam  Excellent 9.7 !!Featured amenities include a business center, dry cleaning/laundry services, and a safe deposit box at the front desk. A roundtrip airport shuttle is provided for a surcharge (available 24 hours). \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]           
+                                                                                
+                                                                        
+                            },{ "tag":"fes_Riad Ahlam _PHONE",
+                                    "patterns":["Phone number of Riad Ahlam ","call Riad Ahlam ","reach Riad Ahlam "],
+                                     "responses":[" Riad Ahlam  phone number : +212 5356-38714"]  
+                            },{ "tag":"fes_Riad Ahlam _LINK",
+                                    "patterns":["link of Riad Ahlam ","website of Riad Ahlam "],
+                                    "responses":["https://www.riad-ahlam.com"]
+                                                                                    
+                            },{ "tag":"fes_Riad Ahlam _location",
+                                     "patterns":["location of Riad Ahlam ","location of Riad Ahlam "],
+                                      "responses":["location :24 Derb El Miter, Fez 30200, Morocco "]
+                            },{ "tag":"fes_Riad Ahlam _price",
+                                    "patterns":["price of Riad Ahlam ","price of Riad Ahlam ","Nightly base price of Riad Ahlam "],
+                                     "responses":[" Nightly base price for 1 night : $85 - $90  "]                                                         
+                            
+                    
+                    
+                    
+      
+    },{ "tag":"5 stars  in Essaouira ",
+            "patterns":["i want a hotel with 5 stars in Essaouira  ","describe Essaouira  with 5 stars ", "5 Essaouira ","5 in Essaouira ","5 in Essaouira ","5 stars in Essaouira ","the hotel 5 stars in Essaouira "],
+            "responses":["Alright I see , here are some suggestions choose your favorite :Atlas Essaouira & Spa  ,Palais Des Remparts ,Dar L'Oussia  "]
+                                                                     
+                                                                   
+                                                                 
+    },{ "tag":"Essaouira_hotels_Atlas Essaouira & Spa  ",
+            "patterns":["What about Atlas Essaouira & Spa ","i think imma go with Atlas Essaouira & Spa ", "Atlas Essaouira & Spa seems like a good choice", "Atlas Essaouira & Spa  Essaouira"],
+            "responses":["Atlas Essaouira & Spa  Excellent 8.2 !!  The spacious rooms offer a unique comfort, uniting both tradition and modernity in order to provide you with the latest facilities meant to make you stay unforgettable. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                          
+    },{ "tag":"Essaouira_Atlas Essaouira & Spa_PHONE",
+            "patterns":["Phone number of Atlas Essaouira & Spa  ","call Atlas Essaouira & Spa","reach Atlas Essaouira & Spa"],
+            "responses":[" Atlas Essaouira & Spa  phone number : +212 5244-79999"]  
+    },{ "tag":"Essaouira_Atlas Essaouira & Spa_LINK",
+             "patterns":["link of Atlas Essaouira & Spa ","website of Atlas Essaouira & Spa "],
+             "responses":["https://www.legend-collection.com/fr/hotels-maroc/essaouira/atlas-essaouira"]
+                                                        
+    },{ "tag":"Essaouira_Atlas Essaouira & Spa_localisation",
+            "patterns":["location of Atlas Essaouira & Spa ","location of Atlas Essaouira & Spa "],
+            "responses":["location :Boulevard Mohamed V, Essaouira 44000, Morocco"]
+                                                        
+    },{ "tag":"Essaouira_Atlas Essaouira & Spa_price",
+           "patterns":["price of Atlas Essaouira & Spa ","price of Atlas Essaouira & Spa ","Nightly base price of Atlas Essaouira & Spa "],
+            "responses":[" Nightly base price for 1 night :   $108  "]
+                                                     
+    },{ "tag":"Essaouira_hotels_Palais Des Remparts  ",
+          "patterns":["What about Palais Des Remparts ","i think imma go with Palais Des Remparts ", "Palais Des Remparts seems like a good choice", "Palais Des Remparts  Essaouira"],
+            "responses":["Palais Des Remparts  Excellent 8.0 !!  Featured amenities include a 24-hour front desk, multilingual staff, and luggage storage. A train station pick-up service is provided at no charge, and self parking (subject to charges) is available onsite. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                  
+    },{ "tag":"Essaouira_Palais Des Remparts_PHONE",
+             "patterns":["Phone number of Palais Des Remparts  ","call Palais Des Remparts","reach Palais Des Remparts"],
+            "responses":[" Palais Des Remparts  phone number : +212 5244-75110"]  
+    },{ "tag":"Essaouira_Palais Des Remparts_LINK",
+            "patterns":["link of Palais Des Remparts ","website of Palais Des Remparts "],
+            "responses":["http://www.riad-palais-essaouira.com"]
+                                                                
+    },{ "tag":"Essaouira_Palais Des Remparts_localisation",
+            "patterns":["location of Palais Des Remparts ","location of Palais Des Remparts "],
+            "responses":["location :18 Rue Ibn Rochd Medina, Essaouira 44000, Morocco"]
+                                                                
+    },{ "tag":"Essaouira_Palais Des Remparts_price",
+            "patterns":["price of Palais Des Remparts ","price of Palais Des Remparts ","Nightly base price of Palais Des Remparts "],
+             "responses":[" Nightly base price for 1 night :   $49 - $60 "]
+    
+                                                     
+    },{ "tag":"Essaouira_hotels_Dar L'Oussia  ",
+                    "patterns":["What about Dar L'Oussia ","i think imma go with Dar L'Oussia ", "Dar L'Oussia seems like a good choice", "Dar L'Oussia  Essaouira"],
+                      "responses":["Dar L'Oussia  Excellent 8.6 !!   Featured amenities include express check-in, express check-out, and dry cleaning/laundry services. A roundtrip airport shuttle is provided for a surcharge (available 24 hours). \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                            
+    },{ "tag":"Essaouira_Dar L'Oussia_PHONE",
+                       "patterns":["Phone number of Dar L'Oussia  ","call Dar L'Oussia","reach Dar L'Oussia"],
+                      "responses":[" Dar L'Oussia  phone number : +212 5247-83756"]  
+    },{ "tag":"Essaouira_Dar L'Oussia_LINK",
+                      "patterns":["link of Dar L'Oussia ","website of Dar L'Oussia "],
+                      "responses":["https://hotel-darloussia.com/fr/"]
+                                                                          
+    },{ "tag":"Essaouira_Dar L'Oussia_localisation",
+                      "patterns":["location of Dar L'Oussia ","location of Dar L'Oussia "],
+                      "responses":["location :18 Rue Ibn Rochd Medina, Essaouira 44000, Morocco"]
+                                                                          
+     },{ "tag":"Essaouira_Dar L'Oussia_price",
+                      "patterns":["price of Dar L'Oussia ","price of Dar L'Oussia ","Nightly base price of Dar L'Oussia "],
+                       "responses":[" Nightly base price for 1 night :   $65 - $99"]
+              
+       
+    },{ "tag":"4 stars  in Essaouira  ",
+            "patterns":["i want a hotel with 4 stars in Essaouira  ","describe Essaouira  with 4 stars ", "4 Essaouira ","4 in Essaouira ","4 in Essaouira ","4 stars in Essaouira ","the hotel 4 stars in Essaouira "],
+            "responses":["Alright I see , here are some suggestions choose your favorite :Riad Mimouna  ,Hôtel Villa Quieta ,Casa Lila & Spa  "]
+                                                       
+    },{ "tag":"Essaouira_hotels_Riad Mimouna  ",
+            "patterns":["What about Riad Mimouna ","i think imma go with Riad Mimouna ", "Riad Mimouna seems like a good choice", "Riad Mimouna  Essaouira"],
+              "responses":["Riad Mimouna  Excellent 8.7 !!   With a stay at Riad Mimouna in Essaouira (Medina), you'll be within a 10-minute walk of Essaouira Beach and Mellah. Featured amenities include express check-in, dry cleaning/laundry services, and a 24-hour front desk. A roundtrip airport shuttle is available for a surcharge. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                    
+    },{ "tag":"Essaouira_Riad Mimouna_PHONE",
+               "patterns":["Phone number of Riad Mimouna  ","call Riad Mimouna","reach Riad Mimouna"],
+              "responses":[" Riad Mimouna  phone number : +212 5247-85753"]  
+    },{ "tag":"Essaouira_Riad Mimouna_LINK",
+              "patterns":["link of Riad Mimouna ","website of Riad Mimouna "],
+              "responses":["http://www.hotelriad-mimouna.com/fr"]
+                                                                  
+    },{ "tag":"Essaouira_Riad Mimouna_localisation",
+              "patterns":["location of Riad Mimouna ","location of Riad Mimouna "],
+              "responses":["location :62, Rue D'Oujda, Essaouira , Morocco"]
+                                                                  
+    },{ "tag":"Essaouira_Riad Mimouna_price",
+              "patterns":["price of Riad Mimouna ","price of Riad Mimouna ","Nightly base price of Riad Mimouna "],
+               "responses":[" Nightly base price for 1 night :$54 - $63"]
+     
+                                                      
+    },{ "tag":"Essaouira_hotels_Hôtel Villa Quieta  ",
+                    "patterns":["What about Hôtel Villa Quieta ","i think imma go with Hôtel Villa Quieta ", "Hôtel Villa Quieta seems like a good choice", "Hôtel Villa Quieta  Essaouira"],
+                      "responses":["Hôtel Villa Quieta  Excellent 9.4 !!   With a stay at Villa Quieta, you'll be centrally located in Essaouira, within a 5-minute drive of Essaouira Beach and Place Moulay el Hassan. Featured amenities include a computer station, complimentary newspapers in the lobby, and dry cleaning/laundry services. For a surcharge. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                            
+    },{ "tag":"Essaouira_Hôtel Villa Quieta_PHONE",
+                       "patterns":["Phone number of Hôtel Villa Quieta  ","call Hôtel Villa Quieta","reach Hôtel Villa Quieta"],
+                      "responses":[" Hôtel Villa Quieta  phone number : +212 5247-85004"]  
+    },{ "tag":"Essaouira_Hôtel Villa Quieta_LINK",
+                      "patterns":["link of Hôtel Villa Quieta ","website of Hôtel Villa Quieta "],
+                      "responses":["http://www.villaquietaessaouira.com"]
+                                                                          
+     },{ "tag":"Essaouira_Hôtel Villa Quieta_localisation",
+                      "patterns":["location of Hôtel Villa Quieta ","location of Hôtel Villa Quieta "],
+                      "responses":["location :89, Rue Moulay Ali Chrif, Essaouira 44000, Morocco"]
+                                                                          
+     },{ "tag":"Essaouira_Hôtel Villa Quieta_price",
+                      "patterns":["price of Hôtel Villa Quieta ","price of Hôtel Villa Quieta ","Nightly base price of Hôtel Villa Quieta "],
+                       "responses":[" Nightly base price for 1 night :$115"]
+             
+    },{ "tag":"Essaouira_hotels_Casa Lila & Spa  ",
+             "patterns":["What about Casa Lila & Spa ","i think imma go with Casa Lila & Spa ", "Casa Lila & Spa seems like a good choice", "Casa Lila & Spa  Essaouira"],
+             "responses":["Casa Lila & Spa  Excellent 9.0 !!   With a stay at Casa Lila & Spa in Essaouira (Medina), you'll be within a 15-minute walk of Essaouira Beach and Mellah. Featured amenities include dry cleaning/laundry services, a 24-hour front desk, and luggage storage. A roundtrip airport shuttle is provided for a surcharge (available 24 hours). \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                    
+    },{ "tag":"Essaouira_Casa Lila & Spa_PHONE",
+             "patterns":["Phone number of Casa Lila & Spa  ","call Casa Lila & Spa","reach Casa Lila & Spa"],
+             "responses":[" Casa Lila & Spa  phone number : +212 5244-75545"]  
+     },{ "tag":"Essaouira_Casa Lila & Spa_LINK",
+                              "patterns":["link of Casa Lila & Spa ","website of Casa Lila & Spa "],
+                              "responses":["https://www.riad-casalila.com"]
+                                                                                  
+    },{ "tag":"Essaouira_Casa Lila & Spa_localisation",
+                              "patterns":["location of Casa Lila & Spa ","location of Casa Lila & Spa "],
+                              "responses":["location :94 Rue Mohamed El Qorry Bab Marrakech, Essaouira 44000, Morocco"]
+                                                                                  
+    },{ "tag":"Essaouira_Casa Lila & Spa_price",
+                              "patterns":["price of Casa Lila & Spa ","price of Casa Lila & Spa ","Nightly base price of Casa Lila & Spa "],
+                               "responses":[" Nightly base price for 1 night :$54 - $57"]
+    
+    
+    
+    
+      
+    },{ "tag":"3 stars  in Essaouira  ",
+          "patterns":["i want a hotel with 3 stars in Essaouira  ","describe Essaouira  with 3 stars ", "3 Essaouira ","3 in Essaouira ","3 in Essaouira ","3 stars in Essaouira ","the hotel 3 stars in Essaouira "],
+          "responses":["Alright I see , here are some suggestions choose your favorite :Riad Zahra  ,Dar El Paco ,Riad Malaïka  "]
+                                                       
+          },{ "tag":"Essaouira_hotels_Riad Zahra  ",
+                  "patterns":["What about Riad Zahra ","i think imma go with Riad Zahra ", "Riad Zahra seems like a good choice", "Riad Zahra  Essaouira"],
+                    "responses":["Riad Zahra  Excellent 8.9 !!   With a stay at Riad Zahra in Essaouira (Essaouira Coast), you'll be within a 5-minute drive of Essaouira Beach and Bordj el Berod. Featured amenities include a computer station, a 24-hour front desk, and multilingual staff. Planning an event in Essaouira? This riad has facilities measuring 40 square feet (4 square meters), including a meeting room.\n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                          
+          },{ "tag":"Essaouira_Riad Zahra_PHONE",
+                     "patterns":["Phone number of Riad Zahra  ","call Riad Zahra","reach Riad Zahra"],
+                    "responses":[" Riad Zahra  phone number : +212 5244-74822"]  
+          },{ "tag":"Essaouira_Riad Zahra_LINK",
+                    "patterns":["link of Riad Zahra ","website of Riad Zahra "],
+                    "responses":["http://www.riadzahra.com"]
+                                                                        
+          },{ "tag":"Essaouira_Riad Zahra_localisation",
+                    "patterns":["location of Riad Zahra ","location of Riad Zahra "],
+                    "responses":["location : 90, Quartier des Dunes, Essaouira, Morocco"]
+                                                                        
+    },{ "tag":"Essaouira_Riad Zahra_price",
+                    "patterns":["price of Riad Zahra ","price of Riad Zahra ","Nightly base price of Riad Zahra "],
+                     "responses":[" Nightly base price for 1 night :$57 - $64"]
+             
+    
+    },{ "tag":"Essaouira_hotels_Dar El Paco  ",
+                            "patterns":["What about Dar El Paco ","i think imma go with Dar El Paco ", "Dar El Paco seems like a good choice", "Dar El Paco  Essaouira"],
+                              "responses":["Dar El Paco  Excellent 9.3 !!   Featured amenities include dry cleaning/laundry services, luggage storage, and laundry facilities. A shuttle from the airport to the hotel is provided for a surcharge (available 24 hours). \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                    
+    },{ "tag":"Essaouira_Dar El Paco_PHONE",
+                               "patterns":["Phone number of Dar El Paco  ","call Dar El Paco","reach Dar El Paco"],
+                              "responses":[" Dar El Paco  phone number : +212 669-930251"]  
+    },{ "tag":"Essaouira_Dar El Paco_LINK",
+                              "patterns":["link of Dar El Paco ","website of Dar El Paco "],
+                              "responses":["https://www.tripadvisor.fr/Hotel_Review-g298349-d1902680-Reviews-RIad_Dar_El_Paco-Essaouira_Marrakech_Safi.html"]
+                                                                                  
+    },{ "tag":"Essaouira_Dar El Paco_localisation",
+                              "patterns":["location of Dar El Paco ","location of Dar El Paco "],
+                              "responses":["location : 10, Impasse Dra, Essaouira 44000, Morocco"]
+                                                                                  
+    },{ "tag":"Essaouira_Dar El Paco_price",
+                              "patterns":["price of Dar El Paco ","price of Dar El Paco ","Nightly base price of Dar El Paco "],
+                               "responses":[" Nightly base price for 1 night :$43"]
+     
+    
+},{ "tag":"Essaouira_hotels_Riad Malaïka  ",
+                                    "patterns":["What about Riad Malaïka ","i think imma go with Riad Malaïka ", "Riad Malaïka seems like a good choice", "Riad Malaïka  Essaouira"],
+                                      "responses":["Riad Malaïka  Excellent 9.1 !!   The Riad Malaika Hotel is located in the heart of the Essaouira Médina, just 50 metres from the beach. The hotel offers beauty and body treatments and free Wi-Fi access. The spacious guest rooms have a traditional, oriental decoration, and each has a private bathroom. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                            
+},{ "tag":"Essaouira_Riad Malaïka_PHONE",
+                                       "patterns":["Phone number of Riad Malaïka  ","call Riad Malaïka","reach Riad Malaïka"],
+                                      "responses":[" Riad Malaïka  phone number : +212 5247-84908"]  
+},{ "tag":"Essaouira_Riad Malaïka_LINK",
+                                      "patterns":["link of Riad Malaïka ","website of Riad Malaïka "],
+                                      "responses":["http://riad-essaouira-malaika.com"]
+                                                                                          
+},{ "tag":"Essaouira_Riad Malaïka_localisation",
+                                      "patterns":["location of Riad Malaïka ","location of Riad Malaïka "],
+                                      "responses":["location :17 Rue Zayan, Essaouira 44100, Morocco"]
+                                                                                          
+},{ "tag":"Essaouira_Riad Malaïka_price",
+                                      "patterns":["price of Riad Malaïka ","price of Riad Malaïka ","Nightly base price of Riad Malaïka "],
+                                       "responses":[" Nightly base price for 1 night :$81 - $91"]
+                
+    
+},{ "tag":"5 stars  in Chefchaouen",
+        "patterns":["i want a hotel with 5 stars in Chefchaouen ","describe Chefchaouen with 5 stars ", "5 Chefchaouen","5 in Chefchaouen","5 in Chefchaouen","5 stars in Chefchaouen","the hotel 5 stars in Chefchaouen"],
+        "responses":[" Alright I see , the only hotel 5 stars in Chefchaouen is Lina Ryad & Spa Excellent 9.0 !! \n  With a stay at Lina Ryad & Spa in Chefchaouen, you'll be a 3-minute walk from Chefchaouen Waterfall and 7 minutes by foot from Chefchaouen Kasbah. Featured amenities include luggage storage, laundry facilities, and a safe deposit box at the front desk. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                
+},{ "tag":"Chefchaouen_Lina Ryad & Spa_PHONE",
+           "patterns":["Phone number of Lina Ryad & Spa ","call Lina Ryad & Spa","reach Lina Ryad & Spa"],
+          "responses":[" Lina Ryad & Spa phone number : +212 645-069903"]  
+},{ "tag":"Chefchaouen_Lina Ryad & Spa_LINK",
+          "patterns":["link of Lina Ryad & Spa","website of Lina Ryad & Spa"],
+          "responses":["http://www.linaryad.com"]
+                                                              
+},{ "tag":"Chefchaouen_Lina Ryad & Spa_localisation",
+          "patterns":["location of Lina Ryad & Spa","location of Lina Ryad & Spa"],
+          "responses":["location :Avenue Hassan I, Chefchaouen 10540, Morocco"]
+                                                              
+},{ "tag":"Chefchaouen_Lina Ryad & Spa_price",
+          "patterns":["price of Lina Ryad & Spa","price of Lina Ryad & Spa","Nightly base price of Lina Ryad & Spa"],
+           "responses":[" Nightly base price for 1 night :$171"]
+
+    
+    
+ },{ "tag":"4 stars  in Chefchaouen",
+         "patterns":["i want a hotel with 4 stars in Chefchaouen ","describe Chefchaouen with 4 stars ", "4 Chefchaouen","4 in Chefchaouen","4 in Chefchaouen","4 stars in Chefchaouen","the hotel 4 stars in Chefchaouen"],
+                        
+       "responses":["Alright I see , here are some suggestions choose your favorite : Parador  ,Dar Ba Sidi & Spa   "]
+                          
+                       
+                    
+},{ "tag":"Chefchaouen_hotels_ Parador ",
+                        "patterns":["What about  Parador","i think imma go with  Parador", " Paradorseems like a good choice", " Parador Chefchaouen"],
+                          "responses":[" Parador Excellent 9.0 !!  A stay at Hotel Parador places you in the heart of Chefchaouen, within a 10-minute walk of Chefchaouen Kasbah and Chefchaouen Waterfall \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                
+},{ "tag":"Chefchaouen_ Parador_PHONE",
+                           "patterns":["Phone number of  Parador ","call  Parador","reach  Parador"],
+                          "responses":["  Parador phone number : +212 5399-86324"]  
+  },{ "tag":"Chefchaouen_ Parador_LINK",
+                          "patterns":["link of  Parador","website of  Parador"],
+                          "responses":["https://www.hotel-parador.com"]
+                                                                              
+},{ "tag":"Chefchaouen_ Parador_localisation",
+                          "patterns":["location of  Parador","location of  Parador"],
+                          "responses":["location :Place El Makhzen BP3, Chefchaouen 91000, Morocco"]
+                                                                              
+ },{ "tag":"Chefchaouen_ Parador_price",
+                          "patterns":["price of  Parador","price of  Parador","Nightly base price of  Parador"],
+                           "responses":[" Nightly base price for 1 night :$71 - $88"]
+                
+                   
+},{ "tag":"Chefchaouen_hotels_Dar Ba Sidi & Spa  ",
+                                "patterns":["What about Dar Ba Sidi & Spa ","i think imma go with Dar Ba Sidi & Spa ", "Dar Ba Sidi & Spa seems like a good choice", "Dar Ba Sidi & Spa  Essaouira"],
+                                  "responses":["Dar Ba Sidi & Spa  Excellent 8.3 !!   With a stay at DAR BA SIDI & SPA in Derdara, you'll be 4.1 mi (6.6 km) from Ras Elma Park and 4.4 mi (7.1 km) from Plaza Uta el-Hammam. Featured amenities include dry cleaning/laundry services, a 24-hour front desk, and luggage storage \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                        
+},{ "tag":"Chefchaouen_Dar Ba Sidi & Spa_PHONE",
+                                   "patterns":["Phone number of Dar Ba Sidi & Spa  ","call Dar Ba Sidi & Spa","reach Dar Ba Sidi & Spa"],
+                                  "responses":[" Dar Ba Sidi & Spa  phone number : +212 5399-86187"]  
+},{ "tag":"Chefchaouen_Dar Ba Sidi & Spa_LINK",
+                                  "patterns":["link of Dar Ba Sidi & Spa ","website of Dar Ba Sidi & Spa "],
+                                  "responses":["https://darbasidi.com"]
+                                                                                      
+  },{ "tag":"Chefchaouen_Dar Ba Sidi & Spa_localisation",
+                                  "patterns":["location of Dar Ba Sidi & Spa ","location of Dar Ba Sidi & Spa "],
+                                  "responses":["300 National Road No 2 PK108 Commune Dardara, Chefchaouen 91000 Maroc"]
+                                                                                      
+ },{ "tag":"Chefchaouen_Dar Ba Sidi & Spa_price",
+                                  "patterns":["price of Dar Ba Sidi & Spa ","price of Dar Ba Sidi & Spa ","Nightly base price of Dar Ba Sidi & Spa "],
+                                   "responses":[" Nightly base price for 1 night :$99 - $175"]
+                     
+    
+   
+},{ "tag":"3 stars  in Chefchaouen",
+         "patterns":["i want a hotel with 3 stars in Chefchaouen ","describe Chefchaouen with 3 stars ", "3 Chefchaouen","3 in Chefchaouen","3 in Chefchaouen","3 stars in Chefchaouen","the hotel 3 stars in Chefchaouen"],
+        "responses":["Alright I see , here are some suggestions choose your favorite : Hotel Al Khalifa   ,Hoteliere Chez Aziz ,Riad Gharnata "]
+                   
+},{ "tag":"Chefchaouen_hotels_ Hotel Al Khalifa  ",
+        "patterns":["What about  Hotel Al Khalifa ","i think imma go with  Hotel Al Khalifa ", " Hotel Al Khalifa seems like a good choice", " Hotel Al Khalifa  Chefchaouen"],
+        "responses":[" Hotel Al Khalifa  Excellent 9.1 !!  With a stay at Hotel Al Khalifa in Chefchaouen, you'll be a 4-minute walk from Chefchaouen Waterfall and 10 minutes by foot from Chefchaouen Kasbah. Featured amenities include dry cleaning/laundry services and a safe deposit box at the front desk \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                
+},{ "tag":"Chefchaouen_Hotel Al Khalifa _PHONE",
+         "patterns":["Phone number of Hotel Al Khalifa  ","call Hotel Al Khalifa ","reach Hotel Al Khalifa "],
+        "responses":[" Hotel Al Khalifa  phone number : +212 5398-82664"]  
+},{ "tag":"Chefchaouen_Hotel Al Khalifa _LINK",
+        "patterns":["link of Hotel Al Khalifa ","website of Hotel Al Khalifa "],
+        "responses":["https://hotel-alkhalifa.com"]
+                                                                      
+},{ "tag":"Chefchaouen_Hotel Al Khalifa _localisation",
+        "patterns":["location of Hotel Al Khalifa ","location of Hotel Al Khalifa "],
+        "responses":["location :Avenue Ras Elmaa, Chefchaouen 91000, Morocco "]
+                                                                      
+},{ "tag":"Chefchaouen_Hotel Al Khalifa _price",
+        "patterns":["price of Hotel Al Khalifa ","price of Hotel Al Khalifa ","Nightly base price of Hotel Al Khalifa "],
+         "responses":[" Nightly base price for 1 night :$51 - $73"]
+                  
+},{ "tag":"Chefchaouen_hotels_ Hoteliere Chez Aziz  ",
+                "patterns":["What about  Hoteliere Chez Aziz ","i think imma go with  Hoteliere Chez Aziz ", " Hoteliere Chez Aziz seems like a good choice", " Hoteliere Chez Aziz  Chefchaouen"],
+                "responses":[" Hoteliere Chez Aziz  Excellent 9.3 !!  With a stay at Résidence Hoteliére Chez Aziz in Chefchaouen, you'll be within a 10-minute walk of Chefchaouen Kasbah and Plaza Uta el-Hammam. Featured amenities include dry cleaning/laundry services, a 24-hour front desk, and laundry facilities  \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                        
+ },{ "tag":"Chefchaouen_Hoteliere Chez Aziz_PHONE",
+                 "patterns":["Phone number of Hoteliere Chez Aziz ","call Hoteliere Chez Aziz","reach Hoteliere Chez Aziz"],
+                "responses":[" Hoteliere Chez Aziz phone number : +212 5398-82158"]  
+},{ "tag":"Chefchaouen_Hoteliere Chez Aziz_LINK",
+                "patterns":["link of Hoteliere Chez Aziz","website of Hoteliere Chez Aziz"],
+                "responses":["https://www.booking.com/hotel/ma/residence-hoteliere-chez-aziz.fr.html"]
+                                                                              
+},{ "tag":"Chefchaouen_Hoteliere Chez Aziz_localisation",
+                "patterns":["location of Hoteliere Chez Aziz","location of Hoteliere Chez Aziz"],
+                "responses":["location :Avenue Sidi Srifi Zkt Batalla Alhamra, Chefchaouen 91000, Morocco"]
+},{ "tag":"Chefchaouen_Hoteliere Chez Aziz_price",
+                "patterns":["price of Hoteliere Chez Aziz","price of Hoteliere Chez Aziz","Nightly base price of Hoteliere Chez Aziz"],
+                 "responses":[" Nightly base price for 1 night : $52 -$130"]
+                                                      
+                  
+},{ "tag":"Chefchaouen_hotels_ Riad Gharnata ",
+         "patterns":["What about  Riad Gharnata ","i think imma go with  Riad Gharnata ", " Riad Gharnata seems like a good choice", " Riad Gharnata Chefchaouen"],
+         "responses":[" Riad Gharnata Excellent 8.4 !! With a stay at Riad Gharnata, you'll be centrally located in Chefchaouen, just a 4-minute walk from Chefchaouen Waterfall and 6 minutes by foot from Chefchaouen Kasbah. Featured amenities include a business center, express check-in, and dry cleaning/laundry services. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                
+},{ "tag":"Chefchaouen_Riad Gharnata_PHONE",
+        "patterns":["Phone number of Riad Gharnata ","call Riad Gharnata","reach Riad Gharnata"],
+        "responses":[" Riad Gharnata phone number : +212 5398-82595"]  
+},{ "tag":"Chefchaouen_Riad Gharnata_LINK",
+        "patterns":["link of Riad Gharnata","website of Riad Gharnata"],
+        "responses":["https://fr.hotels.com/ho582893/riad-gharnata-chefchaouen-maroc/"]
+                                                                                      
+},{ "tag":"Chefchaouen_Riad Gharnata_localisation",
+        "patterns":["location of Riad Gharnata","location of Riad Gharnata"],
+         "responses":["location :Quartier Andalous, Rue Gharnati, Chefchaouen 91000, Morocco"]
+                                                                                      
+},{ "tag":"Chefchaouen_Riad Gharnata_price",
+         "patterns":["price of Riad Gharnata","price of Riad Gharnata","Nightly base price of Riad Gharnata"],
+         "responses":[" Nightly base price for 1 night :$60 - $87"]
+                    
+   
+},{ "tag":"5 stars  in rabat",
+         "patterns":["i want a hotel with 5 stars in rabat ","describe rabat with 5 stars ", "5 rabat","5 in rabat","5 in rabat","5 stars in rabat","the hotel 5 stars in rabat"],
+        "responses":["Alright I see , here are some suggestions choose your favorite : Sofitel Rabat Jardin des Roses   ,Hotel Rabat ,La Tour Hassan Palace  "]
+           
+},{ "tag":"rabat_hotels_ Sofitel Rabat Jardin des Roses ",
+                "patterns":["What about  Sofitel Rabat Jardin des Roses ","i think imma go with  Sofitel Rabat Jardin des Roses ", " Sofitel Rabat Jardin des Roses seems like a good choice", " Sofitel Rabat Jardin des Roses rabat"],
+                "responses":[" Sofitel Rabat Jardin des Roses Excellent 8.3 !! In the heart of the capital, Sofitel Rabat Jardin des Roses is near the Royal Palace and Rabat International Airport. Our 5-star luxury hotel has contemporary art combining French design with Moroccan touches. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                       
+},{ "tag":"rabat_Sofitel Rabat Jardin des Roses_PHONE",
+               "patterns":["Phone number of Sofitel Rabat Jardin des Roses ","call Sofitel Rabat Jardin des Roses","reach Sofitel Rabat Jardin des Roses"],
+               "responses":[" Sofitel Rabat Jardin des Roses phone number : +212 5376-75656"]  
+},{ "tag":"rabat_Sofitel Rabat Jardin des Roses_LINK",
+               "patterns":["link of Sofitel Rabat Jardin des Roses","website of Sofitel Rabat Jardin des Roses"],
+               "responses":["https://all.accor.com/hotel/6813/index.fr.shtml"]
+                                                                                             
+},{ "tag":"rabat_Sofitel Rabat Jardin des Roses_localisation",
+               "patterns":["location of Sofitel Rabat Jardin des Roses","location of Sofitel Rabat Jardin des Roses"],
+                "responses":["location :BP 450 Souissi, Rabat 10000, Morocco"]
+                                                                                             
+},{ "tag":"rabat_Sofitel Rabat Jardin des Roses_price",
+                "patterns":["price of Sofitel Rabat Jardin des Roses","price of Sofitel Rabat Jardin des Roses","Nightly base price of Sofitel Rabat Jardin des Roses"],
+                "responses":[" Nightly base price for 1 night :$209 - $201"]
+
+           
+},{ "tag":"rabat_hotels_ Hotel Rabat ",
+         "patterns":["What about  Hotel Rabat ","i think imma go with  Hotel Rabat ", " Hotel Rabat seems like a good choice", " Hotel Rabat rabat"],
+          "responses":[" Hotel Rabat Excellent 8.3 !! A stay at Hotel Rabat places you in the heart of Rabat, within a 15-minute walk of Hassan Tower and Mohammed V National Theatre. Featured amenities include a 24-hour business center, express check-in, and express check-out. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                               
+},{ "tag":"rabat_Hotel Rabat_PHONE",
+          "patterns":["Phone number of Hotel Rabat ","call Hotel Rabat","reach Hotel Rabat"],
+          "responses":[" Hotel Rabat phone number : +212 5377-00071"]  
+},{ "tag":"rabat_Hotel Rabat_LINK",
+         "patterns":["link of Hotel Rabat","website of Hotel Rabat"],
+         "responses":["http://www.hotelrabat.ma"]
+                                                                                                     
+},{ "tag":"rabat_Hotel Rabat_localisation",
+         "patterns":["location of Hotel Rabat","location of Hotel Rabat"],
+         "responses":["location :21 Avenue Chellah, Rabat 10000, Morocco "]
+                                                                                                     
+},{ "tag":"rabat_Hotel Rabat_price",
+         "patterns":["price of Hotel Rabat","price of Hotel Rabat","Nightly base price of Hotel Rabat"],
+         "responses":[" Nightly base price for 1 night :$141 - $355"]
+  
+           
+},{ "tag":"rabat_hotels_ La Tour Hassan Palace  ",
+                "patterns":["What about  La Tour Hassan Palace ","i think imma go with  La Tour Hassan Palace ", " La Tour Hassan Palace seems like a good choice", " La Tour Hassan Palace  rabat"],
+                 "responses":[" La Tour Hassan Palace  Excellent 8.4 !! A stay at Hotel La Tour Hassan Palace places you in the heart of Rabat, within a 15-minute walk of Hassan Tower and Mohammed V National Theatre. Featured amenities include a business center, express check-in, and express check-out. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                                      
+ },{ "tag":"rabat_La Tour Hassan Palace _PHONE",
+                 "patterns":["Phone number of La Tour Hassan Palace  ","call La Tour Hassan Palace ","reach La Tour Hassan Palace "],
+                 "responses":[" La Tour Hassan Palace  phone number : +212 5372-39000"]  
+},{ "tag":"rabat_La Tour Hassan Palace _LINK",
+                "patterns":["link of La Tour Hassan Palace ","website of La Tour Hassan Palace "],
+                "responses":["http://tourhassanpalace.com"]
+                                                                                                            
+},{ "tag":"rabat_La Tour Hassan Palace _localisation",
+                "patterns":["location of La Tour Hassan Palace ","location of La Tour Hassan Palace "],
+                "responses":["location :26 Rue Chellah Bp 14, Rabat, Morocco"]
+                                                                                                            
+},{ "tag":"rabat_La Tour Hassan Palace _price",
+                "patterns":["price of La Tour Hassan Palace ","price of La Tour Hassan Palace ","Nightly base price of La Tour Hassan Palace "],
+                "responses":[" Nightly base price for 1 night :$193 - $226"]
+    
+},{ "tag":"3 stars  in rabat",
+        "patterns":["i want a hotel with 3 stars in rabat ","describe rabat with 3 stars ", "3 rabat","3 in rabat","3 in rabat","3 stars in rabat","the hotel 3 stars in rabat"],
+       "responses":["Alright I see , here are some suggestions choose your favorite :Onomo Hotel   ,Riad Meftaha  ,Mercure Rabat Sheherazade "]
+          
+},{ "tag":"rabat_hotels_ Onomo Hotel ",
+               "patterns":["What about  Onomo Hotel ","i think imma go with  Onomo Hotel ", " Onomo Hotel seems like a good choice", " Onomo Hotel rabat"],
+               "responses":[" Onomo Hotel Excellent 8.2 !! With a stay at ONOMO Hotel Rabat Medina, you'll be centrally located in Rabat, within a 10-minute drive of Hassan Tower and Moroccan Parliament. Featured amenities include dry cleaning/laundry services, a 24-hour front desk, and multilingual staff. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                      
+},{ "tag":"rabat_Onomo Hotel_PHONE",
+              "patterns":["Phone number of Onomo Hotel ","call Onomo Hotel","reach Onomo Hotel"],
+              "responses":[" Onomo Hotel phone number : +212 5377-03074"]  
+},{ "tag":"rabat_Onomo Hotel_LINK",
+              "patterns":["link of Onomo Hotel","website of Onomo Hotel"],
+              "responses":["https://www.onomohotels.com/hotel/onomo-hotel-rabat-medina/"]
+                                                                                            
+},{ "tag":"rabat_Onomo Hotel_localisation",
+              "patterns":["location of Onomo Hotel","location of Onomo Hotel"],
+               "responses":["location :2 Rue Ghandi, Rabat 10000, Morocco"]
+                                                                                            
+},{ "tag":"rabat_Onomo Hotel_price",
+               "patterns":["price of Onomo Hotel","price of Onomo Hotel","Nightly base price of Onomo Hotel"],
+               "responses":[" Nightly base price for 1 night :$64 - $65"]
+   
+                 
+},{ "tag":"rabat_hotels_ Riad Meftaha  ",
+                       "patterns":["What about  Riad Meftaha ","i think imma go with  Riad Meftaha ", " Riad Meftaha seems like a good choice", " Riad Meftaha  rabat"],
+                       "responses":[" Riad Meftaha  Excellent 9.4  !! stay at Riad Meftaha places you in the heart of Rabat, within a 5-minute drive of Rabat Beach and Moroccan Parliament. Featured amenities include complimentary newspapers in the lobby, a 24-hour front desk, and multilingual staf. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+ },{ "tag":"rabat_Riad Meftaha _PHONE",
+                      "patterns":["Phone number of Riad Meftaha  ","call Riad Meftaha ","reach Riad Meftaha "],
+                      "responses":[" Riad Meftaha  phone number : +212 5377-21406"]  
+},{ "tag":"rabat_Riad Meftaha _LINK",
+                      "patterns":["link of Riad Meftaha ","website of Riad Meftaha "],
+                      "responses":["https://www.riad-meftaha.com"]
+                                                                                                    
+ },{ "tag":"rabat_Riad Meftaha _localisation",
+                      "patterns":["location of Riad Meftaha ","location of Riad Meftaha "],
+                       "responses":["location : 15 rue Iran, Rabat 10000, Morocco"]
+                                                                                                    
+},{ "tag":"rabat_Riad Meftaha _price",
+                       "patterns":["price of Riad Meftaha ","price of Riad Meftaha ","Nightly base price of Riad Meftaha "],
+                       "responses":[" Nightly base price for 1 night :$56 -$84 "]
+        
+},{ "tag":"rabat_hotels_ Mercure Rabat Sheherazade   ",
+               "patterns":["What about   Mercure Rabat Sheherazade  ","i think imma go with   Mercure Rabat Sheherazade  ", "  Mercure Rabat Sheherazade  seems like a good choice", " Mercure Rabat Sheherazade   rabat"],
+               "responses":[" Mercure Rabat Sheherazade   Good 7.1  !!The Mercure Sheherazade Rabat is located in the city center, in the residential of Hassan. 5 min from the principal historic monuments and districts businesses, 15 min from the Royal golf course; airport. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                      
+},{ "tag":"rabat_Mercure Rabat Sheherazade  _PHONE",
+              "patterns":["Phone number of Mercure Rabat Sheherazade   ","call Mercure Rabat Sheherazade  ","reach Mercure Rabat Sheherazade  "],
+              "responses":[" Mercure Rabat Sheherazade   phone number : +212 5377-22226"]  
+},{ "tag":"rabat_Mercure Rabat Sheherazade  _LINK",
+              "patterns":["link of Mercure Rabat Sheherazade  ","website of Mercure Rabat Sheherazade  "],
+              "responses":["https://all.accor.com/hotel/2962/index.fr.shtml"]
+                                                                                            
+},{ "tag":"rabat_Mercure Rabat Sheherazade  _localisation",
+              "patterns":["location of Mercure Rabat Sheherazade  ","location of Mercure Rabat Sheherazade  "],
+               "responses":["location :21 Rue De Tunis Hassan, Rabat 10000, Morocco"]
+                                                                                            
+},{ "tag":"rabat_Mercure Rabat Sheherazade  _price",
+               "patterns":["price of Mercure Rabat Sheherazade  ","price of Mercure Rabat Sheherazade  ","Nightly base price of Mercure Rabat Sheherazade  "],
+               "responses":[" Nightly base price for 1 night :$71"]
+          
+    
+               },{ "tag":"4 stars  in rabat",
+                "patterns":["i want a hotel with 4 stars in rabat ","describe rabat with 4 stars ", "4 rabat","4 in rabat","4 in rabat","4 stars in rabat","the hotel 4 stars in rabat"],
+               "responses":["Alright I see , here are some suggestions choose your favorite :Riad Mimouna   ,Villa Quieta  ,Belere    "]
+                  
+        },{ "tag":"rabat_hotels_ Riad Mimouna ",
+                       "patterns":["What about  Riad Mimouna ","i think imma go with  Riad Mimouna ", " Riad Mimouna seems like a good choice", " Riad Mimouna rabat"],
+                       "responses":[" Riad Mimouna Excellent 8.7 !! With a stay at Riad Mimouna in rabat (Medina), you'll be within a 10-minute walk of rabat Beach and Mellah. Featured amenities include express check-in, dry cleaning/laundry services, and a 24-hour front desk. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+        },{ "tag":"rabat_Riad Mimouna_PHONE",
+                      "patterns":["Phone number of Riad Mimouna ","call Riad Mimouna","reach Riad Mimouna"],
+                      "responses":[" Riad Mimouna phone number : +212 5247-85753"]  
+},{ "tag":"rabat_Riad Mimouna_LINK",
+                      "patterns":["link of Riad Mimouna","website of Riad Mimouna"],
+                      "responses":["http://www.hotelriad-mimouna.com/fr"]
+                                                                                                    
+},{ "tag":"rabat_Riad Mimouna_localisation",
+                      "patterns":["location of Riad Mimouna","location of Riad Mimouna"],
+                       "responses":["location :62, Rue D'Oujda, rabat , Morocco"]
+                                                                                                    
+},{ "tag":"rabat_Riad Mimouna_price",
+                       "patterns":["price of Riad Mimouna","price of Riad Mimouna","Nightly base price of Riad Mimouna"],
+                       "responses":[" Nightly base price for 1 night :$54 - $63"]
+           
+                         
+},{ "tag":"rabat_hotels_ Villa Quieta  ",
+                               "patterns":["What about  Villa Quieta ","i think imma go with  Villa Quieta ", " Villa Quieta seems like a good choice", " Villa Quieta  rabat"],
+                               "responses":[" Villa Quieta  Excellent 9.4  !!With a stay at Villa Quieta, you'll be centrally located in rabat, within a 5-minute drive of rabat Beach and Place Moulay el Hassan. Featured amenities include a computer station, complimentary newspapers in the lobby, and dry cleaning/laundry services. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+},{ "tag":"rabat_Villa Quieta _PHONE",
+                              "patterns":["Phone number of Villa Quieta  ","call Villa Quieta ","reach Villa Quieta "],
+                              "responses":[" Villa Quieta  phone number : +212 5247-85004"]  
+},{ "tag":"rabat_Villa Quieta _LINK",
+                              "patterns":["link of Villa Quieta ","website of Villa Quieta "],
+                              "responses":["http://www.villaquietaessaouira.com"]
+                                                                                                            
+ },{ "tag":"rabat_Villa Quieta _localisation",
+                              "patterns":["location of Villa Quieta ","location of Villa Quieta "],
+                               "responses":["location : 89, Rue Moulay Ali Chrif, rabat 44000, Morocco"]
+                                                                                                            
+},{ "tag":"rabat_Villa Quieta _price",
+                               "patterns":["price of Villa Quieta ","price of Villa Quieta ","Nightly base price of Villa Quieta "],
+                               "responses":[" Nightly base price for 1 night :$115"]
+                
+},{ "tag":"rabat_hotels_ Belere   ",
+                       "patterns":["What about  Belere ","i think imma go with  Belere ", " Belere seems like a good choice", " Belere   rabat"],
+                       "responses":[" Belere   Good 7.8  !!Hotel Belere Rabat is centrally located in Rabat, a 5-minute walk from Moroccan Parliament and 5 minutes by foot from Museum Mohamed VI of Modern and Contemporary Art. Featured amenities include a business center, limo/town car service, and express check-in \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+},{ "tag":"rabat_Belere  _PHONE",
+                      "patterns":["Phone number of Belere   ","call Belere  ","reach Belere  "],
+                      "responses":[" Belere   phone number : +212 5372-03301"]  
+},{ "tag":"rabat_Belere  _LINK",
+                      "patterns":["link of Belere  ","website of Belere  "],
+                      "responses":["https://belere-hotels.com/fr/"]
+                                                                                                    
+},{ "tag":"rabat_Belere  _localisation",
+                      "patterns":["location of Belere  ","location of Belere  "],
+                       "responses":["location :33 Avenue Moulay Youssef, Rabat 10000, Morocco"]
+                                                                                                    
+},{ "tag":"rabat_Belere  _price",
+                       "patterns":["price of Belere  ","price of Belere  ","Nightly base price of Belere  "],
+                       "responses":[" Nightly base price for 1 night :$58 - $69"]
+                     
+    
+    
+},{ "tag":"5 stars  in tanger",
+        "patterns":["i want a hotel with 5 stars in tanger ","describe tanger with 5 stars ", "5 tanger","5 in tanger","5 in tanger","5 stars in tanger","the hotel 5 stars in tanger"],
+       "responses":["Alright I see , here are some suggestions choose your favorite : Grand Mogador Sea View & Spa   ,El Minzah  ,Farah Tanger  "]
+          
+},{ "tag":"tanger_hotels_ Grand Mogador Sea View & Spa ",
+               "patterns":["What about  Grand Mogador Sea View & Spa ","i think imma go with  Grand Mogador Sea View & Spa ", " Grand Mogador Sea View & Spa seems like a good choice", " Grand Mogador Sea View & Spa tanger"],
+               "responses":[" Grand Mogador Sea View & Spa Excellent 8.0 !! This property is 12 minutes walk from the beach. Located a 5-minute drive from Tanger train Station, Grand Mogador Sea View & Spa offers an outdoor swimming pool, a buffet and a Moroccan restaurant. It has a direct access to the beach. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                      
+},{ "tag":"tanger_Grand Mogador Sea View & Spa_PHONE",
+              "patterns":["Phone number of Grand Mogador Sea View & Spa ","call Grand Mogador Sea View & Spa","reach Grand Mogador Sea View & Spa"],
+              "responses":[" Grand Mogador Sea View & Spa phone number : +212 530-530530"]  
+},{ "tag":"tanger_Grand Mogador Sea View & Spa_LINK",
+              "patterns":["link of Grand Mogador Sea View & Spa","website of Grand Mogador Sea View & Spa"],
+              "responses":["https://www.mogadorhotels.com/our-destinations/tanger"]
+                                                                                            
+},{ "tag":"tanger_Grand Mogador Sea View & Spa_localisation",
+              "patterns":["location of Grand Mogador Sea View & Spa","location of Grand Mogador Sea View & Spa"],
+               "responses":["location :10, Lot Ghandouri. Bd.Med V, Tangier 90000, Morocco"]
+                                                                                            
+},{ "tag":"tanger_Grand Mogador Sea View & Spa_price",
+               "patterns":["price of Grand Mogador Sea View & Spa","price of Grand Mogador Sea View & Spa","Nightly base price of Grand Mogador Sea View & Spa"],
+               "responses":[" Nightly base price for 1 night :$420 - $1416"]
+
+          
+},{ "tag":"tanger_hotels_ El Minzah ",
+        "patterns":["What about  El Minzah ","i think imma go with  El Minzah ", " El Minzah seems like a good choice", " El Minzah tanger"],
+         "responses":[" El Minzah Excellent 8.4 !! With a stay at El Minzah Hotel, you'll be centrally located in Tangier, a 5-minute drive from Tangier Ferry Terminal and 10 minutes from Port of Tangier. Featured amenities include a business center, express check-out, and dry cleaning/laundry services. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+},{ "tag":"tanger_El Minzah_PHONE",
+         "patterns":["Phone number of El Minzah ","call El Minzah","reach El Minzah"],
+         "responses":[" El Minzah phone number : +212 5393-33444"]  
+},{ "tag":"tanger_El Minzah_LINK",
+        "patterns":["link of El Minzah","website of El Minzah"],
+        "responses":["https://leroyal.com/en/AFRICA/el-minzah-hotel"]
+                                                                                                    
+},{ "tag":"tanger_El Minzah_localisation",
+        "patterns":["location of El Minzah","location of El Minzah"],
+        "responses":["location :85 Rue De La Liberte, Tangier, Morocco "]
+                                                                                                    
+},{ "tag":"tanger_El Minzah_price",
+        "patterns":["price of El Minzah","price of El Minzah","Nightly base price of El Minzah"],
+        "responses":[" Nightly base price for 1 night :$144 - $166"]
+ 
+          
+},{ "tag":"tanger_hotels_ Farah Tanger  ",
+               "patterns":["What about  Farah Tanger ","i think imma go with  Farah Tanger ", " Farah Tanger seems like a good choice", " Farah Tanger  tanger"],
+                "responses":[" Farah Tanger Good 7.8 !! Perched on a hill overlooking the Mediterranean Sea, Farah Tanger is a haven of peace and tranquility that combines both refinement and high standing.Located just 10 minutes from the city center, this luxury hotel invites you to discover its sea facing rooms and suites. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                                     
+},{ "tag":"tanger_Farah Tanger _PHONE",
+                "patterns":["Phone number of Farah Tanger  ","call Farah Tanger ","reach Farah Tanger "],
+                "responses":[" Farah Tanger  phone number : +212 5393-43550"]  
+},{ "tag":"tanger_Farah Tanger _LINK",
+               "patterns":["link of Farah Tanger ","website of Farah Tanger "],
+               "responses":["https://www.farahtanger.com"]
+                                                                                                           
+},{ "tag":"tanger_Farah Tanger _localisation",
+               "patterns":["location of Farah Tanger ","location of Farah Tanger "],
+               "responses":["location : Cap Malabata Zone Touristique El Ghandouri, Tangier 90000, Morocco"]
+                                                                                                           
+},{ "tag":"tanger_Farah Tanger _price",
+               "patterns":["price of Farah Tanger ","price of Farah Tanger ","Nightly base price of Farah Tanger "],
+               "responses":[" Nightly base price for 1 night :$141 - $176"]
+  
+},{ "tag":"4 stars  in tanger",
+        "patterns":["i want a hotel with 4 stars in tanger ","describe tanger with 4 stars ", "4 tanger","4 in tanger","4 in tanger","4 stars in tanger","the hotel 4 stars in tanger"],
+       "responses":["Alright I see , here are some suggestions choose your favorite : Kenzi Solazur ,Marina Bay  ,Hilton Garden  "]
+          
+},{ "tag":"tanger_hotels_ Kenzi Solazur ",
+               "patterns":["What about  Kenzi Solazur ","i think imma go with  Kenzi Solazur ", " Kenzi Solazur seems like a good choice", " Kenzi Solazur tanger"],
+               "responses":[" Kenzi Solazur Good 6.9 !! The four-star KENZI SOLAZUR is the most exclusive hotel, with the largest Capacity in North of Morocco. Standing on the Mediterranean shore, in one of the loveliest districts of Tangier and very close to the city center. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                      
+},{ "tag":"tanger_Kenzi Solazur_PHONE",
+              "patterns":["Phone number of Kenzi Solazur ","call Kenzi Solazur","reach Kenzi Solazur"],
+              "responses":[" Kenzi Solazur phone number : +212 5393-48383"]  
+},{ "tag":"tanger_Kenzi Solazur_LINK",
+              "patterns":["link of Kenzi Solazur","website of Kenzi Solazur"],
+              "responses":["https://www.kenzi-hotels.com/kenzi-solazur"]
+                                                                                            
+},{ "tag":"tanger_Kenzi Solazur_localisation",
+              "patterns":["location of Kenzi Solazur","location of Kenzi Solazur"],
+               "responses":["location : Avenue Mohamed 6 Tangier, Asilah 90000, Morocco"]
+                                                                                            
+},{ "tag":"tanger_Kenzi Solazur_price",
+               "patterns":["price of Kenzi Solazur","price of Kenzi Solazur","Nightly base price of Kenzi Solazur"],
+               "responses":[" Nightly base price for 1 night :$77 - $106"]
+
+          
+},{ "tag":"tanger_hotels_ Marina Bay ",
+        "patterns":["What about  Marina Bay ","i think imma go with  Marina Bay ", " Marina Bay seems like a good choice", " Marina Bay tanger"],
+         "responses":[" Marina Bay Excellent 9.4 !! Facing the Marina and located on the promenade of Tangier, MARINA BAY HOTEL is centrally located. The Kasbah (souk) and American Legation Museum are10 minutes walk. The High speed Train Station is 5 minutes drive and the internation airport of Tangier is 12 km away. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+},{ "tag":"tanger_Marina Bay_PHONE",
+         "patterns":["Phone number of Marina Bay ","call Marina Bay","reach Marina Bay"],
+         "responses":[" Marina Bay phone number : +212 5393-49300"]  
+},{ "tag":"tanger_Marina Bay_LINK",
+        "patterns":["link of Marina Bay","website of Marina Bay"],
+        "responses":["https://www.booking.com/hotel/ma/rif-spa.fr.html"]
+                                                                                                    
+},{ "tag":"tanger_Marina Bay_localisation",
+        "patterns":["location of Marina Bay","location of Marina Bay"],
+        "responses":["location : 152 Avenue Mohamed Vi, Tangier 90000, Morocco "]
+                                                                                                    
+},{ "tag":"tanger_Marina Bay_price",
+        "patterns":["price of Marina Bay","price of Marina Bay","Nightly base price of Marina Bay"],
+        "responses":[" Nightly base price for 1 night : $139 - $149 "]
+ 
+          
+},{ "tag":"tanger_hotels_ Hilton Garden  ",
+               "patterns":["What about  Hilton Garden ","i think imma go with  Hilton Garden ", " Hilton Garden seems like a good choice", " Hilton Garden  tanger"],
+                "responses":[" Hilton Garden Excellent 8.2 !! Hilton Garden Inn Tanger City Center is perfectly located for your stay in Tangier, Morocco. This new hotel is steps from the train station, a 5-minute drive to the port ferry to Spain, and 15 km from the airport (TNG). \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                                     
+},{ "tag":"tanger_Hilton Garden _PHONE",
+                "patterns":["Phone number of Hilton Garden  ","call Hilton Garden ","reach Hilton Garden "],
+                "responses":[" Hilton Garden  phone number : +212 5393-09500"]  
+},{ "tag":"tanger_Hilton Garden _LINK",
+               "patterns":["link of Hilton Garden ","website of Hilton Garden "],
+               "responses":["https://www.hilton.com/en/hotels/tnggigi-hilton-garden-inn-tanger-city-center"]
+                                                                                                           
+},{ "tag":"tanger_Hilton Garden _localisation",
+               "patterns":["location of Hilton Garden ","location of Hilton Garden "],
+               "responses":["location : Place du Maghreb Arab Tanger Ville, Tangier 90000, Morocco"]
+                                                                                                           
+},{ "tag":"tanger_Hilton Garden _price",
+               "patterns":["price of Hilton Garden ","price of Hilton Garden ","Nightly base price of Hilton Garden "],
+               "responses":[" Nightly base price for 1 night : $117 - $118"]       
+    
+  },{ "tag":"3 stars  in tanger",
+        "patterns":["i want a hotel with 3 stars in tanger ","describe tanger with 3 stars ", "3 tanger","3 in tanger","3 in tanger","3 stars in tanger","the hotel 3 stars in tanger"],
+       "responses":["Alright I see , here are some suggestions choose your favorite : Rembrandt ,Chellah   ,Dar El Kasbah  "]
+          
+},{ "tag":"tanger_hotels_ Rembrandt ",
+               "patterns":["What about  Rembrandt ","i think imma go with  Rembrandt ", " Rembrandt seems like a good choice", " Rembrandt tanger"],
+               "responses":[" Rembrandt Excellent 8.0 !! With a stay at Hotel Rembrandt, you'll be centrally located in Tangier, a 2-minute drive from Tangier Ferry Terminal and 6 minutes from Port of Tangier. Featured amenities include a business center, dry cleaning/laundry services, and a 24-hour front desk. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                      
+},{ "tag":"tanger Rembrandt_PHONE",
+              "patterns":["Phone number of Rembrandt ","call Rembrandt","reach Rembrandt"],
+              "responses":[" Rembrandt phone number : +212 5399-37870"]  
+},{ "tag":"tanger Rembrandt_LINK",
+              "patterns":["link of Rembrandt","website of Rembrandt"],
+              "responses":["https://rembrandthotel.ma"]
+                                                                                            
+},{ "tag":"tanger Rembrandt_localisation",
+              "patterns":["location of Rembrandt","location of Rembrandt"],
+               "responses":["location : Boulevard Mohamed V & Boulevard Pasteur, Tangier 90000, Morocco"]
+                                                                                            
+},{ "tag":"tanger Rembrandt_price",
+               "patterns":["price of Rembrandt","price of Rembrandt","Nightly base price of Rembrandt"],
+               "responses":[" Nightly base price for 1 night :$56 - $71"]
+
+          
+},{ "tag":"tanger_hotels_ Chellah  ",
+        "patterns":["What about  Chellah ","i think imma go with  Chellah ", " Chellah seems like a good choice", " Chellah  tanger"],
+         "responses":[" Chellah  Good 7.5 !! With a stay at Chellah Hotel, you'll be centrally located in Tangier, within a 15-minute drive of Port of Tangier and Tangier Ferry Terminal. Featured amenities include a 24-hour front desk, luggage storage, and laundry facilities. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+},{ "tag":"tanger_Chellah _PHONE",
+         "patterns":["Phone number of Chellah  ","call Chellah ","reach Chellah "],
+         "responses":[" Chellah  phone number : +212 5393-21002"]  
+},{ "tag":"tanger_Chellah _LINK",
+        "patterns":["link of Chellah ","website of Chellah "],
+        "responses":["https://hotelchellahtanger.com"]
+                                                                                                    
+},{ "tag":"tanger_Chellah _localisation",
+        "patterns":["location of Chellah ","location of Chellah "],
+        "responses":["location : 47-49 Rue Allal Ben Abdellah Bp 399, Tangier -, Morocco "]
+                                                                                                    
+},{ "tag":"tanger_Chellah _price",
+        "patterns":["price of Chellah ","price of Chellah ","Nightly base price of Chellah "],
+        "responses":[" Nightly base price for 1 night : $73- $77 "]
+ 
+          
+},{ "tag":"tanger_hotels_ Dar El Kasbah  ",
+               "patterns":["What about  Dar El Kasbah r","i think imma go with  Dar El Kasbah r", " Dar El Kasbah rseems like a good choice", " Dar El Kasbah  tanger"],
+                "responses":[" Dar El Kasbah Excellent 8.5 !! With a stay at Dar El Kasbah in Tangier (Marshan), you'll be within a 15-minute drive of Tangier Ferry Terminal and Dar-el-Makhzen. Featured amenities include a business center, express check-in, and dry cleaning/laundry services. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                                     
+},{ "tag":"tanger_Dar El Kasbah _PHONE",
+                "patterns":["Phone number of Dar El Kasbah  ","call Dar El Kasbah ","reach Dar El Kasbah "],
+                "responses":[" Dar El Kasbah  phone number : +212 5393-71371"]  
+},{ "tag":"tanger_Dar El Kasbah _LINK",
+               "patterns":["link of Dar El Kasbah ","website of Dar El Kasbah "],
+               "responses":["https://www.dar-kasbah.com"]
+                                                                                                           
+},{ "tag":"tanger_Dar El Kasbah _localisation",
+               "patterns":["location of Dar El Kasbah ","location of Dar El Kasbah "],
+               "responses":["location :  2, rue de la Kasbah, Tangier 90000, Morocco"]
+                                                                                                           
+},{ "tag":"tanger_Dar El Kasbah _price",
+               "patterns":["price of Dar El Kasbah ","price of Dar El Kasbah ","Nightly base price of Dar El Kasbah "],
+               "responses":[" Nightly base price for 1 night : $58 -$98"]      
+    
+ },{ "tag":"5 stars  in Tinghir",
+        "patterns":["i want a hotel with 5 stars in Tinghir ","describe Tinghir with 5 stars ", "5 Tinghir","5 in Tinghir","5 in Tinghir","5 stars in Tinghir","the hotel 5 stars in Tinghir"],
+       "responses":["were are sorry only 4 stars  and 3 stars exit if you want see it write 4 in tinghir or 3 in tinghir "]
+},{ "tag":"4 stars  in Tinghir",
+        "patterns":["i want a hotel with 4 stars in Tinghir ","describe Tinghir with 4 stars ", "4 Tinghir","4 in Tinghir","4 in Tinghir","4 stars in Tinghir","the hotel 4 stars in Tinghir"],
+        "responses":[" only Hotel Saghro exit it's Good 7.3 !! A stay at Hôtel Saghro places you in the heart of Tinghir, steps from Ksar Ait-Ben-Haddou and 6 minutes by foot from Tinghir Park. Featured amenities include express check-in, dry cleaning/laundry services, and a 24-hour front desk. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+ 
+        
+},{ "tag":"Tinghir Hotel Saghro_PHONE",
+              "patterns":["Phone number of Hotel Saghro ","call Hotel Saghro","reach Hotel Saghro"],
+              "responses":[" Hotel Saghro phone number : +212 5248-34179"]  
+},{ "tag":"Tinghir Hotel Saghro_LINK",
+              "patterns":["link of Hotel Saghro","website of Hotel Saghro"],
+              "responses":["http://hotelsaghro.ma"]
+                                                                                            
+},{ "tag":"Tinghir Hotel Saghro_localisation",
+              "patterns":["location of Hotel Saghro","location of Hotel Saghro"],
+               "responses":["location : Av. Des Far, Tinghir 45000, Morocco"]
+                                                                                            
+},{ "tag":"Tinghir Hotel Saghro_price",
+               "patterns":["price of Hotel Saghro","price of Hotel Saghro","Nightly base price of Hotel Saghro"],
+               "responses":[" Nightly base price for 1 night :$63 - $64"]
+},{ "tag":"3 stars  in tinghir",
+                "patterns":["i want a hotel with 3 stars in tinghir ","describe tinghir with 3 stars ", "3 tinghir","3 in tinghir","3 in tinghir","3 stars in tinghir","the hotel 3 stars in tinghir"],
+               "responses":["Alright I see , here are some suggestions choose your favorite : Hotel Tomboctou ,Kasbah Restaurant Amazir   ,Auberge Restaurant La Petite Gorge  "]
+ 
+          
+},{ "tag":"Tinghir_hotels_ Hotel Tomboctou  ",
+        "patterns":["What about   Hotel Tomboctou ","i think imma go with   Hotel Tomboctou ", "  Hotel Tomboctou seems like a good choice", " Hotel Tomboctou  Tinghir"],
+         "responses":[" Hotel Tomboctou  Excellent 8.7 !! Hotel Tomboctou is a former kasbah located in Tingir, central Morocco. It has an outdoor terrace, a floral garden and an outdoor swimming pool. Each guest room has a private bathroom and air-conditioning. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+},{ "tag":"Tinghir_Hotel Tomboctou _PHONE",
+         "patterns":["Phone number of Hotel Tomboctou  ","call Hotel Tomboctou ","reach Hotel Tomboctou "],
+         "responses":[" Hotel Tomboctou  phone number : +212 5248-34604"]  
+},{ "tag":"Tinghir_Hotel Tomboctou _LINK",
+        "patterns":["link of Hotel Tomboctou ","website of Hotel Tomboctou "],
+        "responses":["http://www.hoteltomboctou.com/hotel-tinghir/fr/"]
+                                                                                                    
+},{ "tag":"Tinghir_Hotel Tomboctou _localisation",
+        "patterns":["location of Hotel Tomboctou ","location of Hotel Tomboctou "],
+        "responses":["location : 126, Rus Bir Anzarane, Tinghir 45800, Morocco "]
+                                                                                                    
+},{ "tag":"Tinghir_Hotel Tomboctou _price",
+        "patterns":["price of Hotel Tomboctou ","price of Hotel Tomboctou ","Nightly base price of Hotel Tomboctou "],
+        "responses":[" Nightly base price for 1 night : $48 - $56 "]
+ 
+          
+},{ "tag":"Tinghir_hotels_ Kasbah Restaurant Amazir  ",
+               "patterns":["What about  Kasbah Restaurant Amazir ","i think imma go with  Kasbah Restaurant Amazir ", " Kasbah Restaurant Amazir seems like a good choice", " Kasbah Restaurant Amazir  Tinghir"],
+                "responses":[" Kasbah Restaurant Amazir Excellent 9.2!! With a stay at KASBAH AMAZIR in Toudgha El Oulia, you'll be 3.1 mi (5 km) from Todra Gorge and 9.9 mi (16 km) from Tinghir Palm Grove. Featured amenities include dry cleaning/laundry services, luggage storage, and laundry facilities. Free self parking is available onsite. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                                     
+},{ "tag":"Tinghir_Kasbah Restaurant Amazir _PHONE",
+                "patterns":["Phone number of Kasbah Restaurant Amazir  ","call Kasbah Restaurant Amazir ","reach Kasbah Restaurant Amazir "],
+                "responses":[" Kasbah Restaurant Amazir  phone number : +212 5248-95109"]  
+},{ "tag":"Tinghir_Kasbah Restaurant Amazir _LINK",
+               "patterns":["link of Kasbah Restaurant Amazir ","website of Kasbah Restaurant Amazir "],
+               "responses":["http://lamazir.com"]
+                                                                                                           
+},{ "tag":"Tinghir_Kasbah Restaurant Amazir _localisation",
+               "patterns":["location of Kasbah Restaurant Amazir ","location of Kasbah Restaurant Amazir "],
+               "responses":["location : 10 Km Route Des Gorge De Toudra, R703, Tinghir 45800, Morocco"]
+                                                                                                           
+},{ "tag":"Tinghir_Kasbah Restaurant Amazir _price",
+               "patterns":["price of Kasbah Restaurant Amazir ","price of Kasbah Restaurant Amazir ","Nightly base price of Kasbah Restaurant Amazir "],
+               "responses":[" Nightly base price for 1 night : $40- $75"]      
+    
+          
+},{ "tag":"Tinghir_hotels_ Auberge Restaurant La Petite Gorge  ",
+        "patterns":["What about  Auberge Restaurant La Petite Gorge ","i think imma go with  Auberge Restaurant La Petite Gorge ", " Auberge Restaurant La Petite Gorge seems like a good choice", " Auberge Restaurant La Petite Gorge  Tinghir"],
+         "responses":[" Auberge Restaurant La Petite Gorge Excellent 9.0 !! With a stay at Auberge Restaurant La Petite Gorge in Toudgha El Oulia, you'll be just steps from High Atlas and Ksar Ait-Ben-Haddou. Free self parking is available onsite. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+},{ "tag":"Tinghir_Auberge Restaurant La Petite Gorge _PHONE",
+         "patterns":["Phone number of Auberge Restaurant La Petite Gorge  ","call Auberge Restaurant La Petite Gorge ","reach Auberge Restaurant La Petite Gorge "],
+         "responses":[" Auberge Restaurant La Petite Gorge  phone number : +212 5248-95726"]  
+},{ "tag":"Tinghir_Auberge Restaurant La Petite Gorge _LINK",
+        "patterns":["link of Auberge Restaurant La Petite Gorge ","website of Auberge Restaurant La Petite Gorge "],
+        "responses":["https://www.booking.com/hotel/ma/auberge-restaurant-la-petite-gorge.fr.html"]
+                                                                                                    
+},{ "tag":"Tinghir_Auberge Restaurant La Petite Gorge _localisation",
+        "patterns":["location of Auberge Restaurant La Petite Gorge ","location of Auberge Restaurant La Petite Gorge "],
+        "responses":["location : Gorge De Todgha, Tinghir 45800, Morocco"]
+                                                                                                    
+},{ "tag":"Tinghir_Auberge Restaurant La Petite Gorge _price",
+        "patterns":["price of Auberge Restaurant La Petite Gorge ","price of Auberge Restaurant La Petite Gorge ","Nightly base price of Auberge Restaurant La Petite Gorge "],
+        "responses":[" Nightly base price for 1 night : $47 -$57 "]      
+
+    
+ },{ "tag":"5 stars  in meknes",
+        "patterns":["i want a hotel with 5 stars in meknes ","describe meknes with 5 stars ", "5 meknes","5 in meknes","5 in meknes","5 stars in meknes","the hotel 5 stars in meknes"],
+       "responses":["were are sorry only 4 stars  and 3 stars exit if you want see it write 4 in meknes or 3 in meknes "]
+},{ "tag":"4 stars  in meknes",
+        "patterns":["i want a hotel with 4 stars in meknes ","describe meknes with 4 stars ", "4 meknes","4 in meknes","4 in meknes","4 stars in meknes","the hotel 4 stars in meknes"],
+    "responses":["Alright I see , here are some suggestions choose your favorite :  Riad Yacout   ,Menzeh Dalia  "]
+
+          
+},{ "tag":"meknes_hotels_ Riad Yacout  ",
+               "patterns":["What about  Riad Yacout ","i think imma go with  Riad Yacout ", " Riad Yacout seems like a good choice", " Riad Yacout  meknes"],
+                "responses":[" Riad Yacout Excellent 8.7 !! When you a stay at Riad Yacout in Meknes, you'll be in the historical district, just steps from Meknes Museum and Kobt Souk. Featured amenities include dry cleaning/laundry services, laundry facilities, and coffee/tea in a common area. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                                     
+},{ "tag":"meknes_Riad Yacout _PHONE",
+                "patterns":["Phone number of Riad Yacout  ","call Riad Yacout ","reach Riad Yacout "],
+                "responses":[" Riad Yacout  phone number : +212 5355-33110"]  
+},{ "tag":"meknes_Riad Yacout _LINK",
+               "patterns":["link of Riad Yacout ","website of Riad Yacout "],
+               "responses":["https://www.riad-yacout-meknes.com"]
+                                                                                                           
+},{ "tag":"meknes_Riad Yacout _localisation",
+               "patterns":["location of Riad Yacout ","location of Riad Yacout "],
+               "responses":["location : 22 Pace Lalla Aouda, Meknes 50000, Morocco "]
+                                                                                                           
+},{ "tag":"meknes_Riad Yacout _price",
+               "patterns":["price of Riad Yacout ","price of Riad Yacout ","Nightly base price of Riad Yacout "],
+               "responses":[" Nightly base price for 1 night :  $46 - $60"]      
+    
+          
+},{ "tag":"meknes_hotels_ Menzeh Dalia  ",
+        "patterns":["What about  Menzeh Dalia ","i think imma go with  Menzeh Dalia ", " Menzeh Dalia seems like a good choice", " Menzeh Dalia  meknes"],
+         "responses":[" Menzeh Dalia Good 6.3 !! Located in Meknes, Hotel Menzeh Dalia is in the business district, within a 15-minute drive of Dar Jamai Museum and Kobt Souk. Featured amenities include a business center, express check-in, and express check-out. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+},{ "tag":"meknes_Menzeh Dalia _PHONE",
+         "patterns":["Phone number of Menzeh Dalia  ","call Menzeh Dalia ","reach Menzeh Dalia "],
+         "responses":[" Menzeh Dalia  phone number : +212 5354-68595"]  
+},{ "tag":"meknes_Menzeh Dalia _LINK",
+        "patterns":["link of Menzeh Dalia ","website of Menzeh Dalia "],
+        "responses":["https://www.hotelmenzehdalia.com"]
+                                                                                                    
+},{ "tag":"meknes_Menzeh Dalia _localisation",
+        "patterns":["location of Menzeh Dalia ","location of Menzeh Dalia "],
+        "responses":["location : Domaine Izmar, RP N6 Vers Rabat, B.P 972, Meknes 50000, Morocco"]
+                                                                                                    
+},{ "tag":"meknes_Menzeh Dalia _price",
+        "patterns":["price of Menzeh Dalia ","price of Menzeh Dalia ","Nightly base price of Menzeh Dalia "],
+        "responses":[" Nightly base price for 1 night : $61 - $70 "]      
+
+ },{ "tag":"3 stars  in meknes",
+        "patterns":["i want a hotel with 3 stars in meknes ","describe meknes with 3 stars ", "3 meknes","3 in meknes","3 in meknes","3 stars in meknes","the hotel 3 stars in meknes"],
+    "responses":["Alright I see , here are some suggestions choose your favorite : Riad Bab Berdaine ,Ibis Meknes   ,Ryad Bahia  "]
+ 
+          
+},{ "tag":"meknes_hotels_ Riad Bab Berdaine  ",
+        "patterns":["What about   Riad Bab Berdaine ","i think imma go with   Riad Bab Berdaine ", "  Riad Bab Berdaine seems like a good choice", " Riad Bab Berdaine  meknes"],
+         "responses":[" Riad Bab Berdaine  Excellent 8.5 !! When you stay at Riad Bab Berdaine in Meknes, you'll be in the historical district, within a 10-minute walk of Bou Inania Medersa and Great Mosque. Featured amenities include a business center, dry cleaning/laundry services, and multilingual staff. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+},{ "tag":"meknes_Riad Bab Berdaine _PHONE",
+         "patterns":["Phone number of Riad Bab Berdaine  ","call Riad Bab Berdaine ","reach Riad Bab Berdaine "],
+         "responses":[" Riad Bab Berdaine  phone number : +212 619-215900"]  
+},{ "tag":"meknes_Riad Bab Berdaine _LINK",
+        "patterns":["link of Riad Bab Berdaine ","website of Riad Bab Berdaine "],
+        "responses":["https://www.booking.com/hotel/ma/ryad-bab-berdaine.fr.html"]
+                                                                                                    
+},{ "tag":"meknes_Riad Bab Berdaine _localisation",
+        "patterns":["location of Riad Bab Berdaine ","location of Riad Bab Berdaine "],
+        "responses":["location : 7 Derb Moussa, Meknes 50030, Morocco "]
+                                                                                                    
+},{ "tag":"meknes_Riad Bab Berdaine _price",
+        "patterns":["price of Riad Bab Berdaine ","price of Riad Bab Berdaine ","Nightly base price of Riad Bab Berdaine "],
+        "responses":[" Nightly base price for 1 night : $56 - $71 "]
+ 
+          
+},{ "tag":"meknes_hotels_ Ibis Meknes  ",
+               "patterns":["What about  Ibis Meknes ","i think imma go with  Ibis Meknes ", " Ibis Meknes seems like a good choice", " Ibis Meknes  meknes"],
+                "responses":[" Ibis Meknes Good 7.0 !! Located between the Medina and the modern city, the ibis Meknes hotel is the perfect gateway to the charms of Morocco. The various city districts are within walking distance, and the hotel is 37.3 miles from Fes-Saïss Airport and 12.4 miles from the Roman city of Volubilis. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                                     
+},{ "tag":"meknes_Ibis Meknes _PHONE",
+                "patterns":["Phone number of Ibis Meknes  ","call Ibis Meknes ","reach Ibis Meknes "],
+                "responses":[" Ibis Meknes  phone number : +212 5354-04141"]  
+},{ "tag":"meknes_Ibis Meknes _LINK",
+               "patterns":["link of Ibis Meknes ","website of Ibis Meknes "],
+               "responses":["https://all.accor.com/errors/session-expired/index.fr.shtml"]
+                                                                                                           
+},{ "tag":"meknes_Ibis Meknes _localisation",
+               "patterns":["location of Ibis Meknes ","location of Ibis Meknes "],
+               "responses":["location : Avenue des F.A.R, Meknes 50000, Morocco"]
+                                                                                                           
+},{ "tag":"meknes_Ibis Meknes _price",
+               "patterns":["price of Ibis Meknes ","price of Ibis Meknes ","Nightly base price of Ibis Meknes "],
+               "responses":[" Nightly base price for 1 night : $45- $60"]      
+    
+          
+},{ "tag":"meknes_hotels_ Ryad Bahia  ",
+        "patterns":["What about  Ryad Bahia ","i think imma go with  Ryad Bahia ", " Ryad Bahia seems like a good choice", " Ryad Bahia  meknes"],
+         "responses":[" Ryad Bahia Excellent 9.4 !! With a stay at Ryad Bahia in Meknes, you'll be within a 5-minute walk of Dar Jamai Museum and Kobt Souk. Featured amenities include a 24-hour front desk, multilingual staff, and laundry facilities. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+},{ "tag":"meknes_Ryad Bahia _PHONE",
+         "patterns":["Phone number of Ryad Bahia  ","call Ryad Bahia ","reach Ryad Bahia "],
+         "responses":[" Ryad Bahia  phone number : +212 5355-54541"]  
+},{ "tag":"meknes_Ryad Bahia _LINK",
+        "patterns":["link of Ryad Bahia ","website of Ryad Bahia "],
+        "responses":["http://www.ryad-bahia.com"]
+                                                                                                    
+},{ "tag":"meknes_Ryad Bahia _localisation",
+        "patterns":["location of Ryad Bahia ","location of Ryad Bahia "],
+        "responses":["location : Tiberbarine, Meknes 50003, Morocco"]
+                                                                                                    
+},{ "tag":"meknes_Ryad Bahia _price",
+        "patterns":["price of Ryad Bahia ","price of Ryad Bahia ","Nightly base price of Ryad Bahia "],
+        "responses":[" Nightly base price for 1 night : $49 -$54 "]      
+ 
+    
+ },{ "tag":"5 stars  in Ait Benhaddou",
+        "patterns":["i want a hotel with 5 stars in Ait Benhaddou ","describe Ait Benhaddou with 5 stars ", "5 Ait Benhaddou","5 in Ait Benhaddou","5 in Ait Benhaddou","5 stars in Ait Benhaddou","the hotel 5 stars in Ait Benhaddou"],
+       "responses":["were are sorry only  3 stars exit if you want see it write  3 in Ait Benhaddou "]
+},{ "tag":"4 stars  in Ait Benhaddou",
+        "patterns":["i want a hotel with 4 stars in Ait Benhaddou ","describe Ait Benhaddou with 4 stars ", "4 Ait Benhaddou","4 in Ait Benhaddou","4 in Ait Benhaddou","4 stars in Ait Benhaddou","the hotel 4 stars in Ait Benhaddou"],
+        "responses":["were are sorry only  3 stars exit if you want see it write  3 in Ait Benhaddou "]
+
+},{ "tag":"3 stars  in Ait Benhaddou",
+                "patterns":["i want a hotel with 3 stars in Ait Benhaddou ","describe Ait Benhaddou with 3 stars ", "3 Ait Benhaddou","3 in Ait Benhaddou","3 in Ait Benhaddou","3 stars in Ait Benhaddou","the hotel 3 stars in Ait Benhaddou"],
+               "responses":["Alright I see , here are some suggestions choose your favorite : Bagdad ,Paradise of Silence  ,La Kasbah du Jardin  "]
+ 
+          
+},{ "tag":"Ait Benhaddou_hotels_ Bagdad  ",
+        "patterns":["What about   Bagdad ","i think imma go with   Bagdad ", "  Bagdad seems like a good choice", " Bagdad  Ait Benhaddou"],
+         "responses":[" Bagdad  Excellent 9.5 !! With a stay at Bagdad Cafe in Ait Benhaddou, you'll be steps from Ksar Ait-Ben-Haddou and a 4-minute drive from High Atlas. The front desk is staffed during limited hours. Free self parking is available onsite. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+},{ "tag":"Ait Benhaddou_Bagdad _PHONE",
+         "patterns":["Phone number of Bagdad  ","call Bagdad ","reach Bagdad "],
+         "responses":[" Bagdad  phone number : +212 662-771218"]  
+},{ "tag":"Ait Benhaddou_Bagdad _LINK",
+        "patterns":["link of Bagdad ","website of Bagdad "],
+        "responses":["https://hotel-ait-ben-haddou.com"]
+                                                                                                    
+},{ "tag":"Ait Benhaddou_Bagdad _localisation",
+        "patterns":["location of Bagdad ","location of Bagdad "],
+        "responses":["location :  Rue Principale, Aït Ben Haddou 45100, Morocco "]
+                                                                                                    
+},{ "tag":"Ait Benhaddou_Bagdad _price",
+        "patterns":["price of Bagdad ","price of Bagdad ","Nightly base price of Bagdad "],
+        "responses":[" Nightly base price for 1 night : $46 - $49 "]
+ 
+          
+},{ "tag":"Ait Benhaddou_hotels_ Paradise of Silence ",
+               "patterns":["What about  Paradise of Silence","i think imma go with  Paradise of Silence", " Paradise of Silenceseems like a good choice", " Paradise of Silence Ait Benhaddou"],
+                "responses":[" Paradise of Silence EExcellent 9.0 !! Located in Ait Benhaddou, Paradise of Silence is a 1-minute drive from Ksar Ait-Ben-Haddou and 5 minutes from High Atlas. A roundtrip airport shuttle is provided for a surcharge (available 24 hours), and free self parking is available onsite. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                                     
+},{ "tag":"Ait Benhaddou_Paradise of Silence_PHONE",
+                "patterns":["Phone number of Paradise of Silence ","call Paradise of Silence","reach Paradise of Silence"],
+                "responses":[" Paradise of Silence phone number : +212 661-926960"]  
+},{ "tag":"Ait Benhaddou_Paradise of Silence_LINK",
+               "patterns":["link of Paradise of Silence","website of Paradise of Silence"],
+               "responses":["http://paradise-of-silence.com"]
+                                                                                                           
+},{ "tag":"Ait Benhaddou_Paradise of Silence_localisation",
+               "patterns":["location of Paradise of Silence","location of Paradise of Silence"],
+               "responses":["location : Ait Zineb Ouarzazate, Aït Ben Haddou 45122, Morocco"]
+                                                                                                           
+},{ "tag":"Ait Benhaddou_Paradise of Silence_price",
+               "patterns":["price of Paradise of Silence","price of Paradise of Silence","Nightly base price of Paradise of Silence"],
+               "responses":[" Nightly base price for 1 night : $44- $49"]      
+    
+          
+},{ "tag":"Ait Benhaddou_hotels_ La Kasbah du Jardin  ",
+        "patterns":["What about  La Kasbah du Jardin ","i think imma go with  La Kasbah du Jardin ", " La Kasbah du Jardin seems like a good choice", " La Kasbah du Jardin  Ait Benhaddou"],
+         "responses":[" La Kasbah du Jardin Excellent 8.2 !! With a stay at La Kasbah du Jardin in Ait Benhaddou, you'll be steps from Ksar Ait-Ben-Haddou and a 3-minute drive from High Atlas. Featured amenities include dry cleaning/laundry services, a 24-hour front desk, and luggage storage. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+},{ "tag":"Ait Benhaddou_La Kasbah du Jardin _PHONE",
+         "patterns":["Phone number of La Kasbah du Jardin  ","call La Kasbah du Jardin ","reach La Kasbah du Jardin "],
+         "responses":[" La Kasbah du Jardin  phone number : +212 5248-88019"]  
+},{ "tag":"Ait Benhaddou_La Kasbah du Jardin _LINK",
+        "patterns":["link of La Kasbah du Jardin ","website of La Kasbah du Jardin "],
+        "responses":["http://www.kasbahdujardin.com"]
+                                                                                                    
+},{ "tag":"Ait Benhaddou_La Kasbah du Jardin _localisation",
+        "patterns":["location of La Kasbah du Jardin ","location of La Kasbah du Jardin "],
+        "responses":["location : Ait Ben Haddou, Aït Ben Haddou, Morocco"]
+                                                                                                    
+},{ "tag":"Ait Benhaddou_La Kasbah du Jardin _price",
+        "patterns":["price of La Kasbah du Jardin ","price of La Kasbah du Jardin ","Nightly base price of La Kasbah du Jardin "],
+        "responses":[" Nightly base price for 1 night : $37 -$65 "]      
+
+   
+ },{ "tag":"5 stars  in dakhla",
+        "patterns":["i want a hotel with 5 stars in dakhla ","describe dakhla with 5 stars ", "5 dakhla","5 in dakhla","5 in dakhla","5 stars in dakhla","the hotel 5 stars in dakhla"],
+       "responses":["were are sorry only  3 stars exit if you want see it write  3 in dakhla "]
+},{ "tag":"4 stars  in dakhla",
+        "patterns":["i want a hotel with 4 stars in dakhla ","describe dakhla with 4 stars ", "4 dakhla","4 in dakhla","4 in dakhla","4 stars in dakhla","the hotel 4 stars in dakhla"],
+        "responses":["were are sorry only  3 stars exit if you want see it write  3 in dakhla "]
+
+},{ "tag":"3 stars  in dakhla",
+                "patterns":["i want a hotel with 3 stars in dakhla ","describe dakhla with 3 stars ", "3 dakhla","3 in dakhla","3 in dakhla","3 stars in dakhla","the hotel 3 stars in dakhla"],
+                "responses":[" only Hotel Calipau Sahara exit it's Good 7.0 !! Located in Dakhla, Calipau Sahara is on the waterfront, within a 5-minute drive of Dakhla Conference Center and Al Kassam Mosque. Featured amenities include express check-in, express check-out, and dry cleaning/laundry services. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                             
+},{ "tag":"dakhla_ Calipau Sahara _PHONE",
+         "patterns":["Phone number of  Calipau Sahara  ","call  Calipau Sahara ","reach  Calipau Sahara "],
+         "responses":["  Calipau Sahara  phone number : +212 661-191634"]  
+},{ "tag":"dakhla_ Calipau Sahara _LINK",
+        "patterns":["link of  Calipau Sahara ","website of  Calipau Sahara "],
+        "responses":["http://www.dakhla-hotel-sahara.com"]
+                                                                                                    
+},{ "tag":"dakhla_ Calipau Sahara _localisation",
+        "patterns":["location of  Calipau Sahara ","location of  Calipau Sahara "],
+        "responses":["location :  13 Aveneu El Walaa Cites Des Villas, Dakhla, Morocco "]
+                                                                                                    
+},{ "tag":"dakhla_ Calipau Sahara _price",
+        "patterns":["price of  Calipau Sahara ","price of  Calipau Sahara ","Nightly base price of  Calipau Sahara "],
+        "responses":[" Nightly base price for 1 night : $126 - $156 "]
+    
+},{ "tag":"5 stars  in Ouarzazate",
+        "patterns":["i want a hotel with 5 stars in Ouarzazate ","describe Ouarzazate with 5 stars ", "5 Ouarzazate","5 in Ouarzazate","5 in Ouarzazate","5 stars in Ouarzazate","the hotel 5 stars in Ouarzazate"],
+       "responses":["Alright I see , here are some suggestions choose your favorite : Le Berbere Palace , Le Temple Des Arts "]
+          
+},{ "tag":"Ouarzazate_hotels_ Le Berbere Palace ",
+               "patterns":["What about  Le Berbere Palace ","i think imma go with  Le Berbere Palace ", " Le Berbere Palace seems like a good choice", " Le Berbere Palace Ouarzazate"],
+               "responses":[" Le Berbere Palace Excellent 8.1 !! A stay at Le Berbere Palace places you in the heart of Ouarzazate, steps from Ksar Ait-Ben-Haddou and a 2-minute drive from Kasbah Taouirt. Featured amenities include complimentary wired Internet access, a business center, and express check-in. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                      
+},{ "tag":"Ouarzazate Le Berbere Palace_PHONE",
+              "patterns":["Phone number of Le Berbere Palace ","call Le Berbere Palace","reach Le Berbere Palace"],
+              "responses":[" Le Berbere Palace phone number : +212 5248-83105"]  
+},{ "tag":"Ouarzazate Le Berbere Palace_LINK",
+              "patterns":["link of Le Berbere Palace","website of Le Berbere Palace"],
+              "responses":["https://www.hotel-berberepalace.com"]
+                                                                                            
+},{ "tag":"Ouarzazate Le Berbere Palace_localisation",
+              "patterns":["location of Le Berbere Palace","location of Le Berbere Palace"],
+               "responses":["location : Quartier Mansour Eddahbi, Ouarzazate 45000, Morocco"]
+                                                                                            
+},{ "tag":"Ouarzazate Le Berbere Palace_price",
+               "patterns":["price of Le Berbere Palace","price of Le Berbere Palace","Nightly base price of Le Berbere Palace"],
+               "responses":[" Nightly base price for 1 night :$232 - $238"]
+
+          
+},{ "tag":"Ouarzazate_hotels_ Le Temple Des Arts  ",
+        "patterns":["What about  Le Temple Des Arts ","i think imma go with  Le Temple Des Arts ", " Le Temple Des Arts seems like a good choice", " Le Temple Des Arts  Ouarzazate"],
+         "responses":[" Le Temple Des Arts  Excellent 8.3 !! A stay at Le Temple des Arts places you in the heart of Ouarzazate, steps from Ksar Ait-Ben-Haddou and a 2-minute drive from Kasbah Taouirt. Featured amenities include dry cleaning/laundry services. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+},{ "tag":"Ouarzazate_Le Temple Des Arts _PHONE",
+         "patterns":["Phone number of Le Temple Des Arts  ","call Le Temple Des Arts ","reach Le Temple Des Arts "],
+         "responses":[" Le Temple Des Arts  phone number : +212 5248-88831"]  
+},{ "tag":"Ouarzazate_Le Temple Des Arts _LINK",
+        "patterns":["link of Le Temple Des Arts ","website of Le Temple Des Arts "],
+        "responses":["https://www.templedesarts-ouarzazate.com/fr/index.html"]
+                                                                                                    
+},{ "tag":"Ouarzazate_Le Temple Des Arts _localisation",
+        "patterns":["location of Le Temple Des Arts ","location of Le Temple Des Arts "],
+        "responses":["location : 173-174 Hay Al Wahda, Ouarzazate 45000, Morocco "]
+                                                                                                    
+},{ "tag":"Ouarzazate_Le Temple Des Arts _price",
+        "patterns":["price of Le Temple Des Arts ","price of Le Temple Des Arts ","Nightly base price of Le Temple Des Arts "],
+        "responses":[" Nightly base price for 1 night : $151 - $170 "]
+  
+ },{ "tag":"4 stars  in Ouarzazate",
+        "patterns":["i want a hotel with 4 stars in Ouarzazate ","describe Ouarzazate with 4 stars ", "4 Ouarzazate","4 in Ouarzazate","4 in Ouarzazate","4 stars in Ouarzazate","the hotel 4 stars in Ouarzazate"],
+       "responses":["Alright I see , here are some suggestions choose your favorite : Oscar Hotel By Atlas Studios , Sultana Royal Golf ,Kenzi Azghor "]
+          
+},{ "tag":"Ouarzazate_hotels_ Kenzi Azghor ",
+               "patterns":["What about  Kenzi Azghor ","i think imma go with  Kenzi Azghor ", " Kenzi Azghor seems like a good choice", " Kenzi Azghor Ouarzazate"],
+               "responses":[" Kenzi Azghor Good 6.9 !! Just about virtually impossible not to chill out, disconnect and take it easy!Well located near heart of the city, this unique concept boutique hotel is bestowed with the most privileged setting in the entire region.Wonder at the breathtaking panoramic view from the Hotels mythic, legendary terrace, overlooking the Ouarzazate valley of roses in the desert, the breathtaking view as though the Guest is suspended in time, hanging over a gem nestling in the surrounding mountain peaks, unforgettable contrast. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                      
+},{ "tag":"Ouarzazate Kenzi Azghor_PHONE",
+              "patterns":["Phone number of Kenzi Azghor ","call Kenzi Azghor","reach Kenzi Azghor"],
+              "responses":[" Kenzi Azghor phone number : +212 5248-86501"]  
+},{ "tag":"Ouarzazate Kenzi Azghor_LINK",
+              "patterns":["link of Kenzi Azghor","website of Kenzi Azghor"],
+              "responses":["https://www.kenzi-hotels.com/kenzi-azghor"]
+                                                                                            
+},{ "tag":"Ouarzazate Kenzi Azghor_localisation",
+              "patterns":["location of Kenzi Azghor","location of Kenzi Azghor"],
+               "responses":["location : Avenue Prince Moulay Rachid, Ouarzazate -, Morocco"]
+                                                                                            
+},{ "tag":"Ouarzazate Kenzi Azghor_price",
+               "patterns":["price of Kenzi Azghor","price of Kenzi Azghor","Nightly base price of Kenzi Azghor"],
+               "responses":[" Nightly base price for 1 night :$49 - $57"]
+         
+               },{ "tag":"Ouarzazate_hotels_ Oscar Hotel By Atlas Studios ",
+                "patterns":["What about  Oscar Hotel By Atlas Studios ","i think imma go with  Oscar Hotel By Atlas Studios ", " Oscar Hotel By Atlas Studios seems like a good choice", " Oscar Hotel By Atlas Studios Ouarzazate"],
+                "responses":[" Oscar Hotel By Atlas Studios Excellent 8.4 !!With a stay at Oscar Hotel by Atlas Studios in Ouarzazate, you'll be in the historical district, just steps from Ksar Ait-Ben-Haddou and a 4-minute drive from Kasbah Tifoultoute. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                       
+ },{ "tag":"Ouarzazate Oscar Hotel By Atlas Studios_PHONE",
+               "patterns":["Phone number of Oscar Hotel By Atlas Studios ","call Oscar Hotel By Atlas Studios","reach Oscar Hotel By Atlas Studios"],
+               "responses":[" Oscar Hotel By Atlas Studios phone number : +212 5248-82223"]  
+ },{ "tag":"Ouarzazate Oscar Hotel By Atlas Studios_LINK",
+               "patterns":["link of Oscar Hotel By Atlas Studios","website of Oscar Hotel By Atlas Studios"],
+               "responses":["https://oscarhotelbyatlasstudios.com"]
+                                                                                             
+ },{ "tag":"Ouarzazate Oscar Hotel By Atlas Studios_localisation",
+               "patterns":["location of Oscar Hotel By Atlas Studios","location of Oscar Hotel By Atlas Studios"],
+                "responses":["location : Km 5 Route De Marrakech Tamassinte, Ouarzazate 45000, Morocco"]
+                                                                                             
+ },{ "tag":"Ouarzazate Oscar Hotel By Atlas Studios_price",
+                "patterns":["price of Oscar Hotel By Atlas Studios","price of Oscar Hotel By Atlas Studios","Nightly base price of Oscar Hotel By Atlas Studios"],
+                "responses":[" Nightly base price for 1 night :$88 - $105"]
+ 
+          
+},{ "tag":"Ouarzazate_hotels_ Sultana Royal Golf  ",
+        "patterns":["What about  Sultana Royal Golf ","i think imma go with  Sultana Royal Golf ", " Sultana Royal Golf seems like a good choice", " Sultana Royal Golf  Ouarzazate"],
+         "responses":[" Sultana Royal Golf  Excellent 8.7 !! When you stay at Sultana Royal Golf in Ghassate, you'll be steps from Ksar Ait-Ben-Haddou. Featured amenities include luggage storage and laundry facilities. Guests may use a roundtrip airport shuttle for a surcharge, and free self parking is available onsite. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+},{ "tag":"Ouarzazate_Sultana Royal Golf _PHONE",
+         "patterns":["Phone number of Sultana Royal Golf  ","call Sultana Royal Golf ","reach Sultana Royal Golf "],
+         "responses":[" Sultana Royal Golf  phone number : +212 5248-87421"]  
+},{ "tag":"Ouarzazate_Sultana Royal Golf _LINK",
+        "patterns":["link of Sultana Royal Golf ","website of Sultana Royal Golf "],
+        "responses":["https://hotelsultanaroyalgolf.com"]
+                                                                                                    
+},{ "tag":"Ouarzazate_Sultana Royal Golf _localisation",
+        "patterns":["location of Sultana Royal Golf ","location of Sultana Royal Golf "],
+        "responses":["location : Royal Golf - Bp 448, Ouarzazate 45000, Morocco "]
+                                                                                                    
+},{ "tag":"Ouarzazate_Sultana Royal Golf _price",
+        "patterns":["price of Sultana Royal Golf ","price of Sultana Royal Golf ","Nightly base price of Sultana Royal Golf "],
+        "responses":[" Nightly base price for 1 night : $121 "]   
+},{ "tag":"3 stars  in Ouarzazate",
+        "patterns":["i want a hotel with 3 stars in Ouarzazate ","describe Ouarzazate with 3 stars ", "3 Ouarzazate","3 in Ouarzazate","3 in Ouarzazate","3 stars in Ouarzazate","the hotel 3 stars in Ouarzazate"],
+       "responses":["Alright I see , here are some suggestions choose your favorite : Le Tichka , Dar El Nath ,Dar Daif"]
+          
+},{ "tag":"Ouarzazate_hotels_ Le Tichka ",
+               "patterns":["What about  Le Tichka ","i think imma go with  Le Tichka ", " Le Tichka seems like a good choice", " Le Tichka Ouarzazate"],
+               "responses":[" Le Tichka Good 7.5 !! With a stay at Hotel Ouarzazate Le Tichka in Ouarzazate, you'll be within a 5-minute walk of Ksar Ait-Ben-Haddou and Kasbah Taouirt. Featured amenities include a 24-hour front desk, luggage storage, and laundry facilities. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                      
+},{ "tag":"Ouarzazate Le Tichka_PHONE",
+              "patterns":["Phone number of Le Tichka ","call Le Tichka","reach Le Tichka"],
+              "responses":[" Le Tichka phone number : +212 5248-83335"]  
+},{ "tag":"Ouarzazate Le Tichka_LINK",
+              "patterns":["link of Le Tichka","website of Le Tichka"],
+              "responses":["https://fr.hotels.com/ho453893/hotel-ouarzazate-le-tichka-ouarzazate-maroc"]
+                                                                                            
+},{ "tag":"Ouarzazate Le Tichka_localisation",
+              "patterns":["location of Le Tichka","location of Le Tichka"],
+               "responses":["location : Avenue Mohamed V, Ouarzazate, Morocco "]
+                                                                                            
+},{ "tag":"Ouarzazate Le Tichka_price",
+               "patterns":["price of Le Tichka","price of Le Tichka","Nightly base price of Le Tichka"],
+               "responses":[" Nightly base price for 1 night :$24 - $42"]
+
+          
+},{ "tag":"Ouarzazate_hotels_ Dar El Nath  ",
+        "patterns":["What about  Dar El Nath ","i think imma go with  Dar El Nath ", " Dar El Nath seems like a good choice", " Dar El Nath  Ouarzazate"],
+         "responses":[" Dar El Nath  Excellent 9.2 !! A stay at Dar El Nath places you in the heart of Ouarzazate, steps from Ksar Ait-Ben-Haddou and 3 minutes by foot from Kasbah Taouirt. Featured amenities include express check-out, dry cleaning/laundry services, and luggage storage. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+},{ "tag":"Ouarzazate_Dar El Nath _PHONE",
+         "patterns":["Phone number of Dar El Nath  ","call Dar El Nath ","reach Dar El Nath "],
+         "responses":[" Dar El Nath  phone number : +212 5248-84167"]  
+},{ "tag":"Ouarzazate_Dar El Nath _LINK",
+        "patterns":["link of Dar El Nath ","website of Dar El Nath "],
+        "responses":["https://fr.hotels.com/ho528399/dar-el-nath-ouarzazate-maroc/"]
+                                                                                                    
+},{ "tag":"Ouarzazate_Dar El Nath _localisation",
+        "patterns":["location of Dar El Nath ","location of Dar El Nath "],
+        "responses":["location : Hay Taourirte 111, Ouarzazate 40000, Morocco "]
+                                                                                                    
+},{ "tag":"Ouarzazate_Dar El Nath _price",
+        "patterns":["price of Dar El Nath ","price of Dar El Nath ","Nightly base price of Dar El Nath "],
+        "responses":[" Nightly base price for 1 night : $46 "] 
+            
+},{ "tag":"Ouarzazate_hotels_ Dar Daif   ",
+        "patterns":["What about  Dar Daif  ","i think imma go with  Dar Daif  ", " Dar Daif  seems like a good choice", " Dar Daif   Ouarzazate"],
+         "responses":[" Dar Daif   Excellent 9.1 !! Located in Tarmigt, Dar Daif is within a 15-minute drive of Ksar Ait-Ben-Haddou and Kasbah Taouirt. Featured amenities include a 24-hour front desk, multilingual staff, and luggage storage. \n Would you their phone number or website link or location or Nightly base price  ? choose one if you're interested"]
+                                                                                              
+},{ "tag":"Ouarzazate_Dar Daif  _PHONE",
+         "patterns":["Phone number of Dar Daif   ","call Dar Daif  ","reach Dar Daif  "],
+         "responses":[" Dar Daif   phone number : +212 5248-54949"]  
+},{ "tag":"Ouarzazate_Dar Daif  _LINK",
+        "patterns":["link of Dar Daif  ","website of Dar Daif  "],
+        "responses":["https://dardaif.ma"]
+                                                                                                    
+},{ "tag":"Ouarzazate_Dar Daif  _localisation",
+        "patterns":["location of Dar Daif  ","location of Dar Daif  "],
+        "responses":["location : Douar Talmasla Tarmigt Bp 93, Ouarzazate 45000, Morocco "]
+                                                                                                    
+},{ "tag":"Ouarzazate_Dar Daif  _price",
+        "patterns":["price of Dar Daif  ","price of Dar Daif  ","Nightly base price of Dar Daif  "],
+        "responses":[" Nightly base price for 1 night : $37 - $59 "] 
+                                                                                                      
+},{ "tag":"link",
+        "patterns":["link ","i want a link ","give me i link ","what about a link","website ","i want a website ","give me i website ","what about a website","website"],
+        "responses":[" can you write  the name of your hotels with your choose  like :(link of name hotel )  please ! thank you "] 
+   
+                                                                                                       
+},{ "tag":"location",
+        "patterns":["location ","i want a location ","give me i location ","what about a location"],
+        "responses":[" can you write  the name of your hotels with your choose  like : (location of name hotel )  please ! thank you "] 
+                                                                                                        
+},{ "tag":"price",
+        "patterns":["price ","i want a price ","give me i price ","what about a price"],
+        "responses":[" can you write  the name of your hotels with your choose  like : (price of name hotel )  please ! thank you "] 
+                                                                                                          
+},{ "tag":"Phone number",
+        "patterns":["Phone number ","i want a Phone number ","give me i Phone number ","what about a Phone number","i want a number ","give me i number ","what about a number","number"],
+        "responses":[" can you write  the name of your hotels with your choose  like : (Phone number of name hotel )  please ! thank you "] 
+   
+ 
+    
+    
+    
+    }]}
+    
+    

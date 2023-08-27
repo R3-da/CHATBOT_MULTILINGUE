@@ -1,0 +1,13 @@
+hello
+what's up ?Hola
+Hola, ¿te gustaría recibir algunas sugerencias sobre ciudades? o simplemente puede preguntar por su lugar favoritoHola
+Holaquestion :
+Website of Rick's Cafe
+response :
+Rick's Cafequestion :
+Hola
+response :
+Oye, ¿puedo recomendarte algunos hoteles?question :
+Ciao
+response :
+Ehi, posso consigliarti alcuni hotel?

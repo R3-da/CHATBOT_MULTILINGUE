@@ -1,0 +1,16 @@
+{"intents":[
+    { "tag":"greetings",
+    "patterns":["hey","hello","hi","what's up ?","good day","good morning"],
+    "responses":["Hi , would you like some suggestions about cities ?","Hey, can i recommed you some places where you can go ?"]}
+,{ "tag":"goodbyes",
+    "patterns":["see you ","goodbye","bye","bye bye"],
+    "responses":["alright !!","have  a nice day !!","take care","goodbye !!"]
+},
+{ "tag":"age",
+    "patterns":["how old are you","age","what is your age ?"],
+    "responses":["ow i'm 21 years old","i'm old enough to help you :)","i'm just about your age HAHA"]
+} 
+,{ "tag":"name",
+    "patterns":["what is your name ?","name ?","tell me your name ","how can i call you ?"],
+    "responses":["my name is samia "]
+}]}

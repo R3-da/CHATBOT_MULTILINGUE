@@ -1,0 +1,1208 @@
+
+{"intents":[
+    { "tag":"greeting",
+    "patterns":["hey","hello","hi","what's up ?","good day","good morning"],
+    "responses":["Hi there, you're looking for restaurants right ?"]}
+,{ "tag":"not_searching_restaurant",
+    "patterns":["no","not now","not exactly", "no, i am not"],
+    "responses":["well then i am afraid i can not help you"]
+},
+{ "tag":"searching_restaurant",
+    "patterns":["yes","right","yeah", "yes, i am", "affirmative", "true"],
+    "responses":["Tell me the direction where you want the restaurant: North , South , West , Centre of Morocco "]
+},{ "tag":"North",
+    "patterns":["North of Morocco","North","near Tangier","near fes","near meknes","near asilah  ","near chefchaouen","near ouarzazate","near Rose Valley"],
+    "responses":["Okay , let me show you a list of places : \nTangier \nFes\nMeknes\nAsilah\nChefchaouen\nOuarzazate\nRose Valley\ntell me the city where you want the restaurant"]
+},{ "tag":"Central",
+    "patterns":["Central Morocco","centre of Morocco","near High Atlas","near Tinghir","near Dades Valley"],
+    "responses":["Okay , let me show you a list of places :  \nTinghir\ntell me the city where you want the restaurant"]
+},{ "tag":"West",
+    "patterns":["West of Morocco","West","near Casablanca","near Rabat","near Oudaias Kasbah","near Essaouira","near Marrakech"],
+    "responses":["Okay , let me show you a list of places : \nCasablanca \nRabat\nEssaouira\nMarrakech\ntell me the city where you want the restaurant"]
+},{ "tag":"South",
+    "patterns":["south of Morocco","South","near Ait Ben Haddou","near Agadir","near Saharah"],
+    "responses":["Okay , let me show you a list of places :  \nAgadir\ntell me the city where you want the restaurant"]
+},{ "tag":"best month",
+    "patterns":["What is the best month to travel to Morocco","best time to travel to Morocco"],
+    "responses":[" Although the weather in Morocco is amazing throughout the year but if you want to save some money then the best time to visit Morocco is during the shoulder season - April to May or September to November."]
+},{ "tag":"Hijab",
+    "patterns":["Should I wear a hijab in Morocco","Hijab","scarf"],
+    "responses":[" No, it is not necessary to wear a hijab in Morocco and this is valid for both Muslims and non-Muslim women. Wearing a hijab totally depends on your comfortability."]
+},{ "tag":"Alcohol",
+    "patterns":["Can you drink alcohol in Morocco?","alcohol","beer"],
+    "responses":[" Despite being a Muslim country, Morocco is not a dry place and liquor is easily available in bars, stores, hotels, clubs, and discos. However, drinking in public places is prohibited so you might want to avoid that."]
+}
+,{ "tag":"casablanca_restaurant",
+    "patterns":["i would like a restaurant in casablanca", "is there any restaurant in casablanca", "any suggestions on restaurants in casablanca", "casablanca"],
+    "responses":["Alright I see , here are some suggestions choose your favorite : Rick's Cafe, Paul, Romanoff, Restaurant Cafe La Squala, Las Vegas Restaurant"]
+} 
+,{ "tag":"casablanca_retaurants_Rick's_Cage",
+    "patterns":["What about Rick's Cafe","i think imma go with Rick's Cafe", "Rick's Cafe seems like a good choice", "Rick's Cafe"],
+    "responses":["Rick's Cafe it is !!, well Rick's cafe is a Romantic restaurant inspired by the cafe from the 1942 film Casablanca with cocktails and piano\n Would you their phone number or website link ? choose one if you're interested"]
+},
+{ "tag":"casablanca_retaurants_Rick's_Cage_PHONE",
+    "patterns":["Phone number of Rick's Cage","call Rick's Cage","reach Rick's Cage"],
+    "responses":[" Rick's Cage phone number : +212 5-22-27-42-07"]
+}
+,
+{ "tag":"casablanca_retaurants_Rick's_Cage_LINK",
+    "patterns":["link of Rick's Cage","website of Rick's Cage"],
+    "responses":[" https://www.minube.net/place/ricks-cafe--a100298"]
+}
+,{"tag": "casablanca_retaurants_Paul",
+    "patterns": ["What about Paul", "i think imma go with Paul", "Paul seems like a good choice", "Paul"],
+    "responses": ["Paul it is !!, well Paul Pains traditionals, sandwiches,  pastries served in a French bakery chain.\nWould you their phone number or website link ? choose one if you're interested "]
+},
+{ "tag":"casablanca_retaurants_Paul_Cage_PHONE",
+    "patterns":["Phone number of Paul","call Paul","reach Paul"],
+    "responses":["Paul phone number : +212-5-22-36-60-00"]
+}
+,
+{ "tag":"casablanca_retaurants_Paul_LINK",
+    "patterns":["link of Paul","website of Paul"],
+    "responses":[" https://www.minube.net/place/paul-a134278"]
+}
+,{"tag": "casablanca_retaurants_Romanoff",
+    "patterns": ["What about Romanoff", "i think imma go with Romanoff", "Romanoff seems like a good choice", "Romanoff"],
+    "responses": ["Romanoff it is !!, Le Romanoff is a cafe-restaurant in the Gautier district, one of the wealthiest districts of Casablanca. In the other neighborhoods, you only see men on the cafe terraces, Gautier is a place where you find more women.\nWould you their phone number or website link ? choose one if you're interested "]
+},
+{ "tag":"casablanca_retaurants_Romanoff_Cage_PHONE",
+    "patterns":["Phone number of Romanoff","call Romanoff","reach Romanoff"],
+    "responses":["Romanoff phone number : +212-5-22-47-35-06"]
+}
+,
+{ "tag":"casablanca_retaurants_Romanoff_LINK",
+    "patterns":["link of Romanoff","website of Romanoff"],
+    "responses":[" https://www.minube.net/place/romanoff--a134284"]
+} 
+,{"tag": "casablanca_retaurants_Restaurant_Cafe_La_Squala",
+    "patterns": ["What about Restaurant Cafe La Squala", "i think imma go with Restaurant Cafe La Squala", "Restaurant Cafe La Squala seems like a good choice", "Restaurant Cafe La Squala"],
+    "responses": ["Restaurant_Cafe_La_Squala it is !!, well Restaurant Cafe La Squala Take-away meals.\nWould you their phone number or website link ? choose one if you're interested "]
+},
+{ "tag":"casablanca_retaurants_Cafe_La_Squala_PHONE",
+    "patterns":["Phone number of Cafe La Squala","call Cafe La Squala","reach Cafe La Squala"],
+    "responses":["Cafe La Squala phone number : +212522 26 09 60"]
+}
+,
+{ "tag":"casablanca_retaurants_Cafe_La_Squala_LINK",
+    "patterns":["link of Cafe La Squala","website of Cafe La Squala"],
+    "responses":["https://www.minube.net/place/sqala-a162911"]
+} 
+,{"tag": "casablanca_retaurants_Las_Vegas_Restaurant",
+    "patterns": ["What about Las Vegas Restaurant", "i think imma go with Las Vegas Restaurant", "Las Vegas Restaurant seems like a good choice", "Las Vegas Restaurant"],
+    "responses": ["Las Vegas Restaurant Repas in place or you can take it with you\nWould you their phone number or website link ? choose one if you're interested "]
+},
+{ "tag":"casablanca_retaurants_Las_Vegas_Restaurant_PHONE",
+    "patterns":["Phone number of  Las Vegas Restaurant","call Cafe  Las Vegas Restaurant","reach  Las Vegas Restaurant"],
+    "responses":["Las Vegas Restaurant (of Sindibad ) phone number : +212635-574812"]
+}
+,
+{ "tag":"casablanca_retaurants_Las_Vegas_Restaurant_LINK",
+    "patterns":["link of Cafe Las Vegas Restaurant","website of Las Vegas Restaurant"],
+    "responses":["https://www.minube.net/place/las-vegas-a164631"]
+}
+,{"tag": "Marrakech_restaurants",
+    "patterns": ["i would like a restaurant in Marrakech", "is there any restaurant in Marrakech", "any suggestions on restaurants in Marrakech", "Marrakech"],
+    "responses": ["aight i see , here are some suggestions choose your favorite : Chez Chegrouni, Toubkal, Le Grand Balcon Cafe Glacier, Cafe Des Epices, Cafe Argana"]
+}
+,{"tag": "Marrakech_retaurants_chez_chegrouni",
+    "patterns": ["What about Chez Chegrouni", "i think imma go with Chez Chegrouni", "Chez Chegrouni seems like a good choice", "Chez Chegrouni"],
+    "responses": ["Chez ChegrouniRestaurant_Cafe_La_Squala it is !!, This restaurant is most typical in the Jemaa el Fna and that's why you see all the guides. It is best to dine on the terrace above where you have 4 tables that overlook the entire square. The rest of the tables does not have any views. One of the best dishes you have is the Tajin with tomato and chicken. The spikes and olives are very good. The value for money is good. It's a tad cheaper in the square but from here you have a nice view. Do not forget to try the vanilla yogurt this vice, Adresse : Place Djemaa Al Fnaa, Marrakech, Marruecos\n Would you their phone number or website link ? choose one if you're interested"]
+},
+{ "tag":"Marrakech_retaurants_chez_chegrouni_PHONE",
+    "patterns":["Phone number of Chez Chegrouni","call Chez Chegrouni","reach Chez Chegrouni"],
+    "responses":["Chez Chegrouni phone number : +212673-035187"]
+}
+,
+{ "tag":"Marrakech_retaurants_chez_chegrouni_LINK",
+    "patterns":["link of Chez Chegrouni","website of Chez Chegrouni"],
+    "responses":["https://www.minube.net/place/chez-chegrouni--a96587"]
+} 
+,{"tag": "Marrakech_retaurants_Toubkal",
+    "patterns": ["What about Toubkal", "i think imma go with Toubkal", "Toubkal seems like a good choice", "Toubkal"],
+    "responses": ["ToubkalThis cafe-restaurant is situated in the Jemaa el Fna Sqaure, and it is the hub of life in Marrakech. It might go unnoticed if it were not for their excellent breakfasts, Adresse : Plaza Jemaa-el-Fna \n Would you their phone number or website link ? choose one if you're interested"]
+},
+{ "tag":"Marrakech_retaurants_Toubkal_PHONE",
+    "patterns":["Phone number of  Toubkal","call Toubkal","reach Toubkal"],
+    "responses":["Toubkal phone number : not available"]
+}
+,
+{ "tag":"Marrakech_retaurants_Toubkal_LINK",
+    "patterns":["link of Toubkal","website of Toubkal"],
+    "responses":["https://www.minube.net/place/cafe_restaurant-snack-toubkal--a48293"]
+} 
+,{"tag": "Marrakech_retaurants_Le_Grand_Balcon_Cafe_Glacier",
+    "patterns": ["What about Le Grand Balcon Cafe Glacier", "i think imma go with Le Grand Balcon Cafe Glacier", "Le Grand Balcon Cafe Glacier seems like a good choice", "Le Grand Balcon Cafe Glacier"],
+    "responses": ["Le Grand Balcon Cafe Glacierpeople enjoying the views from the balcony. They charge for entry, to ensure that you won't leave without having a drink. It has all kinds of drinks, but they don't serve alcohol. They also offer nice homemade ice cream, and a variety of traditional dishes. There are better places to eat elsewhere in the city, but the views can't be beaten here, Adresse : Jemaa El Fna, Marrakech, Marruecos \n Would you their phone number or website link ? choose one if you're interested"]
+},
+{ "tag":"Marrakech_retaurants_Le_Grand_Balcon_Cafe_Glacier_PHONE",
+    "patterns":["Phone number of  Le Grand Balcon Cafe Glacier","call Le Grand Balcon Cafe Glacier","reach Le Grand Balcon Cafe Glacier"],
+    "responses":["Le Grand Balcon Cafe Glacier phone number : +2125244-42193"]
+}
+,
+{ "tag":"Marrakech_retaurants_Le_Grand_Balcon_Cafe_Glacier_LINK",
+    "patterns":["link of Le Grand Balcon Cafe Glacier","website of Le Grand Balcon Cafe Glacier"],
+    "responses":["https://www.minube.net/place/cafe-glacier-a96573"]
+} 
+, {"tag": "Marrakech_retaurants_Cafe_Des_Epices",
+    "patterns": ["What about Cafe Des Epices", "i think imma go with Cafe Des Epices", "Cafe Des Epices seems like a good choice", "Cafe Des Epices"],
+    "responses": ["Cafe Des EpicesThe Café Des épices (Spice Cafe) is a nicely renovated building. It's painted red and set amid several souqs, or markets of the medina. It's located in the Place aux épices (Plaza of Spices), with an informal market in the center, where spices and baskets are sold along with various beauty products, Adresse : Place Rahba Lakdima | Place des épices, Marrakech,....\nWould you their phone number or website link ? choose one if you're interested"]
+},
+{ "tag":"Marrakech_retaurants_Cafe_Des_Epices_PHONE",
+    "patterns":["Phone number of  Cafe Des Epices","call Cafe Des Epices","reach Cafe Des Epices"],
+    "responses":["Cafe Des Epices phone number : +212524391770"]
+}
+,
+{ "tag":"Marrakech_retaurants_Cafe_Des_Epices_LINK",
+    "patterns":["link of Cafe Des Epices","website of Cafe Des Epices"],
+    "responses":["https://cafedesepices.ma"]
+} 
+,{"tag": "Marrakech_retaurants_Cafe_Argana",
+    "patterns": ["What about Cafe Argana", "i think imma go with Cafe Argana", "Cafe Argana seems like a good choice", "Cafe Argana"],
+    "responses": ["Cafe Argana Café Argana is one of the most classic local that is in the Jemaa El Fna, consists of restaurant and coffee-tea shop, because as they do not serve beer or alcohol, either here or even have Coca-Cola, as almost all the world drink coffee or tea, Adresse : place jemaa el fna\nWould you their phone number or website link ? choose one if you're interested"]
+},
+{ "tag":"Marrakech_retaurants_Cafe_Argana_PHONE",
+    "patterns":["Phone number of  Cafe Argana","call Cafe Argana","reach Cafe Argana"],
+    "responses":["Cafe Argana phone number : +212 628-265479"]
+}
+,
+{ "tag":"Marrakech_retaurants_Cafe_Argana_LINK",
+    "patterns":["link of Cafe Argana","website of Cafe Argana"],
+    "responses":["https://www.minube.net/place/cafe-glacier-a96573"]
+} 
+,{"tag": "Tangier_restaurants",
+    "patterns": ["i would like a restaurant in Tangier", "is there any restaurant in Tangier", "any suggestions on restaurants in Tangier", "Tangier"],
+    "responses": ["aight i see...here are some suggestions choose your favorite : Hafa Cafe, De Mustafa Restaurant, Chez Hammadi, Central Cafe, El Korsan Restaurant"]
+}
+,{"tag": "Tangier_retaurants_Hafa_Cafe",
+    "patterns": ["What about Hafa Cafe", "i think imma go with Hafa Cafe", "Hafa Cafe seems like a good choice", "Hafa Cafe"],
+    "responses": ["It is a bit difficult to reach this historic cafe, but once inside it offers many terraces that descend from the mountain side, which provide a beautiful view of the Strait and the Spanish coast in the background, Adresse : Av. Mohammed Tazi\nWould you their phone number or website link ? choose one if you're interested"]
+},
+{ "tag":"Tangier_retaurants_Hafa_Cafe_PHONE",
+    "patterns":["Phone number of  Hafa Cafe","call Hafa Cafe","reach Hafa Cafe"],
+    "responses":["Hafa Cafe phone number : +31 6 87562699"]
+}
+,
+{ "tag":"Tangier_retaurants_Hafa_Cafe_LINK",
+    "patterns":["link of Hafa Cafe","website of Hafa Cafe"],
+    "responses":["https://www.minube.net/place/hafa-cafe--a2986"]
+} 
+,{"tag": "Tangier_retaurants_De_Mustafa_Restaurant",
+    "patterns": ["What about De Mustafa Restaurant", "i think imma go with De Mustafa Restaurant", "De Mustafa Restaurant seems like a good choice", "De Mustafa Restaurant"],
+    "responses": ["The kebabs were unpalatable, although the fish edible, nothing special. The salad was the best. The lack of cleanliness and saturated oil which are performed frying is something inexplicable. And in the end the price?? A nasty surprise!!, Adresse : Place 9 avril (Gran Zoco)\nWould you their phone number or website link ? choose one if you're interested"]
+},
+{ "tag":"Tangier_retaurants_De_Mustafa_Restaurant_PHONE",
+    "patterns":["Phone number of De Mustafa Restaurant","call De Mustafa Restaurant","reach De Mustafa Restaurant"],
+    "responses":["De Mustafa Restaurant phone number : not available "]
+}
+,
+{ "tag":"Tangier_retaurants_De_Mustafa_Restaurant_LINK",
+    "patterns":["link of De Mustafa Restaurant","website of De Mustafa Restaurant"],
+    "responses":["https://www.minube.net/place/de-mustafa-restaurant--a2953"]
+} 
+,{"tag": "Tangier_retaurants_Chez_Hammadi",
+    "patterns": ["What about Chez Hammadi", "i think imma go with Chez Hammadi", "Chez Hammadi seems like a good choice", "Chez Hammadi"],
+    "responses": ["Typical tourist restaurant with a group of Andalusian musicians. Good food. Good service. Good price-quality ratio. It's easy to find and very quiet, Adresse : 2 Rue de la Kasbah, T\u00e1nger, Marruecos\nWould you their phone number or website link ? choose one if you're interested "]
+},
+{ "tag":"Tangier_retaurants_Chez_Hammadi_PHONE",
+    "patterns":["Phone number of Chez Hammadi","call Chez Hammadi","reach Chez Hammadi"],
+    "responses":["Chez Hammadi phone number :+212 5399-34514"]
+}
+,
+{ "tag":"Tangier_retaurants_Chez_Hammadi_LINK",
+    "patterns":["link of Chez Hammadi","website of Chez Hammadi"],
+    "responses":["https://www.minube.net/place/hammadi--a263841"]
+} 
+,{"tag": "Tangier_retaurants_Central_Cafe",
+    "patterns": ["What about Central Cafe", "i think imma go with Central Cafe", "Central Cafe seems like a good choice", "Central Cafe"],
+    "responses": ["This is the perfect place to have a typical Tangier peppermint tea. All the chairs face the street so you do not miss anything that is happening in front. You can also have lunch or dinner there, Adresse : Petit Socco (Zoco Chico)\nThe phone number and the link of this restaurant is not available . "]
+},
+{ "tag":"Tangier_retaurants_Central_Cafe_PHONE",
+    "patterns":["Phone number of Central Cafe","call Central Cafe","reach Central Cafe"],
+    "responses":["Central Cafe phone number :Not available "]
+}
+,
+{ "tag":"Tangier_retaurants_Central_Cafe_LINK",
+    "patterns":["link of Central Cafe","website of Central Cafe"],
+    "responses":["Not available "]
+} 
+,{"tag": "Tangier_retaurants_El_Korsan_Restaurant",
+    "patterns": ["What about El Korsan Restaurant", "i think imma go with El Korsan Restaurant", "El Korsan Restaurant seems like a good choice", "El Korsan Restaurant"],
+    "responses": ["The Korsan is one of the best Moroccan food restaurants there in Tangier. Located within the Hotel El Minzah, one of the most spectacular of Tangier, in the Rue de la Liberte9, and in the new area. Although the guides usually put there to go to get dressed properly, there is no problem to go dressed as a normal tourist. The treatment is excellent and the decor is very nice and typically dwells, Adresse : Rue de la Liberte, 85\nWould you their phone number or website link ? choose one if you're interested"]
+},
+{ "tag":"Tangier_retaurants_El_Korsan_Restaurant_PHONE",
+    "patterns":["Phone number of El Korsan Restaurant","call El Korsan Restaurant","reach El Korsan Restaurant"],
+    "responses":["El Korsan Restaurant phone number : +2125393-33444 "]
+}
+,
+{ "tag":"Tangier_retaurants_El_Korsan_Restaurant_LINK",
+    "patterns":["link of El Korsan Restaurant","website of El Korsan Restaurant"],
+    "responses":["http://www.elminzah.com/index1.php?lang=esp&amp;page=elkorsan.php"]
+} 
+,{"tag": "Rabat_restaurants",
+    "patterns": ["i would like a restaurant in Rabat", "is there any restaurant in Rabat", "any suggestions on restaurants in Rabat", "Rabat"],
+    "responses": ["Alright I see...here are some suggestions choose your favorite : Cafe Maure, Sidi Fatah Food Stalls, Blue Berry, Venezia Ice, Bab Khebaz Cafe"]
+}
+,{"tag": "Rabat_retaurants_Cafe_Maure",
+    "patterns": ["What about Cafe Maure", "i think imma go with Cafe Maure", "Cafe Maure seems like a good choice", "Cafe Maure"],
+    "responses": ["Possibly the best place to enjoy a typical mint tea in the Moroccan capital. It usually comes with typical side dishes and all for only a little more than one euro! I think a visit is mandatory if you're passing through the Kasbah to enjoy the views from this terrace and the Bou Regreg estuary, Adresse : Kasbah des Oudaias\nWould you their phone number or website link ? choose one if you're interested"]
+},
+{ "tag":"Rabat_retaurants_Cafe_Maure_PHONE",
+    "patterns":["Phone number of Cafe Maure","call Cafe Maure","reach Cafe Maure"],
+    "responses":["Cafe Maure phone number : +212658-317181 "]
+}
+,
+{ "tag":"Rabat_retaurants_Cafe_Maure_LINK",
+    "patterns":["link of Cafe Maure","website of Cafe Maure"],
+    "responses":["https://www.minube.net/place/cafe-maure--a120697"]
+} 
+,{"tag": "Rabat_retaurants_Sidi_Fatah_Food_Stalls",
+    "patterns": ["What about Sidi Fatah Food Stalls", "i think imma go with Sidi Fatah Food Stalls", "Sidi Fatah Food Stalls seems like a good choice", "Sidi Fatah Food Stalls"],
+    "responses": ["On the street Sidi Fatah, in the historic center of Rabat, several guys who make fried fish, from the river Bou Regreg nearby and the sea. There sardines and fish over meat, cut into small pieces and sold by weight, Adresse : sidi fatah\nWould you their phone number or website link ? choose one if you're interested"]
+},
+{ "tag":"Rabat_retaurants_Sidi_Fatah_Food_Stalls_PHONE",
+    "patterns":["Phone number of Sidi Fatah Food Stalls","call Sidi Fatah Food Stalls","reach Sidi Fatah Food Stalls"],
+    "responses":["Sidi Fatah Food Stalls phone number : +212639-597762 "]
+}
+,
+{ "tag":"Rabat_retaurants_Sidi_Fatah_Food_Stalls_LINK",
+    "patterns":["link of Sidi Fatah Food Stalls","website of Sidi Fatah Food Stalls"],
+    "responses":["https://www.minube.net/place/fryhouses-in-sidi-fatah--a134395"]
+} 
+,{"tag": "Rabat_retaurants_Blue_Berry",
+    "patterns": ["What about Blue Berry", "i think imma go with Blue Berry", "Blue Berry seems like a good choice", "Blue Berry"],
+    "responses": ["The Blue Berry is a tea room and ice cream parlor in Rabat. It contrasts with the traditional city that's close by, near the water, with leisurely views of the Sale port on the other side of the Bou Regreg river. It opened in June of last year, Adresse : Avenue Al Marsa, Rabat, Marruecos\nWould you their phone number or website link ? choose one if you're interested"]
+},
+{ "tag":"Rabat_retaurants_Blue_Berry_PHONE",
+    "patterns":["Phone number of Blue Berry","call Blue Berry","reach Blue Berry"],
+    "responses":["Blue Berry phone number : +2125373-75555 "]
+}
+,
+{ "tag":"Rabat_retaurants_Blue_Berry_LINK",
+    "patterns":["link of Blue Berry","website of Blue Berry"],
+    "responses":["https://www.minube.net/place/blue-berry--a163701"]
+}
+,{"tag": "Rabat_retaurants_Venezia_Ice",
+    "patterns": ["What about Venezia Ice", "i think imma go with Venezia Ice", "Venezia Ice seems like a good choice", "Venezia Ice"],
+    "responses": ["Venezia Ice cream is a Moroccan chain, with handmade products that are good. It can be found on the seafront in Rabat, opposite Sal\u00e9 Navy - Rabat and the river Bou Regreg. It's a lovely place, which is more expensive than regular ice cream in the city, Adresse : Rue Zahla, Rabat, Marrueco\nWould you their phone number or website link ? choose one if you're interested"]
+},
+{ "tag":"Rabat_retaurants_Venezia_Ice_PHONE",
+    "patterns":["Phone number of Venezia Ice","call Venezia Ice","reach Venezia Ice"],
+    "responses":["Venezia Ice(28 Avenue de France) phone number : +2125376-82465"]
+}
+,
+{ "tag":"Rabat_retaurants_Venezia_Ice_LINK",
+    "patterns":["link of Venezia Ice","website of Venezia Ice"],
+    "responses":["https://www.minube.net/place/venezia-ice--a163721"]
+}
+,{"tag": "Rabat_retaurants_Bab_Khebaz_Cafe",
+    "patterns": ["What about Bab Khebaz Cafe", "i think imma go with Bab Khebaz Cafe", "Bab Khebaz Cafe seems like a good choice", "Bab Khebaz Cafe"],
+    "responses": ["It is cheap and alcohol is not served. Peppermint tea kindly comes with a small doll in order for you not to burn your hands when touching the kettle, Adresse : Rabat, Morocco\nWould you their phone number or website link ? choose one if you're interested"]
+    },
+{ "tag":"Rabat_retaurants_Bab_Khebaz_PHONE",
+    "patterns":["Phone number of Bab Khebaz Cafe","call Bab Khebaz Cafe","reach Bab Khebaz Cafe"],
+    "responses":["Bab Khebaz Cafe(Avenue Moulay Hassan ) phone number : +2125377-00169"]
+} ,
+{ "tag":"Rabat_retaurants_Bab_Khebaz_LINK",
+    "patterns":["link of Bab Khebaz Cafe","website of Bab Khebaz Cafe"],
+    "responses":["https://www.minube.net/place/bab-khebaz-cafe--a163731"]
+}
+,{"tag": "Meknes_restaurants",
+    "patterns": ["i would like a restaurant in Meknes", "is there any restaurant in Meknes", "any suggestions on restaurants in Meknes", "Meknes"],
+    "responses": ["aight i see...here are some suggestions choose your favorite : Riad dor, Restaurante Ifoulki, Collier de la Colombe, Restaurante Miams Food, Restaurante Foulki"]
+
+},{"tag": "Meknes_retaurants_Restaurante_Ifoulki",
+    "patterns": ["What about Restaurante Ifoulki", "i think imma go with Restaurante Ifoulki", "Restaurante Ifoulki seems like a good choice", "Restaurante Ifoulki"],
+    "responses": ["Simple, convenient place to enjoy normal meals on the historic Lahdim Meknes, burgers and Type Take away dishes to regain strength. The terrace at street allows you to enjoy the lively somewhat reminiscent to Marrakech. It also protects you from the sun and is very cool ;-) I recommend drinking their delicious orange juice and try the mint tea, Adresse : Place El Hedim, Meknes 5000, Marruecos\nWould you their phone number or website link ? choose one if you're interested"]
+},
+{ "tag":"Meknes_retaurants_Ifoulki_PHONE",
+    "patterns":["Phone number of Ifoulki","call Ifoulki","reach Ifoulki"],
+    "responses":["Ifoulki phone number : +212 644-688461"]
+} ,
+{ "tag":"Meknes_retaurants_Ifoulki_LINK",
+    "patterns":["link of Ifoulki","website of Ifoulki"],
+    "responses":["http://www.i-foulki.com/"]
+},
+{"tag": "Meknes_retaurants_Collier_de_la_Colombe",
+    "patterns": ["What about Collier de la Colombe", "i think imma go with Collier de la Colombe", "Collier de la Colombe seems like a good choice", "Collier de la Colombe"],
+    "responses": ["Restaurant located near the center of Meknes, has a good panoramic view of the city center. The food is quite good, very affordable in price and a very generous abundance, Adresse : Rue Rouamzine\nWould you their phone number or website link ? choose one if you're interested"]
+
+},
+{ "tag":"Meknes_retaurants_Collier_de_la_Colombe_PHONE",
+    "patterns":["Phone number of Collier de la Colombe","call Collier de la Colombe","reach Collier de la Colombe"],
+    "responses":["Collier de la Colombe phone number : +212 5355-55041"]
+} ,
+{ "tag":"Meknes_retaurants_Collier_de_la_Colombe_LINK",
+    "patterns":["link of Collier de la Colombe","website of Collier de la Colombe"],
+    "responses":["https://www.minube.net/place/collier-de-la-colombe-a3289281"]
+},
+{"tag": "Meknes_retaurants_Restaurante_Miams_Food",
+    "patterns": ["What about Restaurante Miams Food", "i think imma go with Restaurante Miams Food", "Restaurante Miams Food seems like a good choice", "Restaurante Miams Food"],
+    "responses": ["Located opposite the wall of Meknes on Rue Dar Smen we find a restaurant known as Miams Food Restaurant. This is a small fastfood restaurant with only 3 tables where we can drink juices, eat pizza or taste the delicious paninis, Adresse : Bab Ayssi, Meknes\nWould you their phone number or website link ? choose one if you're interested"]
+
+},
+{ "tag":"Meknes_retaurants_Restaurante_Miams_Food_PHONE",
+    "patterns":["Phone number of Restaurante Miams Food","call Restaurante Miams Food","reach Restaurante Miams Food"],
+    "responses":["Restaurante Miams Food phone number : +212 5355-57653"]
+} ,
+{ "tag":"Meknes_retaurants_Restaurante_Miams_Food_LINK",
+    "patterns":["link of Restaurante Miams Food","website of Restaurante Miams Food"],
+    "responses":["Not available "]
+},{"tag": "Meknes_retaurants_Restaurante_Foulki",
+    "patterns": ["What about Restaurante Foulki", "i think imma go with Restaurante Foulki", "Restaurante Foulki seems like a good choice", "Restaurante Foulki"],
+    "responses": ["In the west of the place El Hedim, there are several restaurants to eat something or stop for a t. One such restaurant is known as Restaurant Foulki. The prices here are pretty good and for less than 1 euro podris you take a t in the middle of the most lively square of Meknes medina. In addition, this is the most nearest restaurant is the position of music in the square so Estaris continuously Accompanied of music and good atmosphere\n The phone and the website link of this restaurant is not available"]
+
+},
+{ "tag":"Meknes_retaurants_Restaurante_Foulki_PHONE",
+    "patterns":["Phone number of Restaurante Foulki","call Restaurante Foulki","reach Restaurante Foulki"],
+    "responses":["Restaurante Foulki phone number : Not available"]
+} ,
+{ "tag":"Meknes_retaurants_Restaurante_Foulki_LINK",
+    "patterns":["link of Restaurante Foulki","website of Restaurante Foulki"],
+    "responses":["Not available "]
+},{"tag": "Dakhla_restaurants",
+    "patterns": ["i would like a restaurant in Dakhla", "is there any restaurant in Dakhla", "any suggestions on restaurants in Dakhla", "Dakhla"],
+    "responses": ["aight i see...here are some suggestions choose your favorite : Villa Dakhla Restaurant, La Maison Du The Dakhla, Chez N'TIFI, Flamant Rose, Le Restaurant du Palais Rhoul"]
+    
+},{"tag": "Dakhla_retaurants_Villa_Dakhla_Restaurant",
+    "patterns": ["What about Villa Dakhla Restaurant", "i think i'm going to go with Villa Dakhla Restaurant", "Villa Dakhla Restaurant seems like a good choice", "Villa Dakhla Restaurant"],
+    "responses": ["It is not easy to find good restaurants in Dakhla, most people just eat a sandwich in the street. But Villa Dakhla is a great place: the quality of food here is good (I recommend the fish, especially the croaker, and the Caesar salad was scrumptious), Adresse : Avenue Mohamed V, Ad Dakhla, Sahara Occidental\nWould you their phone number or website link ? choose one if you're interested"]
+    
+},
+{ "tag":"Dakhla_retaurants_Villa_Dakhla_Restaurant_PHONE",
+    "patterns":["Phone number of Villa Dakhla Restaurant","call Villa Dakhla Restaurant","reach Villa Dakhla Restaurant"],
+    "responses":["Villa Dakhla Restaurant phone number : 0648-315818"]
+} ,
+{ "tag":"Dakhla_retaurants_Villa_Dakhla_Restaurant_LINK",
+    "patterns":["link of Villa Dakhla Restaurant","website of Villa Dakhla Restaurant"],
+    "responses":["https://www.minube.net/place/villa-dakhla-restaurant--a169651 "]
+},{"tag": "Dakhla_retaurants_La_Maison_Du_The_Dakhla",
+    "patterns": ["What about La Maison Du The Dakhla", "i think imma go with La Maison Du The Dakhla", "La Maison Du The Dakhla seems like a good choice", "La Maison Du The Dakhla"],
+    "responses": ["They say that this is the best restaurant in Dakhla, Adresse : 01/101 Avenue Mohamed V, Ad Dakhla 73000, Sahara O...\nWould you their phone number or website link ? choose one if you're interested"]
+    
+},
+{ "tag":"Dakhla_retaurants_La_Maison_Du_The_Dakhla_PHONE",
+    "patterns":["Phone number of La Maison Du The Dakhla","call La Maison Du The Dakhla","reach La Maison Du The Dakhla"],
+    "responses":["La Maison Du The Dakhla phone number : +212 (0)676192437"]
+} ,
+{ "tag":"Dakhla_retaurants_La_Maison_Du_The_Dakhla_LINK",
+    "patterns":["link of La Maison Du The Dakhla","website of La Maison Du The Dakhla"],
+    "responses":["https://www.minube.net/place/la-maison-du-the-dakhla-a3506038 "]
+}
+,{"tag": "Dakhla_retaurants_Chez_N'TIFI",
+    "patterns": ["What about Chez N'TIFI", "i think imma go with Chez N'TIFI", "Chez N'TIFI seems like a good choice", "Chez N'TIFI"],
+    "responses": ["excellent service, really very beautiful, a pleasant and friendly welcome. A caring team, Adresse : Boulevard Ahmed Ben Chekroun, Dakhla 73000 Maroc\nWould you their phone number or website link ? choose one if you're interested"]
+    
+},
+{ "tag":"Dakhla_retaurants_Chez_N'TIFI_PHONE",
+    "patterns":["Phone number of Chez N'TIFI","call Chez N'TIFI","reach Chez N'TIFI"],
+    "responses":["Chez N'TIFI phone number : +212 635-982370"]
+} ,
+{ "tag":"Dakhla_retaurants_Chez_N'TIFI_LINK",
+    "patterns":["link of Chez N'TIFI","website of Chez N'TIFI"],
+    "responses":["https://chez-ntifi.business.site/ "]
+},{"tag": "Dakhla_retaurants_Flamant_Rose",
+    "patterns": ["What about Flamant Rose", "i think imma go with Flamant Rose", "Flamant Rose seems like a good choice", "Flamant Rose"],
+    "responses": ["Good service and good food A pleasant welcome Speed when you are in turbo mode hhh, Adresse : A31, Avenue Al Walla, Dakhla 73000 Maroc\nWould you their phone number or website link ? choose one if you're interested"]
+    
+},
+{ "tag":"Dakhla_retaurants_Flamant_Rose_PHONE",
+    "patterns":["Phone number of Flamant Rose","call Flamant Rose","reach Flamant Rose"],
+    "responses":["Flamant Rose phone number : +212 5289-35678"]
+} ,
+{ "tag":"Dakhla_retaurants_Flamant_Rose_LINK",
+    "patterns":["link of Flamant Rose","website of Flamant Rose"],
+    "responses":["https://www.facebook.com/flamantrosedakhla/ "]
+},{"tag": "Asilah_restaurants",
+    "patterns": ["i would like a restaurant in Asilah", "is there any restaurant in Asilah", "any suggestions on restaurants in Asilah", "Asilah"],
+    "responses": ["aight i see...here are some suggestions choose your favorite : Chiringo de Miguel, Yali Restaurant, Asilah Restaurant Antonio, Restaurant La Place, Caf\u00e9 Malaga"]
+    
+},{"tag": "Asilah_retaurants_Chiringo_de_Miguel",
+    "patterns": ["What about Chiringo de Miguel", "i think imma go with Chiringo de Miguel", "Chiringo de Miguel seems like a good choice", "Chiringo de Miguel"],
+    "responses": ["It is on one of the calmest and tranquil beaches in Morocco,that is both wild and clean. You can eat rice, salads, chicken, sardines, fish, vegetables and grilled meat, tagine, Cus-cus fruit, etc. All done with love and care, Adresse : Asilah\nWould you their phone number or website link ? choose one if you're interested"]
+    
+},
+{ "tag":"Asilah_retaurants_Chiringo_de_Miguel_PHONE",
+    "patterns":["Phone number of Chiringo de Miguel","call Chiringo de Miguel","reach Chiringo de Miguel"],
+    "responses":["Chiringo de Miguel phone number : +212 667805805"]
+} ,
+{ "tag":"Asilah_retaurants_Chiringo_de_Miguel_LINK",
+    "patterns":["link of Chiringo de Miguel","website of Chiringo de Miguel"],
+    "responses":["www.elbaraka.net"]
+},{"tag": "Asilah_retaurants_Yali_Restaurant",
+    "patterns": ["What about Yali Restaurant", "i think imma go with Yali Restaurant", "Yali Restaurant seems like a good choice", "Yali Restaurant"],
+    "responses": ["The Yali Restaurant is located next to the great walls of Asilah and with its large terrace is a perfect place for outdoor dining in the town for a reasonable price, and which has a wide selection of Moroccan dishes. Its specialties are fish, shellfish, Arabic salad, couscous and chicken tagine, Adresse : Restaurant Yali | town centre, Arcila, Marruecos\nWould you their phone number or website link ? choose one if you're interested"]
+    
+},
+{ "tag":"Asilah_retaurants_Yali_Restaurant_PHONE",
+    "patterns":["Phone number of Yali Restaurant","call Yali Restaurant","reach Yali Restaurant"],
+    "responses":["Yali Restaurant phone number : +212675-655372"]
+} ,
+{ "tag":"Asilah_retaurants_Yali_Restaurant_LINK",
+    "patterns":["link of Yali Restaurant","website of Yali Restaurant"],
+    "responses":["https://www.minube.net/place/yali-restaurant--a3002"]
+}
+,{"tag": "Asilah_retaurants_Asilah_Restaurant_Antonio",
+    "patterns": ["What about Asilah Restaurant Antonio", "i think imma go with Asilah Restaurant Antonio", "Asilah Restaurant Antonio seems like a good choice", "Asilah Restaurant Antonio"],
+    "responses": ["the food was great and the people are great, the prices are good and there are many things to buy. you definetly have to take some pictures as souvenirs, Adresse : Asilah, Morocco\nWould you their phone number or website link ? choose one if you're interested"]
+    
+},
+{ "tag":"Asilah_retaurants_Asilah_Restaurant_Antonio_PHONE",
+    "patterns":["Phone number of Asilah Restaurant Antonio","call Asilah Restaurant Antonio","reach Asilah Restaurant Antonio"],
+    "responses":["Asilah Restaurant Antonio phone number : +2125394-17465"]
+} ,
+{ "tag":"Asilah_retaurants_Asilah_Restaurant_Antonio_LINK",
+    "patterns":["link of Asilah Restaurant Antonio","website of Asilah Restaurant Antonio"],
+    "responses":["https://www.minube.net/place/asilah-restaurant-antonio--a86617"]
+}
+,{"tag": "Asilah_retaurants_Restaurant_La_Place",
+    "patterns": ["What about Restaurant La Place", "i think imma go with Restaurant La Place", "Restaurant La Place seems like a good choice", "Restaurant La Place"],
+    "responses": ["La Place is located ... in the square is at the end of the promenade seafront which is named after a saint Moulay El Hassan Ben Mehdi. It seemed a very decent restaurant compared to other Assilah. A local peculiarity of the city, the service is in addition (10%), Adresse : 7 Avenue Moulay Hassan ben el-Mehdi\nWould you their phone number or website link ? choose one if you're interested"]
+    
+},
+{ "tag":"Asilah_retaurants_Restaurant_La_Place_PHONE",
+    "patterns":["Phone number of Restaurant La Place","call Restaurant La Place","reach Restaurant La Place"],
+    "responses":["Restaurant La Place phone number : +212666-282505"]
+} ,
+{ "tag":"Asilah_retaurants_Restaurant_La_Place_LINK",
+    "patterns":["link of Restaurant La Place","website of Restaurant La Place"],
+    "responses":["https://www.minube.net/place/restaurant-de-la-place-a3291147"]
+},{"tag": "Asilah_retaurants_Cafe_Malaga",
+    "patterns": ["What about Cafe Malaga", "i think imma go with Cafe Malaga", "Cafe Malaga seems like a good choice", "Cafe Malaga"],
+    "responses": ["One of the best places in Asilah to take a smoothie quality and good price is known as Caf Malaga. This cafe is located on the main Avenue Mohamed Hassani and in this place besides sndwich delicious smoothies are served by only 15 dirhams each. These smoothies are made with fresh fruit of the day and squeeze in at the same time, Adresse : Avenue Mohamed El Hassani\nWould you their phone number or website link ? choose one if you're interested"]
+    
+},
+{ "tag":"Asilah_retaurants_Cafe_Malaga_PHONE",
+    "patterns":["Phone number of Cafe Malaga","call Cafe Malaga","reach Cafe Malaga"],
+    "responses":["Cafe Malaga phone number : +212645-691802"]
+} ,
+{ "tag":"Asilah_retaurants_Cafe_Malaga_LINK",
+    "patterns":["link of Cafe Malaga","website of Cafe Malaga"],
+    "responses":["Not Available"]
+},{"tag": "Chefchaouen_restaurants",
+    "patterns": ["i would like a restaurant in Chefchaouen", "is there any restaurant in Chefchaouen", "any suggestions on restaurants in Chefchaouen", "Chefchaouen"],
+    "responses": ["aight i see...here are some suggestions choose your favorite : Chez Aziz, Pizzeria Mandala, Restaurant Morisco, Restaurant Al Moukhtar, Restaurante Aladdin"]
+    
+},{"tag": "Chefchaouen_retaurants_Chez_Aziz",
+    "patterns": ["What about Chez Aziz", "i think imma go with Chez Aziz", "Chez Aziz seems like a good choice", "Chez Aziz"],
+    "responses": ["The pizzeria-bakery Chez Aziz is an option to consider when you want a change from the diet of harira soup, couscous and tajine. Like several places in Chefchaouen, in the centre near the Medina, Chez Aziz looks like a fast food take-away joint, but inside you can enjoy pastries, juices, smoothies, burgers and pizzas, all at reasonable prices, Adresse : Ave Hassan II\nWould you their phone number or website link ? choose one if you're interested"]
+    
+},
+{ "tag":"Chefchaouen_retaurants_Chez_Aziz_PHONE",
+    "patterns":["Phone number of Chez Aziz","call Chez Aziz","reach Chez Aziz"],
+    "responses":["Chez Aziz phone number : +2125399-88894"]
+} ,
+{ "tag":"Chefchaouen_retaurants_Chez_Aziz_LINK",
+    "patterns":["link of Chez Aziz","website of Chez Aziz"],
+    "responses":["https://www.minube.net/place/chez-aziz--a409211"]
+}
+,{"tag": "Chefchaouen_retaurants_Pizzeria_Mandala",
+    "patterns": ["What about Pizzeria Mandala", "i think imma go with Pizzeria Mandala", "Pizzeria Mandala seems like a good choice", "Pizzeria Mandala"],
+    "responses": ["The best in Chefchaouen, Adresse : Avenue Hassan II,Angle Sebanin Chefchaouen, , 9100...\nWould you their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Chefchaouen_retaurants_Pizzeria_Mandala_PHONE",
+    "patterns":["Phone number of Pizzeria Mandala","call Pizzeria Mandala","reach Pizzeria Mandala"],
+    "responses":["Pizzeria Mandala phone number : +212539882808"]
+} ,
+{ "tag":"Chefchaouen_retaurants_Pizzeria_Mandala_LINK",
+    "patterns":["link of Pizzeria Mandala","website of Pizzeria Mandala"],
+    "responses":["http://www.pizzeriamandala.com"]
+}
+,{"tag": "Chefchaouen_retaurants_Restaurant_Morisco",
+    "patterns": ["What about Restaurant Morisco", "i think imma go with Restaurant Morisco", "Restaurant Morisco seems like a good choice", "Restaurant Morisco"],
+    "responses": ["Great, it's in the main square of the Medina and very nice people, Adresse : Avenue Hassan II,Angle Sebanin Chefchaouen, , 9100...\nWould you their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Chefchaouen_retaurants_Restaurant_Morisco_PHONE",
+    "patterns":["Phone number of Restaurant Morisco","call Restaurant Morisco","reach Restaurant Morisco"],
+    "responses":["Restaurant Morisco phone number : +212539882323"]
+} ,
+{ "tag":"Chefchaouen_retaurants_Restaurant_Morisco_LINK",
+    "patterns":["link of Restaurant Morisco","website of Restaurant Morisco"],
+    "responses":["www.rest-morisco.com"]
+}
+
+,{"tag": "Chefchaouen_retaurants_Restaurant_Al_Moukhtar",
+    "patterns": ["What about Restaurant Al Moukhtar", "i think imma go with Restaurant Al Moukhtar", "Restaurant Al Moukhtar seems like a good choice", "Restaurant Al Moukhtar"],
+    "responses": ["If you go through Chefchaouen and you want to taste authentic cuisine at prices defying all competition, this is the place where you should go, Adresse : Avenue Moulay Abderahmane Chrif, Chefchaouen\nWould you their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Chefchaouen_retaurants_Restaurant_Al_Moukhtar_PHONE",
+    "patterns":["Phone number of Restaurant Al Moukhtar","call Restaurant Al Moukhtar","reach Restaurant Al Moukhtar"],
+    "responses":["Restaurant Al Moukhtar phone number : +212661-595491"]
+} ,
+{ "tag":"Chefchaouen_retaurants_Restaurant_Al_Moukhtar_LINK",
+    "patterns":["link of Restaurant Al Moukhtar","website of Restaurant Al Moukhtar"],
+    "responses":["https://www.minube.net/place/restaurant-al-mokhtar-a2152166"]
+}
+,{"tag": "Chefchaouen_retaurants_Restaurante_Aladdin",
+    "patterns": ["What about Restaurante Aladdin", "i think imma go with Restaurante Aladdin", "Restaurante Aladdin seems like a good choice", "Restaurante Aladdin"],
+    "responses": ["Only by overlooking Plaza Uta El-Hamma of Chefchaouen and Al Kasaba and worth the climb, but if it seems little, inside you'll look like ests in the palace of Agrabah, even the bathrooms are like turreted Arab it is sper Cmico. It has a lot of plants and serve as many dishes as ts, Adresse : Plaza Uta El- Hamma\nWould you like their phone number or website link ? choose one if you're interested "]
+    } 
+,
+{ "tag":"Chefchaouen_retaurants_Restaurante_Aladdin_PHONE",
+    "patterns":["Phone number of Restaurante Aladdin","call Restaurante Aladdin","reach Restaurante Aladdin"],
+    "responses":["Restaurante Aladdin phone number : +212 5399-89071"]
+} ,
+{ "tag":"Chefchaouen_retaurants_Restaurante_Aladdin_LINK",
+    "patterns":["link of Restaurante Aladdin","website of Restaurante Aladdin"],
+    "responses":["https://www.minube.net/place/restaurante-aladdin-a3648191"]
+}
+ 
+,{"tag": "Fes_restaurants",
+        "patterns": ["i would like a restaurant in Fes", "is there any restaurant in Fes", "any suggestions on restaurants in Fes", "Fes"],
+        "responses": ["aight i see...here are some suggestions choose your favorite : Mezzanine, Fassia, Fez Lounge, Palais La Medina, Dar Anibra"]
+    }
+,{"tag": "Fes_retaurants_Mezzanine",
+    "patterns": ["What about Mezzanine", "i think imma go with Mezzanine", "Mezzanine seems like a good choice", "Mezzanine"],
+    "responses": ["This is a modern restaurant that has 3 floors. On the bottom floor there is a bar for a drink if you have to wait your turn. In the first there is a beautifully decorated living room and the second a terrace from where you can see the wall of the Medina, Adresse : 17 Kasbat Chams, Fez, Marruecos\nWould you like their phone number or website link ? choose one if you're interested "]
+    }
+,
+{ "tag":"Fes_retaurants_Mezzanine_PHONE",
+    "patterns":["Phone number of Mezzanine","call Mezzanine","reach Mezzanine"],
+    "responses":["Mezzanine phone number : +2125356-38668"]
+} ,
+{ "tag":"Fes_retaurants_Mezzanine_LINK",
+    "patterns":["link of Mezzanine","website of Mezzanine"],
+    "responses":["http://www.restaurantfez.com/"]
+}
+,{"tag": "Fes_retaurants_Fassia",
+    "patterns": ["What about Fassia", "i think imma go with Fassia", "Fassia seems like a good choice", "Fassia"],
+    "responses": ["It is situated in the Medina of Fez (I wouldn\u00b4t have been able to arrive to this restaurant alone). It is one of the best known tourist places in the city, which offer shows and dinner. They serve typical Moroccan food. At the entrance is a courtyard, but when you continue to the restaurant itself, you see that it is decorated in beautiful ceramic columns, Adresse : Sofitel Palais Jamai, Fez, Marruecos\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Fes_retaurants_Fassia_PHONE",
+    "patterns":["Phone number of Fassia","call Fassia","reach Fassia"],
+    "responses":["Fassia phone number : +2125356-37314"]
+} ,
+{ "tag":"Fes_retaurants_Fassia_LINK",
+    "patterns":["link of Fassia","website of Fassia"],
+    "responses":["https://www.minube.net/place/al-fassia-restaurant--a629181"]
+}
+,{"tag": "Fes_retaurants_Fez_Lounge",
+    "patterns": ["What about Fez Lounge", "i think imma go with Fez Lounge", "Fez Lounge seems like a good choice", "Fez Lounge"],
+    "responses": ["This cozy restaurant is decorated with the typical colors of Morocco, the service is good, and there is appropriate music and a full menu. The vegetarian couscous was expertly made, Adresse : 95 Zkak Rouah | Fez Medina, Fez 30000, Marruecos\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Fes_retaurants_Fez_Lounge_PHONE",
+    "patterns":["Phone number of Fez Lounge","call Fez Lounge","reach Fez Lounge"],
+    "responses":["Fez Lounge phone number : +212622-137498"]
+} ,
+{ "tag":"Fes_retaurants_Fez_Lounge_LINK",
+    "patterns":["link of Fez Lounge","website of Fez Lounge"],
+    "responses":["www.fezlounge.com"]
+}
+,{"tag": "Fes_retaurants_Dar_Anibra",
+    "patterns": ["What about Dar Anibra", "i think imma go with Dar Anibra", "Dar Anibra seems like a good choice", "Dar Anibra"],
+    "responses": ["Dar Anibra is situated in the center of the medina, and is a traditional Moroccan restaurant, very nice but a bit pricey for Fez, Adresse : Fes, Morocco\nWould you like their phone number or website link ? choose one if you're interested"]
+    },
+{ "tag":"Fes_retaurants_Dar_Anibra_PHONE",
+    "patterns":["Phone number of Dar Anibra","call Dar Anibra","reach Dar Anibra"],
+    "responses":["Dar Anibra phone number : Not available "]
+} ,
+{ "tag":"Fes_retaurants_Dar_Anibra_LINK",
+    "patterns":["link of Dar Anibra","website of Dar Anibra"],
+    "responses":["https://www.minube.net/goto/ETSlVRShnJWlLD=="]
+}
+,{"tag": "Essaouira_restaurants",
+    "patterns": ["i would like a restaurant in Essaouira", "is there any restaurant in Essaouira", "any suggestions on restaurants in Essaouira", "Essaouira"],
+    "responses": ["aight i see...here are some suggestions choose your favorite : Les Vagues, L'Initiale, Patisserie Chez Driss, Il Mare, Triskala Cafe"]
+    }
+,{"tag": "Essaouira_retaurants_Les_Vagues",
+    "patterns": ["What about Les Vagues", "i think imma go with Les Vagues", "Les Vagues seems like a good choice", "Les Vagues"],
+    "responses": ["Les Vagues means waves and is a restaurant in the village of El Oualidia, south of El Jadida. It is next to the beach and served fried, grilled fish, seafood and shellfish... but the specialty is the oysters, Adresse : Essaouira, Morocco\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Essaouira_retaurants_Les_Vagues_PHONE",
+    "patterns":["Phone number of Les Vagues","call Les Vagues","reach Les Vagues"],
+    "responses":["Les Vagues phone number : +212611-283791"]
+} ,
+{ "tag":"Essaouira_retaurants_Les_Vagues_LINK",
+    "patterns":["link of Les Vagues","website of Les Vagues"],
+    "responses":["https://www.minube.net/place/les-vagues--a90552"]
+}
+,{"tag": "Essaouira_retaurants_Patisserie_Chez_Driss",
+    "patterns": ["What about Patisserie Chez Driss", "i think imma go with Patisserie Chez Driss", "Patisserie Chez Driss seems like a good choice", "Patisserie Chez Driss"],
+    "responses": ["At the end of the street The Hajjali, on the Place Moulay Hassan, the most famous pastry all Essaouira is situated. It took years and years to open, and is simply called Driss, the name of its owner. The pasteries are bought by weight and they serve the horns of Gazala, the Eastern pastries, and the tablet, which is a pastry with meat made of pigeon or fish, more marzipan, a delicacy that is often served at weddings or large events, Adresse : 10 rue El Hajjali, Esauira, Marruecos (Previamente...\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Essaouira_retaurants_Patisserie_Chez_Driss_PHONE",
+    "patterns":["Phone number of Patisserie Chez Driss","call Patisserie Chez Driss","reach Patisserie Chez Driss"],
+    "responses":["Patisserie Chez Driss phone number : +212524 475793"]
+} ,
+{ "tag":"Essaouira_retaurants_Patisserie_Chez_Driss_LINK",
+    "patterns":["link of Patisserie Chez Driss","website of Patisserie Chez Driss"],
+    "responses":["https://www.minube.net/place/pasteleria-driss--a134354"]
+}
+,{"tag": "Essaouira_retaurants_Il_Mare",
+    "patterns": ["What about Il Mare", "i think imma go with Il Mare", "Il Mare seems like a good choice", "Il Mare"],
+    "responses": ["This is a shellfish restaurant that also has grilled fish, an ocean view, a panoramic terrace, and a perfect breeze that keeps the temperature at around 25 degrees. It's an absolute dream. Il Mare also offers a lounge area with music and a DJ on the roof until the early hours of the morning, Adresse : Essaouira, Morocco\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Essaouira_retaurants_Il_Mare_PHONE",
+    "patterns":["Phone number of Il Mare","call Il Mare","reach Il Mare"],
+    "responses":["Il Mare phone number : +2125244-76417"]
+} ,
+{ "tag":"Essaouira_retaurants_Il_Mare_LINK",
+    "patterns":["link of Il Mare","website of Il Mare"],
+    "responses":["https://www.minube.net/place/il-mare--a118602"]
+}
+,{"tag": "Essaouira_retaurants_Triskala_Cafe",
+    "patterns": ["What about Triskala Cafe", "i think imma go with Triskala Cafe", "Triskala Cafe seems like a good choice", "Triskala Cafe"],
+    "responses": ["It was an old hotel for caravans in XII century, which became a cellar and then meeting point of eastern artists. After the earthquake of 1911, it was almost destroyed and lost its beautiful crystalline dome. It was taken apart piece by piece to reconstruct it, and now the Triskala is a charming bar that serves French crepes (black wheat flour) from 2 or 3 euros each, oriental salad with argan oil for 3 euros, and pasta dishes, lasagna or fried rice for four euros, Adresse : Rue Touahen | Medina- tout pres de Sqala, Esauira,...\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Essaouira_retaurants_Triskala_Cafe_PHONE",
+    "patterns":["Phone number of Triskala Cafe","call Triskala Cafe","reach Triskala Cafe"],
+    "responses":["Triskala Cafe phone number : +212 6 55 58 51 31"]
+} ,
+{ "tag":"Essaouira_retaurants_Triskala_Cafe_LINK",
+    "patterns":["link of Triskala Cafe","website of Triskala Cafe"],
+    "responses":["https://www.minube.net/place/triskala--a118665"]
+}
+,{"tag": "Agadir_restaurants",
+    "patterns": ["i would like a restaurant in Agadir", "is there any restaurant in Agadir", "any suggestions on restaurants in Agadir", "Agadir"],
+    "responses": ["aight i see...here are some suggestions choose your favorite : Le Nil Bleu, Tour de Paris, Cafe Jour et Nuit, Jardino, O Gourmet"]
+    }
+,{"tag": "Agadir_retaurants_Le_Nil_Bleu",
+    "patterns": ["What about Le Nil Bleu", "i think imma go with Le Nil Bleu", "Le Nil Bleu seems like a good choice", "Le Nil Bleu"],
+    "responses": ["The Nil Bleu restaurant stands out from the others on Agadir's beach for its strange Egyptian decor. And it serves Egyptian and Moroccan cuisine. Other than that, it was recently renovated, and all rhw seafront restaurants have very similar menus. There are several fish soups and lobster, which are good, then cold and warm shrimp and fish starters, Adresse : Front de Mer, Agadir, Marruecos (Previamente rue d...\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Agadir_retaurants_Le_Nil_Bleu_PHONE",
+    "patterns":["Phone number of Le Nil Bleu","call Le Nil Bleu","reach Le Nil Bleu"],
+    "responses":["Le Nil Bleu phone number : +212 5 28 84 16 17"]
+} ,
+{ "tag":"Agadir_retaurants_Le_Nil_Bleu_LINK",
+    "patterns":["link of Le Nil Bleu","website of Le Nil Bleu"],
+    "responses":["http://www.agadirnilbleu.com"]
+}
+,{"tag": "Agadir_retaurants_Tour_de_Paris",
+    "patterns": ["What about Tour de Paris", "i think imma go with Tour de Paris", "Tour de Paris seems like a good choice", "Tour de Paris"],
+    "responses": ["The Tour de Paris is a restaurant located in the residential center of Agadir, just a 10 minute walk from the beach. The locals come to eat there, because it isn't as touristy as a seafront restaurant. The restaurant is open daily from 8 am until midnight, and even later during the month of Ramadan, Adresse : Agadir, Morocco\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Agadir_retaurants_Tour_de_Paris_PHONE",
+    "patterns":["Phone number of Tour de Paris","call Tour de Paris","reach Tour de Paris"],
+    "responses":["Tour de Paris phone number : Not available"]
+} ,
+{ "tag":"Agadir_retaurants_Tour_de_Paris_LINK",
+    "patterns":["link of Tour de Paris","website of Tour de Paris"],
+    "responses":["https://www.minube.net/place/la-tour-de-paris--a90226"]
+}
+,{"tag": "Agadir_retaurants_Cafe_Jour_et_Nuit",
+    "patterns": ["What about Cafe Jour et Nuit", "i think imma go with Cafe Jour et Nuit", "Cafe Jour et Nuit seems like a good choice", "Cafe Jour et Nuit"],
+    "responses": ["Jour et Nuit is a restaurant on the beach in Agadir, located close to Bijaouane Square. In fact there are two restaurants of the same name, one on either side of the square. The Jour et Nuit has a first floor dining room, offering good sea views, Adresse : Av. Tawada, Agadir, Marruecos (Previamente rue de ...\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Agadir_retaurants_Cafe_Jour_et_Nuit_PHONE",
+    "patterns":["Phone number of Cafe Jour et Nuit","call Cafe Jour et Nuit","reach Cafe Jour et Nuit"],
+    "responses":["Cafe Jour et Nuit phone number : 028/822347"]
+} ,
+{ "tag":"Agadir_retaurants_Cafe_Jour_et_Nuit_LINK",
+    "patterns":["link of Cafe Jour et Nuit","website of Cafe Jour et Nuit"],
+    "responses":["https://www.minube.net/place/jour--nuit-a90234"]
+}
+,{"tag": "Agadir_retaurants_Jardino",
+    "patterns": ["What about Jardino", "i think imma go with Jardino", "Jardino seems like a good choice", "Jardino"],
+    "responses": ["Jardino is an Italian restaurant which is on the Agadir beachfront. It's a nice place where you can appreciate the sunset at the end of the day. They have a large terrace and an indoor room. You can eat a variety of salads, pizzas and pastas, I recommend you try some of the options with fish or seafood as we are by the sea, and the cooking is very good, Adresse : Marina, Agadir, Marruecos\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Agadir_retaurants_Jardino_PHONE",
+    "patterns":["Phone number of Jardino","call Jardino","reach Jardino"],
+    "responses":["Jardino phone number : +212661-281502"]
+} ,
+{ "tag":"Agadir_retaurants_Jardino_LINK",
+    "patterns":["link of Jardino","website of Jardino"],
+    "responses":["https://www.minube.net/place/jardino-a90244"]
+}
+,{"tag": "Agadir_retaurants_O_Gourmet",
+    "patterns": ["What about O Gourmet", "i think imma go with O Gourmet", "O Gourmet seems like a good choice", "O Gourmet"],
+    "responses": ["O gourmet bakery is in the very luxurious marina in Agadir. It's at the end of the beach and easily accessible. Recommended if you're a little sick of Moroccan desserts and want a change, Adresse : Agadir, Morocco\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Agadir_retaurants_O_Gourmet_PHONE",
+    "patterns":["Phone number of O Gourmet","call O Gourmet","reach O Gourmet"],
+    "responses":["O Gourmet phone number : +212 5288-48023"]
+} ,
+{ "tag":"Agadir_retaurants_O_Gourmet_LINK",
+    "patterns":["link of O Gourmet","website of O Gourmet"],
+    "responses":["https://www.minube.net/place/o-gourmet--a90241"]
+}
+,{"tag": "Ouarzazate_restaurants",
+    "patterns": ["i would like a restaurant in Ouarzazate", "is there any restaurant in Ouarzazate", "any suggestions on restaurants in Ouarzazate", "Ouarzazate"],
+    "responses": ["aight i see...here are some suggestions choose your favorite : Restaurante Plazza Food, Restaurante L'oasis D'or en Ourzazate, Restaurante Assiette d\u2019or, Epace Ayman, Restaurant Chez Nabil"]
+    }
+,{"tag": "Ouarzazate_retaurants_Restaurante_Plazza_Food",
+    "patterns": ["What about Restaurante Plazza Food", "i think imma go with Restaurante Plazza Food", "Restaurante Plazza Food seems like a good choice", "Restaurante Plazza Food"],
+    "responses": ["Located in the central square of Ouarzazate, one of the options we have to stop sip tea and a dessert or sweet Moroccan is the Plazza Food Restaurant. Attention is the best in the square even approaching the curious to start a conversation with oneself and teas and desserts waiters are good value, Adresse : Rue Al-Mouahidine\nThe phone number and the website link of this restaurant are not available"]
+    }
+,
+
+{ "tag":"Ouarzazate_retaurants_Restaurante_Plazza_Food_PHONE",
+    "patterns":["Phone number of Restaurante Plazza Food","call Restaurante Plazza Food","reach Restaurante Plazza Food"],
+    "responses":["Restaurante Plazza Food phone number : Not available"]
+} ,
+{ "tag":"Ouarzazate_retaurants_Restaurante_Plazza_Food_LINK",
+    "patterns":["link of Restaurante Plazza Food","website of Restaurante Plazza Food"],
+    "responses":["https://www.minube.net/place/o-gourmet--a90241"]
+}
+,{"tag": "Ouarzazate_retaurants_Restaurante_L'oasis_D'or_en_Ourzazate",
+    "patterns": ["What about Restaurante L'oasis D'or en Ourzazate", "i think imma go with Restaurante L'oasis D'or en Ourzazate", "Restaurante L'oasis D'or en Ourzazate seems like a good choice", "Restaurante L'oasis D'or en Ourzazate"],
+    "responses": ["Amazing Moroccan food in this restaurant in Ouarzazate, close to Kasbah of Ait Ben Haddou. Where all the tours stop to eat, and it shows in the overall cleanliness of the place, the baths, the attention of staff, but in return, is crowded at lunch, Adresse : Uarzazate\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+
+{ "tag":"Ouarzazate_retaurants_Restaurante_L'oasis_D'or_PHONE",
+    "patterns":["Phone number of L'oasis D'or en Ourzazate","call L'oasis D'or en Ourzazate","reach L'oasis D'or en Ourzazate"],
+    "responses":["L'oasis D'or en Ourzazate phone number : +212 5248-86290"]
+} ,
+{ "tag":"Ouarzazate_retaurants_Restaurante_L'oasis_D'or_LINK",
+    "patterns":["link of L'oasis D'or en Ourzazate","website of L'oasis D'or en Ourzazate"],
+    "responses":["https://www.minube.net/place/restaurante-loasis-dor-en-ourzazate-a3645168"]
+}
+,{"tag": "Ouarzazate_retaurants_Restaurante_Assiette d'or",
+    "patterns": ["What about Restaurante Assiette d'or", "i think imma go with Restaurante Assiette d\u2019or", "Restaurante Assiette d'or seems like a good choice", "Restaurante Assiette d'or"],
+    "responses": ["is known as Restaurant Assiette dOr. It is a restaurant offering all meals and cheaply, from classics like pastela Moroccans, tagine and cous cous to new trends in pizzas and salads. Prices are pretty good and has local indoor as well as outdoor terrace to enjoy the nightlife of the most animated square this place, Adresse : Rue Al-Mouahidine\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+
+{ "tag":"Ouarzazate_retaurants_Restaurante_Assiette d'or_PHONE",
+    "patterns":["Phone number of Restaurante Assiette d'or","call Restaurante Assiette d'or","reach Restaurante Assiette d'or"],
+    "responses":["Restaurante Assiette d'or phone number : +212639-219015"]
+} ,
+{ "tag":"Ouarzazate_retaurants_Restaurante_Assiette d'or_LINK",
+    "patterns":["link of Restaurante Assiette d'or","website of Restaurante Assiette d'or"],
+    "responses":["Not available"]
+}
+,{"tag": "Ouarzazate_retaurants_Epace_Ayman",
+    "patterns": ["What about Epace Ayman", "i think imma go with Epace Ayman", "Epace Ayman seems like a good choice", "Epace Ayman"],
+    "responses": ["Located at one end of the main square of Ouarzazate, we find a settlement known as Ayman EPACE. The location of this place and draws our attention to have all kinds of fruits and vegetables a hanging in the entrance of this place, Adresse : Rue Al-Mouahidine\nThe phone number and the website link of this restaurant is not available"]
+    }
+,
+
+{ "tag":"Ouarzazate_retaurants_Epace_Ayman_PHONE",
+    "patterns":["Phone number of Epace Ayman","call Epace Ayman","reach Epace Ayman"],
+    "responses":["Not available"]
+} ,
+{ "tag":"Ouarzazate_retaurants_Epace_Ayman_LINK",
+    "patterns":["link of Epace Ayman","website of Epace Ayman"],
+    "responses":["Not available"]
+}
+,{"tag": "Ouarzazate_retaurants_Restaurant_Chez_Nabil",
+    "patterns": ["What about Restaurant Chez Nabil", "i think imma go with Restaurant Chez Nabil", "Restaurant Chez Nabil seems like a good choice", "Restaurant Chez Nabil"],
+    "responses": ["If you go to Morocco, one of the things tpicas comers certainly be Tajine ah! And then I must say that this place has a delicious tajine, of various flavors, ingredients and very good prices. In addition it is a clean and tidy, Adresse : Avenue Moulay Rachid\nWould you like their phone number or website link ? choose one if you're interested "]
+    }
+,
+{ "tag":"Ouarzazate_retaurants_Restaurant_Chez_Nabil_PHONE",
+    "patterns":["Phone number of Restaurant Chez Nabil","call Restaurant Chez Nabil","reach Restaurant Chez Nabil"],
+    "responses":["Restaurant Chez Nabil phone number : +212 5248-84545"]
+} ,
+{ "tag":"Ouarzazate_retaurants_Restaurant_Chez_Nabil_LINK",
+    "patterns":["link of Restaurant Chez Nabil","website of Restaurant Chez Nabil"],
+    "responses":["https://www.minube.net/place/restaurant-chez-nabil--a3677283"]
+}
+,{"tag": "Ait_Benhaddou_restaurants",
+    "patterns": ["i would like a restaurant in Ait Benhaddou", "is there any restaurant in Ait Benhaddou", "any suggestions on restaurants in Ait Benhaddou", "Ait Benhaddou"],
+    "responses": ["Alright I see ... Here are some suggestions choose your favorite : Restaurante l'Oasis d'Or, Snack Les amis, Restaurante L'oasis D'or en Ourzazate, Epace Ayman, Restaurante Plazza Food"]
+    }
+,{"tag": "Ait_Benhaddou_retaurants_Restaurante_l'Oasis_d'Or",
+    "patterns": ["What about Restaurante l'Oasis d'Or", "i think imma go with Restaurante l'Oasis d'Or", "Restaurante l'Oasis d'Or seems like a good choice", "Restaurante l'Oasis d'Or"],
+    "responses": ["A good option to eat in the beautiful town heritage site. The Oasis d'Or autnticos us into the flavors of Moroccan cuisine unmixed and dressings. Lemon chicken skewers with vegetables and meat dishes like Kalia, Adresse : P1506 \nWould you like their phone number or website link ? choose one if you're interested "]
+    }
+,
+{ "tag":"Ait_Benhaddou_retaurants_Restaurante_l'Oasis_d'Or_PHONE",
+    "patterns":["Phone number of Restaurante l'Oasis d'Or","call Restaurante l'Oasis d'Or","reach Restaurante l'Oasis d'Or"],
+    "responses":["Restaurante l'Oasis d'Or phone number : +2125-248-862-90"]
+} ,
+{ "tag":"Ait_Benhaddou_retaurants_Restaurante_l'Oasis_d'Or_LINK",
+    "patterns":["link of Restaurante l'Oasis d'Or","website of Restaurante l'Oasis d'Or"],
+    "responses":["http://www.loasisdor.com/"]
+}
+,{"tag": "Ait_Benhaddou_retaurants_Snack_Les_amis",
+    "patterns": ["What about Snack Les amis", "i think imma go with Snack Les amis", "Snack Les amis seems like a good choice", "Snack Les amis"],
+    "responses": ["This small bar has a bit of everything but is an ideal place to eat a sandwich freshly made site. At Ben Haddou usually they leave with organized tours that often leave you in the restaurant most tourist area, for which you pay about 10-12 euros for men, Adresse : Ait Benhaddou, Morocco\nWould you like their phone number or website link ? choose one if you're interested "]
+    }
+,
+{ "tag":"Ait_Benhaddou_retaurants_Snack_Les_amis_PHONE",
+    "patterns":["Phone number of Snack Les amis","call Snack Les amis","reach Snack Les amis"],
+    "responses":["Snack Les amis phone number : +212674-907377"]
+} ,
+{ "tag":"Ait_Benhaddou_retaurants_Snack_Les_amis_LINK",
+    "patterns":["link of Snack Les amis","website of Snack Les amis"],
+    "responses":["https://www.minube.net/place/snack-les-amis-a3634394"]
+}
+,{"tag": "Tinghir_restaurants",
+    "patterns": ["i would like a restaurant in Tinghir", "is there any restaurant in Tinghir", "any suggestions on restaurants in Tinghir", "Tinghir"],
+    "responses": ["Alright I see ...Here are some suggestions choose your favorite : Valentine Gorge Todra Restaurant, Restaurante Babylon Dades, Riad des palmiers, Restaurant Kasbah Les Roches, Restaurante Ayour"]
+    }
+,{"tag": "Tinghir_retaurants_Valentine_Gorge_Todra_Restaurant",
+    "patterns": ["What about Valentine Gorge Todra Restaurant", "i think imma go with Valentine Gorge Todra Restaurant", "Valentine Gorge Todra Restaurant seems like a good choice", "Valentine Gorge Todra Restaurant"],
+    "responses": ["Wonderful family stay .. very good deal .. great food ... among the people .. with magnificent views .. both the owner and his bro. are lovely people .. perfect for adventure and relaxation .., Adresse : ait baha gorge todra tineghir\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Tinghir_retaurants_Valentine_Gorge_Todra_Restaurant_PHONE",
+    "patterns":["Phone number of Valentine Gorge Todra Restaurant","call Valentine Gorge Todra Restaurant","reach Valentine Gorge Todra Restaurant"],
+    "responses":["Valentine Gorge Todra Restaurant phone number : 00212524895225"]
+} ,
+{ "tag":"Tinghir_retaurants_Valentine_Gorge_Todra_Restaurant_LINK",
+    "patterns":["link of Valentine Gorge Todra Restaurant","website of Valentine Gorge Todra Restaurant"],
+    "responses":[" www.hotel-valentine.net"]
+}
+
+,{"tag": "Tinghir_retaurants_Restaurante_Babylon_Dades",
+    "patterns": ["What about Restaurante Babylon Dades", "i think imma go with Restaurante Babylon Dades", "Restaurante Babylon Dades seems like a good choice", "Restaurante Babylon Dades"],
+    "responses": ["Before meeting the famous Dades Gorges, the best we can do is stand in one of the restaurants in the area and enjoy a good t Moroccan. Certainly the best restaurant is known as Babylon Dades Restaurant, Adresse : Gorges du Dades\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Tinghir_retaurants_Restaurante_Babylon_Dades_PHONE",
+    "patterns":["Phone number of Restaurante Babylon Dades","call Restaurante Babylon Dades","reach Restaurante Babylon Dades"],
+    "responses":["Restaurante Babylon Dades phone number : +212 5248-31579"]
+} ,
+{ "tag":"Tinghir_retaurants_Restaurante_Babylon_Dades_LINK",
+    "patterns":["link of Restaurante Babylon Dades ","website of Restaurante Babylon Dades"],
+    "responses":["hotelbabylon-dades.com"]
+}
+,{"tag": "Tinghir_retaurants_Restaurant_Kasbah_Les_Roches",
+    "patterns": ["What about Restaurant Kasbah Les Roches", "i think imma go with Restaurant Kasbah Les Roches", "Restaurant Kasbah Les Roches seems like a good choice", "Restaurant Kasbah Les Roches"],
+    "responses": ["Lovely restaurant in full Todra Gorge where Berber cuisine is eaten touches. All very well decorated to make you feel like you're in a desert tent. A very delicate attention, we see that around here are accustomed to tourists. His position is right in the middle bellsima rock high walls of one of the most impressive canyons of southern Morocco, Adresse : R703\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Tinghir_retaurants_Restaurant_Kasbah_Les_Roches_PHONE",
+    "patterns":["Phone number of Restaurant Kasbah Les Roches","call Restaurant Kasbah Les Roches","reach Restaurant Kasbah Les Roches"],
+    "responses":["Restaurant Kasbah Les Roches phone number : +212 661-743617"]
+} ,
+{ "tag":"Tinghir_retaurants_Restaurant_Kasbah_Les_Roches_LINK",
+    "patterns":["link of Restaurant Kasbah Les Roches ","website of Restaurant Kasbah Les Roches"],
+    "responses":["https://www.minube.net/place/restaurant-kasbah-les-roches-a3583282"]
+}
+,{"tag": "Tinghir_retaurants_Restaurante_Ayour",
+    "patterns": ["What about Restaurante Ayour", "i think imma go with Restaurante Ayour", "Restaurante Ayour seems like a good choice", "Restaurante Ayour"],
+    "responses": ["Just 10 minutes walk from the entrance to Todra Gorges, we find a small local restaurant known as Aiyour. For us the best restaurant in the entire area where you can eat the traditional dishes of Moroccan culture and also with the quality of the best products in the area, Adresse : Todrha\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Tinghir_retaurants_Restaurante_Ayour_PHONE",
+    "patterns":["Phone number of Restaurante Ayour","call Restaurante Ayour","reach Restaurante Ayour"],
+    "responses":["Restaurante Ayour phone number : +212 5248-95271"]
+} ,
+{ "tag":"Tinghir_retaurants_Restaurante_Ayour_LINK",
+    "patterns":["link of Restaurante Ayour","website of Restaurante Ayour"],
+    "responses":["https://www.minube.net/place/restaurante-aiyour-a3677863"]
+}
+,{"tag": "Rose Valley_restaurants",
+    "patterns": ["i would like a restaurant in Rose Valley", "is there any restaurant in Rose Valley", "any suggestions on restaurants in Rose Valley", "Rose Valley"],
+    "responses": ["aight i see...here are some suggestions choose your favorite : Cafe Restaurant Cesar, El Bahja, Restaurant Glacier 3 Mars, Snack Special Grillade El Bahja, Station WINXO"]
+    }
+
+,{"tag": "Rose Valley_retaurants_Cafe_Restaurant_Cesar",
+    "patterns": ["What about Cafe Restaurant Cesar", "i think imma go with Cafe Restaurant Cesar", "Cafe Restaurant Cesar seems like a good choice", "Cafe Restaurant Cesar"],
+    "responses": ["The coffee (and cake) is excellent and the guys who served me were always very courteous. I also ate lunch (tajines, salad, paninis) many times - it was always super fresh and so well-priced. It can take a bit of time for the food to be made but I enjoyed sitting in the sun with the wifi and watching the world go by. It's a typical view over an unsealed area over to the mosque, Adresse : Ouarzazate 45000, Morocco, Ouarzazate 45000 Morocco\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Rose Valley_retaurants_Cafe_Restaurant_Cesar_PHONE",
+    "patterns":["Phone number of Cafe Restaurant Cesar","call Cafe Restaurant Cesar","reach Cafe Restaurant Cesar"],
+    "responses":["Cafe Restaurant Cesar phone number : +212 5248-84129"]
+} ,
+{ "tag":"Rose Valley_retaurants_Cafe_Restaurant_Cesar_LINK",
+    "patterns":["link of Cafe Restaurant Cesar","website of Cafe Restaurant Cesar"],
+    "responses":["http://www.facebook.com/cafe.restaurant.cesar/"]
+}   
+,{"tag": "Rose Valley_retaurants_El_Bahja",
+    "patterns": ["What about El Bahja", "i think imma go with El Bahja", "El Bahja seems like a good choice", "El Bahja"],
+    "responses": ["Fine moroccan fast food. Common food, cheap prize, exactly what you expect from street food. No sign of like-original, this is pure Morocco, Adresse : Avenue Moulay Tahar Ben Abdelkarim, Ouarzazate 45000 Morocco\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Rose Valley_retaurants_El_Bahja_PHONE",
+    "patterns":["Phone number of El Bahja","call El Bahja","reach El Bahja"],
+    "responses":["El Bahja phone number : Not available"]
+} ,
+{ "tag":"Rose Valley_retaurants_El_Bahja_LINK",
+    "patterns":["link of El Bahja","website of El Bahja"],
+    "responses":["https://www.tripadvisor.com/ImproveListing-d6632225.html#"]
+}   
+,{"tag": "Rose Valley_retaurants_Restaurant_Glacier_3_Mars",
+    "patterns": ["What about Restaurant Glacier 3 Mars", "i think imma go with Restaurant Glacier 3 Mars", "Restaurant Glacier 3 Mars seems like a good choice", "Restaurant Glacier 3 Mars"],
+    "responses": ["Nice place for a good lunch, had the lasagne. Well made and good flavors. Fast and friendly service, Adresse : 7-8, Place Du 3 Mars, Ouarzazate 45000 Morocco\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Rose Valley_retaurants_Restaurant_Glacier_3_Mars_PHONE",
+    "patterns":["Phone number of Restaurant Glacier 3 Mars","call Restaurant Glacier 3 Mars","reach Restaurant Glacier 3 Mars"],
+    "responses":["Restaurant Glacier 3 Mars phone number : +212 5248-82623"]
+} ,
+{ "tag":"Rose Valley_retaurants_Restaurant_Glacier_3_Mars_LINK",
+    "patterns":["link of Restaurant Glacier 3 Mars","website of Restaurant Glacier 3 Mars"],
+    "responses":["http://restaurant-3mars-ouarzazate.com/"]
+}   
+,{"tag": "Rose Valley_retaurants_Snack_Special_Grillade_El_Bahja",
+    "patterns": ["What about Snack Special Grillade El Bahja", "i think imma go with Snack Special Grillade El Bahja", "Snack Special Grillade El Bahja seems like a good choice", "Snack Special Grillade El Bahja"],
+    "responses": ["The place is good just for fast food If you are looking for a good restaurant its not the right place, Adresse : Avenu Mohamed V Ouarzazate N\u00b06 in front of credit morocco Bank, Ouarzazate 45000 Morocco\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Rose Valley_retaurants_Snack_Special_Grillade_El_Bahja_PHONE",
+    "patterns":["Phone number of Snack Special Grillade El Bahja","call Snack Special Grillade El Bahja","reach Snack Special Grillade El Bahja"],
+    "responses":["Snack Special Grillade El Bahja phone number : +212 699-160178"]
+} ,
+{ "tag":"Rose Valley_retaurants_Snack_Special_Grillade_El_Bahja_LINK",
+    "patterns":["link of Snack Special Grillade El Bahja","website of Snack Special Grillade El Bahja"],
+    "responses":["https://snack-special-grillade-el-bahja.business.site/"]
+}   
+,{"tag": "Rose_Valley_retaurants_Station_WINXO",
+    "patterns": ["What about Station WINXO", "i think imma go with Station WINXO", "Station WINXO seems like a good choice", "Station WINXO"],
+    "responses": ["ideal for a stage on the road, good value for money, Adresse : Tamassint Station service, Ouarzazate 45000 Morocco\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Rose Valley_retaurants_Station_WINXO_PHONE",
+    "patterns":["Phone number of Station WINXO","call Station WINXO","reach Station WINXO"],
+    "responses":["Station WINXO phone number : +212 5248-88282"]
+} ,
+{ "tag":"Rose Valley_retaurants_Station_WINXO_LINK",
+    "patterns":["link of Station WINXO","website of Station WINXO"],
+    "responses":["https://www.tripadvisor.com/Restaurant_Review-g304018-d17474133-Reviews-Station_WINXO-Ouarzazate_Draa_Tafilalet.html"]
+}   
+,{"tag": "Azrou_restaurants",
+    "patterns": ["i would like a restaurant in Azrou", "is there any restaurant in Azrou", "any suggestions on restaurants in Azrou", "Azrou"],
+    "responses": ["aight i see...here are some suggestions choose your favorite : Sanck Errachidi Smail, Restaurant Annour Chez Hassan, Vanilla Pasteleria, Al Akhawayne, Salon del The"]
+    }
+,{"tag": "Azrou_retaurants_Sanck_Errachidi_Smail",
+    "patterns": ["What about Sanck Errachidi Smail", "i think imma go with Sanck Errachidi Smail", "Sanck Errachidi Smail seems like a good choice", "Sanck Errachidi Smail"],
+    "responses": ["The place is boat by boat and what the brochetas do in the street. While you wait for your food you are full of smoke and then the smell does not go away with anything, but it does not matter if the purpose is to eat the magnificent suoerbocadillos and brochetas that are prepared here, Adresse : Azrou, Morocco\nWould you like their phone number or website link ? choose one if you're interested "]
+    }
+,
+{ "tag":"Azrou_retaurants_Sanck_Errachidi_Smail_PHONE",
+    "patterns":["Phone number of Sanck Errachidi Smail","call Sanck Errachidi Smail","reach Sanck Errachidi Smail"],
+    "responses":["Sanck Errachidi Smail phone number : Not available"]
+} ,
+{ "tag":"Azrou_retaurants_Sanck_Errachidi_Smail_LINK",
+    "patterns":["link of Sanck Errachidi Smail","website of Sanck Errachidi Smail"],
+    "responses":["https://www.minube.net/place/sanck-errachidi-smail-a3706503"]
+}
+,{"tag": "Azrou_retaurants_Restaurant_Annour_Chez_Hassan",
+    "patterns": ["What about Restaurant Annour Chez Hassan", "i think imma go with Restaurant Annour Chez Hassan", "Restaurant Annour Chez Hassan seems like a good choice", "Restaurant Annour Chez Hassan"],
+    "responses": ["possibly one of the best we have tasted in the country. Family atmosphere, the team is very sympathetic, they have recommended us very well, the perfect attention and it has been a pleasure to see women behind the bar of this place, Adresse : March\u00e9 Municipal Azrou\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Azrou_retaurants_Restaurant_Annour_Chez_Hassan_PHONE",
+    "patterns":["Phone number of Restaurant Annour Chez Hassan","call Restaurant Annour Chez Hassan","reach Restaurant Annour Chez Hassan"],
+    "responses":["Restaurant Annour Chez Hassan phone number : +212 661-590948"]
+} ,
+{ "tag":"Azrou_retaurants_Restaurant_Annour_Chez_Hassan_LINK",
+    "patterns":["link of Restaurant Annour Chez Hassan","website of Restaurant Annour Chez Hassan"],
+    "responses":["https://www.minube.net/place/restaurant-annour-chez-hassan-a3706501"]
+}
+,{"tag": "Azrou_retaurants_Vanilla_Pasteleria",
+    "patterns": ["What about Vanilla Pasteleria", "i think imma go with Vanilla Pasteleria", "Vanilla Pasteleria seems like a good choice", "Vanilla Pasteleria"],
+    "responses": ["A must of Azrou in which to taste typical cakes, a kind of croissant of colors filled with cream that is taken with a drink similar to yogurt. You can also buy lifetime cupcakes, a kind of Berber pizza and other specialties made in the oven itself, Adresse : Azrou, Morocco\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Azrou_retaurants_Vanilla_Pasteleria_PHONE",
+    "patterns":["Phone number of Vanilla Pasteleria","call Vanilla Pasteleria","reach Vanilla Pasteleria"],
+    "responses":["Vanilla Pasteleria phone number : Not available"]
+} ,
+{ "tag":"Azrou_retaurants_Vanilla_Pasteleria_LINK",
+    "patterns":["link of Vanilla Pasteleria","website of Vanilla Pasteleria"],
+    "responses":["https://www.minube.net/place/vanilla-pasteleria--a3706504"]
+}
+,{"tag": "Azrou_retaurants_Al_Akhawayne",
+    "patterns": ["What about Al Akhawayne", "i think imma go with Al Akhawayne", "Al Akhawayne seems like a good choice", "Al Akhawayne"],
+    "responses": ["Ifrane stretches over a vast area and I have not managed to find a cozy restaurant. I found my pittance in establishments that are located around the central market. Mobn choice was port on the Al Akhawayn whose terrace is alluring. The restaurant is pretty basic against, on the first floor, Adresse : Bd Moulay Abdellah\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Azrou_retaurants_Al_Akhawayne_PHONE",
+    "patterns":["Phone number of Al Akhawayne","call Al Akhawayne","reach Al Akhawayne"],
+    "responses":["Al Akhawayne phone number : +212656-947831"]
+} ,
+{ "tag":"Azrou_retaurants_Al_Akhawayne_LINK",
+    "patterns":["link of Al Akhawayne","website of Al Akhawayne"],
+    "responses":["https://www.minube.net/place/al-akhawayne-a3680592"]
+}
+,{"tag": "Azrou_retaurants_Salon_del_The",
+    "patterns": ["What about Salon del The", "i think imma go with Salon del The", "Salon del The seems like a good choice", "Salon del The"],
+    "responses": ["In the Rue de la Cascade Ifrane we found a small bar-restaurant known as The Salon. This place serves meals and snacks pequeas but definitely the best time of day to prove it is at breakfast. French breakfast with dyke and a good t Moroccan discounts are the best choice of this place, Adresse : Rue de la Cascade\nThe phone number and the website link of this restaurant are not available"]
+    }
+,
+{ "tag":"Azrou_retaurants_Salon_del_The_PHONE",
+    "patterns":["Phone number of Salon del The","call Salon del The","reach Salon del The"],
+    "responses":["Salon del The phone number : Not available"]
+} ,
+{ "tag":"Azrou_retaurants_Salon_del_The_LINK",
+    "patterns":["link of Salon del The","website of Salon del The"],
+    "responses":["Not available"]
+}
+,{"tag": "Ifrane_restaurants",
+    "patterns": ["i would like a restaurant in Ifrane", "is there any restaurant in Ifrane", "any suggestions on restaurants in Ifrane", "Ifrane"],
+    "responses": ["aight i see...here are some suggestions choose your favorite : Forest Restaurant, Salon del The, Al Akhawayne, Vanilla Pasteler\u00eda, Restaurant Annour Chez Hassan"]
+    }
+,{"tag": "Ifrane_retaurants_Forest_Restaurant",
+    "patterns": ["What about Forest Restaurant", "i think imma go with Forest Restaurant", "Forest Restaurant seems like a good choice", "Forest Restaurant"],
+    "responses": ["A favorite by visitors of Ifrane restaurant is known as Forest Restaurant. This place stands out for its alternative to other Moroccan gastronomy, the quality of its food and good prices in comparison to the rest of the city, Adresse : Rue de la Cascade\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Ifrane_retaurants_Forest_Restaurant_PHONE",
+    "patterns":["Phone number of Forest Restaurant","call Forest Restaurant","reach Forest Restaurant"],
+    "responses":["Forest Restaurant phone number :+2125355-66544"]
+} ,
+{ "tag":"Ifrane_retaurants_Forest_Restaurant_LINK",
+    "patterns":["link of Forest Restaurant","website of Forest Restaurant"],
+    "responses":["Not available"]
+}
+
+,{"tag": "Erfoud_restaurants",
+    "patterns": ["i would like a restaurant in Erfoud", "is there any restaurant in Erfoud", "any suggestions on restaurants in Erfoud", "Erfoud"],
+    "responses": ["aight i see...here are some suggestions choose your favorite : Cafe Restaurant Valle de Ziz (Marruecos), Restaurante Pizzeria Des Dunes, Restaurant Osaka Ait Ben Assou, Maison Boutchrafine, Restaurante jordi&naima, merzouga"]
+    }
+,{"tag": "Erfoud_retaurants_Cafe_Restaurant_Valle_de_Ziz_(Marruecos)",
+    "patterns": ["What about Cafe Restaurant Valle de Ziz (Marruecos)", "i think imma go with Cafe Restaurant Valle de Ziz (Marruecos)", "Cafe Restaurant Valle de Ziz (Marruecos) seems like a good choice", "Cafe Restaurant Valle de Ziz (Marruecos)"],
+    "responses": ["The Caf\u00e9 Restaurant Ziz Valley is one of those places where everyone likes to pass the time and reflect on their experiences. Very near Errachidia, in the N13 road we found a large tent on a vast esplanade that leads to a huge cliff where a beautiful valley, Adresse : Valle del Ziz (Marruecos)\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Erfoud_retaurants_Cafe_Restaurant_Valle_de_Ziz_(Marruecos)_PHONE",
+    "patterns":["Phone number of Cafe Restaurant Valle de Ziz (Marruecos)","call Cafe Restaurant Valle de Ziz (Marruecos)","reach Cafe Restaurant Valle de Ziz (Marruecos)"],
+    "responses":["Cafe Restaurant Valle de Ziz (Marruecos) phone number :Not available"]
+} ,
+{ "tag":"Erfoud_retaurants_Cafe_Restaurant_Valle_de_Ziz_(Marruecos)_LINK",
+    "patterns":["link of Cafe Restaurant Valle de Ziz (Marruecos)","website of Cafe Restaurant Valle de Ziz (Marruecos)"],
+    "responses":["https://www.minube.net/place/cafe-restaurant-valle-de-ziz-marruecos--a691021"]
+}
+,{"tag": "Erfoud_retaurants_Restaurant_Osaka_Ait_Ben_Assou",
+    "patterns": ["What about Restaurant Osaka Ait Ben Assou", "i think imma go with Restaurant Osaka Ait Ben Assou", "Restaurant Osaka Ait Ben Assou seems like a good choice", "Restaurant Osaka Ait Ben Assou"],
+    "responses": ["Mint tea, good fresh coffee, totally is house food, Adresse : Lot Ennakhil,N\u00b0 79, Avenue Moulay Ismail\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Erfoud_retaurants_Restaurant_Osaka_Ait_Ben_Assou_PHONE",
+    "patterns":["Phone number of Restaurant Osaka Ait Ben Assou","call Restaurant Osaka Ait Ben Assou","reach Restaurant Osaka Ait Ben Assou"],
+    "responses":["Restaurant Osaka Ait Ben Assou phone number :+212 661-721461"]
+} ,
+{ "tag":"Erfoud_retaurants_Restaurant_Osaka_Ait_Ben_Assou_LINK",
+    "patterns":["link of Restaurant Osaka Ait Ben Assou","website of Restaurant Osaka Ait Ben Assou"],
+    "responses":["https://www.minube.net/place/restaurant-osaka-ait-ben-assou--a3704450"]
+}
+,{"tag": "Erfoud_retaurants_Restaurante_Pizzeria_Des_Dunes",
+    "patterns": ["What about Restaurante Pizzeria Des Dunes", "i think imma go with Restaurante Pizzeria Des Dunes", "Restaurante Pizzeria Des Dunes seems like a good choice", "Restaurante Pizzeria Des Dunes"],
+    "responses": ["Rich made pizzas in the oven and the view. Noted for its Berber specialties. Mine, of course vegan, delightful pizza with Moroccan flavors. I recommend the salads. The restaurant is beautiful and immediately envelops you with its smells and colors, Adresse : Avenue Moulay Ismail\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Erfoud_retaurants_Restaurante_Pizzeria_Des_Dunes_PHONE",
+    "patterns":["Phone number of Restaurante Pizzeria Des Dunes","call Restaurante Pizzeria Des Dunes","reach Restaurante Pizzeria Des Dunes"],
+    "responses":["Restaurante Pizzeria Des Dunes phone number :+212 661-721461"]
+} ,
+{ "tag":"Erfoud_retaurants_Restaurante_Pizzeria_Des_Dunes_LINK",
+    "patterns":["link of Restaurante Pizzeria Des Dunes","website of Restaurante Pizzeria Des Dunes"],
+    "responses":["https://www.minube.net/goto/nUE0pQbiY3q3ql5lMKA0LKIlLJ50MTImMUIhMKZhL29gYj=="]
+}
+,{"tag": "Erfoud_retaurants_Maison_Boutchrafine",
+    "patterns": ["What about Maison Boutchrafine", "i think imma go with Maison Boutchrafine", "Maison Boutchrafine seems like a good choice", "Maison Boutchrafine"],
+    "responses": ["Boutchrafine Maison is located in Mountain Boutchrafine, a few km. Erfoud, known for its famous festival of dates and Merzouga town. From the house you can admire the views of the dunes of Erg Chebbi, Adresse : Merzane-Rissani, Erfoud 52450, Marruecos\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Erfoud_retaurants_Maison_Boutchrafine_PHONE",
+    "patterns":["Phone number of Maison Boutchrafine","call Maison Boutchrafine","reach Maison Boutchrafine"],
+    "responses":["Restaurante Pizzeria Des Dunes phone number :+212 670-182539"]
+} ,
+{ "tag":"Erfoud_retaurants_Maison_Boutchrafine_LINK",
+    "patterns":["link of Maison Boutchrafine","website of Maison Boutchrafine"],
+    "responses":["http://www.maisonboutchrafine.com/"]
+}
+,{"tag": "Erfoud_retaurants_Restaurante_jordi&naima,_merzouga",
+    "patterns": ["What about Restaurante jordi&naima, merzouga", "i think imma go with Restaurante jordi&naima, merzouga", "Restaurante jordi&naima, merzouga seems like a good choice", "Restaurante jordi&naima, merzouga"],
+    "responses": ["-,\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Erfoud_retaurants_Restaurante_jordi&naim,_merzougaa_PHONE",
+    "patterns":["Phone number of Restaurante jordi&naima, merzouga","call Restaurante jordi&naima, merzouga","reach Restaurante jordi&naima, merzouga"],
+    "responses":["Restaurante jordi&naima, merzouga phone number :+212 670-182539"]
+} ,
+{ "tag":"Erfoud_retaurants_Restaurante_jordi&naima,_merzouga_LINK",
+    "patterns":["link of Restaurante jordi&naima, merzouga","website of Restaurante jordi&naima, merzouga"],
+    "responses":["https://www.minube.net/place/restaurante-jordinaima-merzouga--a3644703"]
+}
+,{"tag": "Tetouan_restaurants",
+    "patterns": ["i would like a restaurant in Tetouan", "is there any restaurant in Tetouan", "any suggestions on restaurants in Tetouan", "Tetouan"],
+    "responses": ["Alright I see...here are some suggestions choose your favorite : Al Bahr Resturant, Hela-Go Ice creams, Riad El Reducto, Patisserie Rahmouni, Pastisserie Dallas"]
+    }
+,{"tag": "Tetouan_retaurants_Al_Bahr_Resturant",
+    "patterns": ["What about Al Bahr Resturant", "i think imma go with Al Bahr Resturant", "Al Bahr Resturant seems like a good choice", "Al Bahr Resturant"],
+    "responses": ["This restaurant, whose specialty is fresh fish, served on the ground floor fast food, especially sandwiches, juice and chips and has a large room on the 1st floor, Adresse : 10 Avenue de Suez, El Yadida 24000, Marruecos\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Tetouan_retaurants_Al_Bahr_PHONE",
+    "patterns":["Phone number of Al Bahr Resturant","call Al Bahr Resturant","reach Al Bahr Resturant"],
+    "responses":["Al Bahr Resturant phone number :+212 523395777"]
+} ,
+{ "tag":"Tetouan_retaurants_Al_Bahr_LINK",
+    "patterns":["link of Restaurante jordi&naima, merzouga","website of Restaurante jordi&naima, merzouga"],
+    "responses":["https://www.minube.net/place/al-bahr-resturant-a845751"]
+}
+,{"tag": "Tetouan_retaurants_Hela-Go_Ice_creams",
+    "patterns": ["What about Hela-Go Ice creams", "i think imma go with Hela-Go Ice creams", "Hela-Go Ice creams seems like a good choice", "Hela-Go Ice creams"],
+    "responses": ["In foreign countries there is always some trepidation to taste some sensitive products. Ice is part of them. But in Hela-Go, the question does not arise, Adresse : Rue du 10 mai\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Tetouan_retaurants_Hela-Go_Ice_creams_PHONE",
+    "patterns":["Phone number of Hela-Go Ice creams","call Hela-Go Ice creams","reach Hela-Go Ice creams"],
+    "responses":["Hela-Go Ice creams phone number :Not available"]
+} ,
+{ "tag":"Tetouan_retaurants_Hela-Go_Ice_creams_LINK",
+    "patterns":["link of Hela-Go Ice creams","website of Restaurante jordi&naima, merzougaHela-Go Ice creams"],
+    "responses":["http://tourisme-tetouan.darrehla.com/le-glacier-ela-go-de-tetouan/dar-rehla"]
+}
+,{"tag": "Tetouan_retaurants_Riad_El_Reducto",
+    "patterns": ["What about Riad El Reducto", "i think imma go with Riad El Reducto", "Riad El Reducto seems like a good choice", "Riad El Reducto"],
+    "responses": ["The Redoubt Restaurant is located in a lane of the medina of Tetuan just turning right shortly after entering the main street. Is a restaurant run by a Spanish with certain air of high category that is located inside a riad with the same name, Adresse : (Mechwar) Essaid Zanqat Zawya kadiriya N\u00b0 38\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Tetouan_retaurants_Hela-Go_Ice_creams_PHONE",
+    "patterns":["Phone number of Hela-Go Ice creams","call Hela-Go Ice creams","reach Hela-Go Ice creams"],
+    "responses":["Hela-Go Ice creams phone number :Not available"]
+} ,
+{ "tag":"Tetouan_retaurants_Hela-Go_Ice_creams_LINK",
+    "patterns":["link of Hela-Go Ice creams","website of Restaurante Hela-Go Ice creams"],
+    "responses":["http://tourisme-tetouan.darrehla.com/le-glacier-ela-go-de-tetouan/dar-rehla"]
+}
+,{"tag": "Tetouan_retaurants_Patisserie_Rahmouni",
+    "patterns": ["What about Patisserie Rahmouni", "i think imma go with Patisserie Rahmouni", "Patisserie Rahmouni seems like a good choice", "Patisserie Rahmouni"],
+    "responses": ["Rahmouni is one of the best pastry in Tetun. Sit with a glass of delicious sweet taste ta is a delight to the taste. I tom one comb honey and almonds and a ball as a kind of ice cream of white chocolate coated almonds was spectacular, Adresse : Avenue Youssef Ibn Tachfine\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Tetouan_retaurants_Patisserie_Rahmouni_PHONE",
+    "patterns":["Phone number of Patisserie Rahmouni","call Patisserie Rahmouni","reach Patisserie Rahmouni"],
+    "responses":["Patisserie Rahmouni phone number :+2125397-02975"]
+} ,
+{ "tag":"Tetouan_retaurants_Patisserie_Rahmouni_LINK",
+    "patterns":["link of Patisserie Rahmouni","website of Patisserie Rahmouni"],
+    "responses":["https://www.minube.net/place/patisserie-rahmouni-a3647962"]
+}
+,{"tag": "Tetouan_retaurants_Pastisserie_Dallas",
+    "patterns": ["What about Pastisserie Dallas", "i think imma go with Pastisserie Dallas", "Pastisserie Dallas seems like a good choice", "Pastisserie Dallas"],
+    "responses": ["The Eixample area is the most beautiful and modern area of \u200b\u200bthe city of Tetuan. It is a chic place with Spanish style and a touch francs. And this brings us to touch francs which is the best pastry of Tetuan and not what we say but say the same premises, Adresse : Avenue Mohamed Ben Larbi Torres\nWould you like their phone number or website link ? choose one if you're interested"]
+    }
+,
+{ "tag":"Tetouan_retaurants_Pastisserie_Dallas_PHONE",
+    "patterns":["Phone number ofPastisserie Dallas","call Pastisserie Dallas","reach Pastisserie Dallas"],
+    "responses":["Pastisserie Dallas phone number :+2125399-66069"]
+} ,
+{ "tag":"Tetouan_retaurants_Pastisserie_Dallas_LINK",
+    "patterns":["link of Pastisserie Dallas","website of Pastisserie Dallas"],
+    "responses":["Not available"]
+}
+
+                                                                                                      
+,{ "tag":"link",
+    "patterns":["link ","i want a link ","give me i link ","what about a link","website ","i want a website ","give me i website ","what about a website","website"],
+    "responses":[" can you write  the name of your retaurant with your choose  like :(link of name retaurant )  please ! thank you "] 
+
+                                                                                                   
+},{ "tag":"location",
+    "patterns":["location ","i want a location ","give me i location ","what about a location"],
+    "responses":[" can you write  the name of your retaurant with your choose  like : (location of name retaurant )  please ! thank you "] 
+                                                                                                    
+},{ "tag":"price",
+    "patterns":["price ","i want a price ","give me i price ","what about a price"],
+    "responses":[" can you write  the name of your retaurant with your choose  like : (price of name retaurant )  please ! thank you "] 
+                                                                                                      
+},{ "tag":"Phone number",
+    "patterns":["Phone number ","i want a Phone number ","give me i Phone number ","what about a Phone number","i want a number ","give me i number ","what about a number","number"],
+    "responses":[" can you write  the name of your retaurant with your choose  like : (Phone number of name retaurant )  please ! thank you "] 
+
+    }]}
+

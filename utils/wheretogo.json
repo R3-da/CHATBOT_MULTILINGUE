@@ -1,0 +1,566 @@
+{"intents":[
+    { "tag":"greetings",
+    "patterns":["hey","hello","hi","what's up ?","good day","good morning"],
+    "responses":["Hi , would you like some suggestions about cities ? or you can simply ask about your favourit place ","Hey, can I recommand you some places where you can go ?or you can simply ask about your favourit place"]}
+,{ "tag":"goodbyes",
+    "patterns":["see you ","goodbye","bye","bye bye"],
+    "responses":["alright !!","have  a nice day !!","take care","goodbye !!"]
+},
+{ "tag":"age",
+    "patterns":["how old are you","age","what is your age ?"],
+    "responses":["ow i'm 21 years old","i'm old enough to help you :)","i'm just about your age HAHA"]
+} 
+,{ "tag":"name",
+    "patterns":["what is your name ?","name ?","tell me your name ","how can i call you ?","who are you"],
+    "responses":["I'm your chatbot buddy "]
+},{ "tag":"accept",
+    "patterns":["yes","yes i want some suggestions","i want some suggestions ","i want to know what are the best places in morocco","best places","the best in morocco","the best places in morocco","the best cities in morocco","where to go in morocco","i don't know where to do"],
+    "responses":[" Choose one : North , South , West , Centre of Morocco "]
+},{ "tag":"refuse",
+    "patterns":["no thanks","restaurants","hotels","food","no","  ","what can you do"],
+    "responses":[" Hmmm , all I can do for you is to help you find a place to go or a city to visit or an acivitie to do"]
+},{ "tag":"North",
+    "patterns":["North of Morocco","North","near Tangier","near fes","near meknes","near asilah  ","near chefchaouen","near ouarzazate","near Rose Valley"],
+    "responses":["Okay , let me show you a list of places : Tangier \nFes\nMeknes\nAsilah\nChefchaouen\nOuarzazate\nRose Valley"]
+},{ "tag":"Central",
+    "patterns":["Central Morocco","centre of Morocco","near High Atlas","near Tinghir","near Dades Valley"],
+    "responses":["Okay , let me show you a list of places : High Atlas \nTinghir\nDades Valley"]
+},{ "tag":"West",
+    "patterns":["West of Morocco","West","near Casablanca","near Rabat","near Oudaias Kasbah","near Essaouira","near Marrakech"],
+    "responses":["Okay , let me show you a list of places : Casablanca \nRabat\nOudaias Kasbah\nEssaouira\nMarrakech"]
+},{ "tag":"South",
+    "patterns":["south of Morocco","South","near Aït Ben Haddou","near Agadir","near Saharah"],
+    "responses":["Okay , let me show you a list of places : Aït Ben Haddou \nAgadir\nSaharah"]
+},{ "tag":"best month",
+    "patterns":["What is the best month to travel to Morocco","best time to travel to Morocco"],
+    "responses":[" Although the weather in Morocco is amazing throughout the year but if you want to save some money then the best time to visit Morocco is during the shoulder season - April to May or September to November."]
+},{ "tag":"Hijab",
+    "patterns":["Should I wear a hijab in Morocco","Hijab","scarf"],
+    "responses":[" No, it is not necessary to wear a hijab in Morocco and this is valid for both Muslims and non-Muslim women. Wearing a hijab totally depends on your comfortability."]
+},{ "tag":"Alcohol",
+    "patterns":["Can you drink alcohol in Morocco?","alcohol","beer"],
+    "responses":[" Despite being a Muslim country, Morocco is not a dry place and liquor is easily available in bars, stores, hotels, clubs, and discos. However, drinking in public places is prohibited so you might want to avoid that."]
+},{ "tag":"description of ninth century medina",
+    "patterns":["what is the ninth century medina "],
+    "responses":["it's the description of Meknes "]
+} ,{ "tag":"description of meknes",
+    "patterns":["describe meknes to me ","what is meknes"],
+    "responses":["Meknes is one of the four Imperial cities of Morocco, located in northern central Morocco and the sixth largest city by population in the kingdom. Founded in the 11th century by the Almoravids as a military settlement, Meknes became the capital of Morocco under the reign of Sultan Moulay Ismaïl (1672–1727), son of the founder of the Alaouite dynasty. Moulay Ismaïl created a massive imperial palace complex and endowed the city with extensive fortifications and monumental gates. The city recorded a population of 632,079 in the 2014 Moroccan census.It is the seat of Meknès Prefecture and an important economic pole in the region of Fès-Meknès."]
+} ,{ "tag":"places in meknes",
+    "patterns":["what can i visit in meknes  ","what are the best places in meknes ","what to see in meknes "],
+    "responses":["You can go to  the major historical sites like Mausoleum of Moulay Ismail, Bab Mansour, Dar Jamai Museum,Roman ruins of Volubilis, etc. "]
+},{ "tag":"how to reach meknes",
+    "patterns":["how can i go to meknes","what should i take to get to meknes ? ","how to reach meknes"],
+    "responses":["Board a local train or hire a taxi to reach Meknes comfortably"]
+
+},{ "tag":"activities in meknes",
+    "patterns":["what are the best activities to do in meknes ","to do in meknes","activities in meknes","things to do in meknes"],
+    "responses":["You can :\n Take a day trip to the hilltop pilgrimage town of Moulay Idriss\nVisit the Dar Jamai Museum to learn about Morocco’s architecture\nCapture pictures of the magnificent Bab Mansour Gate"]
+},{ "tag":"Bab el mansour",
+    "patterns":["what is Bab El Mansour","Bab el mansour ?"],
+    "responses":["Bab Mansur al-'Alj or Bab Mansour is a monumental gate in the city of Meknes, Morocco. Located on the south side of Place el-Hedim in the old city, it was originally the main ceremonial entrance to the Kasbah of Sultan Moulay Isma'il, built in the late 17th and early 18th centuries"]
+},{ "tag":"Dar Jamai Museum",
+    "patterns":["what is Dar Jamai Museum ","Dar Jamai Museum"],
+    "responses":["The Dar Jamai Museum is a museum in Meknes, Morocco. It displays a number of artifacts and art objects from the city and other regions in Morocco. It is housed in a late 19th-century palace built by the Jama'i family who also built the Jamai Palace in Fes."]
+}, { "tag":"Mausoleum of Moulay Ismail",
+    "patterns":["what is Mausoleum of Moulay Ismail ","Mausoleum of Moulay Ismail"],
+    "responses":["The Mausoleum of Moulay Isma'il is a historic Islamic funerary complex in Meknes, Morocco. It contains the tomb of Sultan Moulay Isma'il, who ruled Morocco from 1672 until his death in 1727, and is located inside his former Kasbah. It is a major historic and religious site in the city."]
+} ,{ "tag":"Asilah",
+    "patterns":["what is Asilah ","Description of Asilah"],
+    "responses":["Asilah is a town on Morocco’s Atlantic coast, south of Tangier. Its old town, or medina, is enclosed by well-preserved 15th-century ramparts and gates, built by colonial Portuguese. The medina is an art hub, known for its murals and Moussem Culturel International d’Asilah, an annual festival. Venues include the exhibition space Centre de Hassan II Rencontres Internationales and early-20th-century Palais Raissouni."]
+},{ "tag":"how to reach asilah",
+    "patterns":["how to reach asilah"],
+    "responses":["Asilah is located on the rail line linking Tangier to Rabat, Casablanca, Marrakech, Meknes, and Fez. Board train from any of the mentioned places to reach here. "]
+},{ "tag":" why visiting asilah",
+    "patterns":["why visiting asilah","why should i visit asilah for ?"],
+    "responses":["Enjoying some respite from the heat "]
+
+},{ "tag":"places in asilah",
+    "patterns":["monuments in asilah"],
+    "responses":["List of monuments in Asilah:\n Medina of Asilah . you can ask for more informations about those monuments"]
+
+},{ "tag":"beaches asilah",
+    "patterns":["beaches in asilah","places to swim in asilah ","cleanest beaches "],
+    "responses":["One of the best beaches is Asilah's  Sidi M’Rait. In the summer months, there are a few pop-up Chiringuitos on the beach offering parasols and chairs and serving food and drinks. Pack a basket and make a day of it."]
+
+},{ "tag":"festivals in asilah",
+    "patterns":["festival in asilah","festival in morocco","festival"],
+    "responses":["A major attraction is the annual Asilah Arts Festival that takes place every summer – this showcases both visual and performing arts , it is a high point in the town calendar."]
+
+},{ "tag":" Medina of Asilah",
+    "patterns":["what is Medina of Asilah","Medina of Asilah","describe Medina of Asilah","how does Medina of Asilah look "],
+    "responses":["The old walled town (medina) of Asilah is well-preserved and dates mostly from the Portuguese occupation (15th-16th century) and afterwards. The medina has been heavily restored and its buildings are typically painted white, with occasionally blue or green, in addition to which can be found many of the murals created during the International Cultural Festival.Though the Portuguese rebuilt its outline of walls, it has the typical maze-like layout and alleys of an old Moroccan city "]
+
+},{ "tag":" festivals in Asilah",
+    "patterns":["festivals in Asilah","celebrations in Asilah"],
+    "responses":["Asilah hosts annual music and arts festivals, including a mural-painting festival. Thursday is market day. The International Cultural Festival, held in August, features jazz and Moroccan music as well as art exhibitions. The festival is also the occasion for mural painting in which the medina's houses are painted with new murals every year"]
+
+},{ "tag":" best location in assilah",
+    "patterns":["what is the best location in assilah","best place in assilah","places in assilah"],
+    "responses":["i advice you to visit Paradise Beach "]
+
+},{ "tag":" things to do in assilah",
+    "patterns":["what are the best things to do in assilah","things to do in assilah"],
+    "responses":["Best things to do in assilah are :\n Shop in the little souk\nHead to Restaurant Oceano Casa Pepe for a fancy lunch\nVisit Aplanos, the famous art gallery"]
+},{ "tag":"High Atlas",
+    "patterns":["what is High Atlas","best mountain"],
+    "responses":["High Atlas, also called the Grand Atlas, is a mountain range in central Morocco, North Africa, the highest part of the Atlas Mountains. The High Atlas rises in the west at the Atlantic Ocean and stretches in an eastern direction to the Moroccan-Algerian border. "]
+
+},{ "tag":"how to reach high atlas",
+    "patterns":["how to reach high atlas","how can i get to high atlas"],
+    "responses":[" Take a bus or taxi to reach here "]
+
+},{ "tag":"things to do in high atlas",
+    "patterns":["things to do in high atlas","what can i do in high atlas"],
+    "responses":[" things to do in high atlas : \nGo for a hiking trail in the Toubkal National Park\nExplore the souvenir shops and restaurants in Imlil\nEnjoy spectacular views from the Tizi n’Test Pass "]
+
+},{ "tag":"essaouira",
+    "patterns":["what is essaouira","saouira","swira","swera","assaouira"],
+    "responses":["Essaouira is a port city and resort on Morocco’s Atlantic coast. Its medina (old town) is protected by 18th-century seafront ramparts called the Skala de la Kasbah, which were designed by European engineers. Old brass cannons line the walls, and there are ocean views. Strong Alizée trade winds make the city’s crescent beach popular for surfing, windsurfing and kitesurfing. "]
+
+} ,{ "tag":"how to reach essaouira",
+    "patterns":["how to reach essaouira","how can i get to essaouira"],
+    "responses":["You can reach Essaouira by bus since there is no train station"]
+
+}  ,{ "tag":"monuments in essaouira",
+    "patterns":["monument essaouira","historical places in essaouira"],
+    "responses":["List of monuments in Essaouira :\n Medina of Essaouira (formerly Mogador) \nThe port \nThe ramparts "]
+
+}  ,{ "tag":"beaches in essaouira",
+    "patterns":["beaches in essaouira","summer time in essaouira"],
+    "responses":[" When it comes to beaches in Essaouira , the wind blows nearly all the time year-round so cool winds are always in the cards. The water however is quite shallow so it’s a good spot to take children as they can swim and play without the fear of large drop-offs."]
+
+}  ,{ "tag":"surfing in essaouira's beaches",
+    "patterns":["surfing in  essaouira","surfing in essaouira's beaches","equipement of surfing in essaouira","lessons of surfing in essaouira"],
+    "responses":["Want to try wind surfing in Essaouira ? It’s one of the activities Essaouira is best known for. If you already know how to windsurf you can simply rent equipment. If you need lessons those are available too. Pre-book to make sure you’re ready as soon as you arrive!  "]
+
+}   ,{ "tag":"The port of essaouira",
+    "patterns":["The port of essaouira","The port"],
+    "responses":["Perhaps the biggest tourist attraction in Essaouira is the port. Everyday small and medium scale fishermen bring in their catch around 10am. You can visit at anytime of day and find what’s fresh on display. Purchase directly from the sellers and have it grilled for you nearby. A great lunch and fun activity!"]
+
+}  ,{ "tag":"The ramparts of essaouira",
+    "patterns":["The ramparts of essaouira","what is The ramparts of essaouira","The ramparts "],
+    "responses":["The ramparts  lines Essaouira and the skala which was built to protect the city. On the lower level you’ll find shops that were once used for military fortifications. Some parts are under renovation but it’s still possible to wander in different areas. This is also where the scenes from Game of Thrones were filmed. "]
+
+},{ "tag":"Medina of Essaouira",
+    "patterns":["what is Medina of Essaouira","what is so special about Medina of Essaouira"],
+    "responses":["The Medina of Essaouira, formerly named Mogador (name originating from the Phoenician word Migdol meaning a « small fortress »), is an outstanding example of a fortified town of the mid-eighteenth century, surrounded by a wall influenced by the Vauban model. "]
+
+}  ,{ "tag":"why  essaouira",
+    "patterns":["why essaouira","why visiting essaouira"],
+    "responses":["Your Love For Game Of Thrones And Beaches","visiting Essaouira Citadel is one of the marvelous things there"]
+
+}  ,{ "tag":"Quad Biking in essaouira",
+    "patterns":["Quad Biking in essaouira"," Biking in essaouira"],
+    "responses":["Prefer to go faster? Quad bike rentals and tours are also an option. There are routes on the beach and also through the forests that surround Essaouira. You can rent a quad directly on the beach or book ahead if you don’t want to deal with the haggling and different pricing you might find in person. "]
+
+}   ,{ "tag":"Horseback riding in  essaouira",
+    "patterns":["horseback riding in essaouira","horseback riding"],
+    "responses":["Whether you want to take a horseback ride on the beach or a longer adventure to neighboring villages there are a lot of options that begin in Essaouira. Of course if you dream of riding a camel on the beach that’s possible too. "]
+
+}  ,{ "tag":"things to do in essaouira",
+    "patterns":["things to do in essaouira","what can i do essaouira"],
+    "responses":["Things to do in essaouira : \nStroll through the medina or wander along the wall to take in gorgeous views of the Atlantic ocean\nExplore the ramparts\nGo for horseback riding,Quad Biking, or windsurfing and kitesurfing\nIf possible, attend the Gnaoua World Music Festival "]
+
+}  ,{ "tag":"how to reach essaouira",
+    "patterns":["how to reach essaouira","how can i get to essaouira"],
+    "responses":["You can reach Essaouira by bus since there is no train station"]
+
+}  ,{ "tag":" essaouira being a good place for kids",
+    "patterns":["is essaouira a good destination for kids","good destination for kids"],
+    "responses":["This city has always been one of our kids favorite places. While there may not be a lot of activities to sign them up for there is plenty to do and it’s also a great place to visit when you just want to sit back and relax."]
+
+}  ,{ "tag":"festivals in essaouira,Gnaoua Festival of Essaouira",
+    "patterns":["festivals in essaouira","Gnaoua Festival of Essaouira","Gnaoua Festival"],
+    "responses":["The largest festival that happens in Essaouira is the Gnaoua Festival held yearly in June. This is an action packed weekend full of music and entertainment. If you want to attend plan early because riads fill up and the city is full! It is a great opportunity to experience West African music and culture. "]
+
+} ,{ "tag":"Chefchaouen",
+    "patterns":["what is Chefchaouen","Chefchaouen","Chaouen"],
+    "responses":["Chefchaouen, or Chaouen, is a city in the Rif Mountains of northwest Morocco. It’s known for the striking, blue-washed buildings of its old town. Leather and weaving workshops line its steep cobbled lanes. In the shady main square of Place Outa el Hammam is the red-walled Kasbah, a 15th-century fortress and dungeon, and Chefchouen Ethnographic Museum. The octagonal minaret of the Great Mosque rises nearby."]
+
+} ,{ "tag":"how to reach Chefchaouen",
+    "patterns":["how to reach Chefchaoen","how can i get to Chefchaouen"],
+    "responses":["To reach here take a flight from Marrakech to either Tangier, Tetouan, Fes, or if you must, Casablanca. From airport take a taxi to the CTM bus station "]
+
+},{ "tag":"why visiting chefchaouen",
+    "patterns":["why visiting chefchaouen","what should i visit chefchaouen for "],
+    "responses":[" Visit the beautiful Chefchaouen for shopping handicrafts and best Morocco souvenirs, you got Kasbah to visit too "]
+
+},{ "tag":"things to do in chefchaouen",
+    "patterns":["what can i do in chefchaouen","things to do in  chefchaouen  "],
+    "responses":[" Things to do in Chefchaouen : \nGo for hiking and wild swimming in the surrounding countryside\nEnjoy a drink amidst the architecture of the Outa el Hammam square\nSoak in the fascinating waterfalls of Ras El Maa\nVisit Kasbah Museum\nWalk Past the Grand Mosque of Chefchaouen\nVisit The Souk of Chefchaouen\nHike to the Cascades d’Akchour right outside of chefchaouen\nWatch the Sunset at the Spanish Mosque"]
+
+},{ "tag":"Kasbah Museum chefchaouen",
+    "patterns":["Kasbah Museum of chefchaouen","Kasbah Museum "],
+    "responses":["Situated in the oasis of the Andalusian Gardens, in the center of the medina, is the Ethnographic Museum. An array of artifacts will take you through a visual journey of the history, customs, and art of Chefchaouen, Morocco.","The 15th-century museum used to be a prison and now houses the art and relics of Chefchaouen. While the museum is small and doesn’t cater too well for English visitors, the highlight is climbing up the fort towers for panoramic views. From here you can drink in the stunning vistas of the city, which is a sea of blue against the surrounding countryside."]
+
+},{ "tag":"Walk Past the Grand Mosque of chefchaouen",
+    "patterns":["the Grand Mosque of chefchaouen","the Grand Mosque "," Mosque in Chefchaouen","what's so special about the Grand Mosque"],
+    "responses":[" You’ll hear the haunting echoes of the call to prayer sounding out through the city five times a day from the Grand Mosque. The mosque is an important part of Chefchauoen life and culture and is a beautiful place to visit in the blue city of Morocco."]
+
+},{ "tag":"The Souk of chefchaouen",
+    "patterns":["the souk of chefchaouen","what is the souk of chefchaouen ","what's so special about the souk of chefchaouen"],
+    "responses":[" The Chefchauoen souk — Arabic for ‘market’ — runs on Mondays and Thursdays in the old medina. If you happen to be in the blue village in Morocco on one of these weekdays, perusing through the vibrant market is a fantastic experience. "]
+
+},{ "tag":"Hike to the Cascades d’Akchour",
+    "patterns":["Hike to the Cascades d’Akchour","Akchour"," the Cascades d’Akchour","Hiking in Akchour"],
+    "responses":[" Just outside of the blue city of Morocco lies a wonderland of natural scenery in the Rif Mountains. Hop into a taxi and in 45 minutes, you’ll find yourself in Akchour village. Here is where you’ll start the beautiful hike to the mesmerizing Akchour waterfalls."]
+
+},{ "tag":"Watch the Sunset at the Spanish Mosque in  chefchaouen",
+    "patterns":["the Sunset at the Spanish Mosque in chefchaouen","Spanish Mosque in chefchaouen ","Spanish Mosque"],
+    "responses":[" One of the best Chefchaouen, Morocco, things to do is to walk up the Spanish Mosque for breathtaking views over the city. While the views are stunning regardless of the time of day, it makes for a particularly amazing sunset spot. As you watch the sun dip below the horizon, ‘the blue pearl’ city is bathed in golden hues, and it’s an image you’ll never forget."]
+
+},{ "tag":"Sahara Desert",
+    "patterns":["why visiting Sahara Desert","Sahara Desert","describe saharah desert for me "],
+    "responses":[" The desert is absolutely a must visit when you’re in Morocco. From watching the gorgeous sunset over the dunes to gazing at the sky full of bright stars, every experience in the desert is captivating and unforgettable. Make sure that out of all the best places to visit in Morocco, you do keep a few days for a trip to the Sahara Desert, one of the finest places to travel in Morocco!"]
+
+},{ "tag":"how to reach sahara desert",
+    "patterns":["how to reach sahara desert"],
+    "responses":["  The most popular way to get to sahara desert is from Marrakech to Merzouga by public transport. Hire a cab or taxi or board a bus to reach here"]
+
+},{ "tag":"why visiting desert saharah",
+    "patterns":["why visiting desert saharah","what does attract tourists in desert saharah "],
+    "responses":[" Incredible views and sleeping under a canopy of stars in Merzouga"]
+
+},{ "tag":"Merzouga in desert saharah",
+    "patterns":["Merzouga  desert saharah","Merzouga","what's special about Merzouga"],
+    "responses":["Merzouga tours are the most popular Sahara tours, with Merzouga being located close to the popular Erg Chebbi sand dunes.  The dunes at Erg Chebbi are taller and richer in color then the dunes found near Zagora making them a much more sought after destination."]
+
+},{ "tag":"things to do in desert saharah",
+    "patterns":["why can i do desert saharah","things to do in desert saharah ","desert saharah boring"],
+    "responses":[" Things to do in desert saharah :\nTry desert safaris or camel caravans\nSavour the picturesque views of the Draa Valley, which stretches from the city of Ouarzazate into the desert.\nInteract with the natives\nGo for a camel safari group trek"]
+
+},{ "tag":"rabat",
+    "patterns":["what is rabat","rabat"],
+    "responses":["Situated on the coast, Rabat is the country’s capital and one of the top Morocco tourist attractions. The year-round good weather and the tranquil Morocco beaches are only a couple of reasons behind its popularity. Its exquisite experiences make it one of the best places in Morocco!"]
+
+},{ "tag":"how to reach rabat",
+    "patterns":["how can i reach rabat","how can i get to rabat ","way to rabat"],
+    "responses":[" to get to rabat you can board a train to Rabat Ville Train Station and hire a taxi to reach here"]
+
+},{ "tag":"why visiting rabat",
+    "patterns":["why visiting rabat","what does attract tourists in rabat "],
+    "responses":[" You can visit beaches, palaces, and museums , and most importantly  Kasbah of the Udayas"]
+
+},{ "tag":"things to do in rabat",
+    "patterns":["what can i do in rabat","things to do  in rabat ","activities in rabat"],
+    "responses":[" there is plenty of things to do in Rabat like : \nTake a tour of the Hassan Tower\nVisit Chellah and escape the crowd\nVisit the exotic gardens At Bouknadel\n Go to CinéAtlasif if you're interested in watching movies\nVisit the Bee Museum (Musée de l’Abeille Vivante)\nGo to forest Maamora\nBuy anything from souvenirs to fresh produce from the medina\n Visit te Rabat Zoo"]
+
+},{ "tag":"the exotic gardens At Bouknadel",
+    "patterns":["what is the exotic gardens At Bouknadel","the exotic gardens At Bouknadel","location of the exotic gardens At Bouknadel","the exotic gardens At Bouknadel in rabat"],
+    "responses":[" These quiet, beautiful gardens are on the road between Sale and Kenitra. The gardens were once the home of a wealthy French family and they are well-maintained and reasonably priced to go inside."]
+
+},{ "tag":"CinéAtlasif",
+    "patterns":["CinéAtlasif","is there any cinemas in rabat ","where can i watch english movies in rabat","location of CinéAtlasif"],
+    "responses":["For movies in English, check out the newly renovated Ciné Atlas in Hassen. This movie theatre shows regular movies in English; just look out for ‘VO’ under the movie description. It means ‘version original’ and the movie will be in English if it’s an American film."]
+
+},{ "tag":"Forest Maamora in rabat",
+    "patterns":["Forest Maamora in rabat","Forest Maamora","forests in rabat ","nature in rabat"],
+    "responses":["Forest Maamora is a wonderful area for children to run free. Just on the A1 autoroute northeast of Rabat and on the road to Khenitra"]
+
+},{ "tag":"Bee Museum (Musée de l’Abeille Vivante) in rabat",
+    "patterns":["Bee Museum (Musée de l’Abeille Vivante)","Bee Museum","Musée de l’Abeille Vivante","location of the Bee Museum","location of Musée de l’Abeille Vivante"],
+    "responses":[" Tucked quietly behind the Oulja Sale Potteries, you will find this spirited little gem of a museum. A fun spot for kids and adults alike, immerse yourself in the charming and fascinating world of bees."]
+
+},{ "tag":"The Rabat Zoo",
+    "patterns":["rabat zoo","zoo in rabat  "],
+    "responses":[" The Rabat Zoo is the quintessential hotspot for kids in the capital. A lovely, quiet, clean attraction for the entire family, the zoo is also perfectly shaded with a vast array of trees and bushes for the warmer months."]
+
+},{ "tag":"casablanca",
+    "patterns":["is casablanca good to visit","casablanca"],
+    "responses":["While Casablanca might not be as atmospheric as the other cities, it is undoubtedly one of the best places to visit in Morocco, and the ideal representation of modernity. The city’s stunning moresque buildings, which meld the French-colonial design with the traditional Moroccan style, is the best thing to admire here. Owing to its awesome food and architecture, it is definitely among the best places to travel in Morocco"]
+
+},{ "tag":"how to reach casablanca",
+    "patterns":["how to reach casablanca","how can i get to casablanca "],
+    "responses":[" Trains are the most comfortable mode to reach here. The stations here are easy to navigate, and boards display the time of departure/arrival"]
+
+},{ "tag":"why visiting casablanca",
+    "patterns":["why visiting casablanca","what does attract tourists in casablanca "],
+    "responses":[" You can visit Hassan II Mosque ,there is also dazzling dining and nightlife scenes"]
+
+},{ "tag":"things to do in casablanca",
+    "patterns":["what to do in casablanca","activities in casablanca "],
+    "responses":["here are some things to do:\nGet around the city in a Casa Tramway\nEnjoy scenic views of the city from the Casablanca Twin Center\nVisit the King’s Palace and witness the Islamic architectural masterpiece\nVisit Habous\nVisit Hassan II Mosque\nGo to the Museum of Moroccan Judaism\nGo to Villa des Arts"]
+
+},{ "tag":"Habous in casablanca",
+    "patterns":["Habous in casablanca ","what is Habous","medina in casablanca"],
+    "responses":[" The new medina of Casablanca. It is a charming maze of souks full of artisanal products, textiles, and cafes. It’s fun to shop here and there are some good photo opportunities as well."]
+
+},{ "tag":"Hassan II Mosque casablanca",
+    "patterns":["Hassan II Mosque","Hassan II Mosque in casablanca ","Mosques in casablanca","prayer in casablanca"],
+    "responses":[" The Hassan II Mosque has a retractable ceiling and a glass floor so that the ocean is visible through the floor of the prayer room. It is possible for non Muslims to enter this Mosque with a guided tour. According to the mosque’s website, the tours are available from 9am-4pm 7 days a week. It’s best to contact the mosque to be sure of the exact tour times. "]
+
+},{ "tag":"Museum of Moroccan Judaism in casablanca",
+    "patterns":["why visiting casablanca","what does attract tourists in casablanca "],
+    "responses":[" You can visit Hassan II Mosque ,there is also dazzling dining and nightlife scenes"]
+
+},{ "tag":"Villa des Arts in casablanca",
+    "patterns":["Villa des Arts in casablanca","what is Villa des Arts in casablanca"],
+    "responses":["A cultural center and art gallery showing contemporary exhibitions  in an Art Deco villa from 1934. The villa is owned by the ONA foundations, promoting culture and creativity in Morocco."]
+
+},{ "tag":"Ouarzazate",
+    "patterns":["what is Ouarzazate","Ouarzazate"],
+    "responses":[" Ouarzazate is a city south of Morocco’s High Atlas mountains, known as a gateway to the Sahara Desert. Its huge Taourirt Kasbah, home to a 19th-century palace, has views over the rugged local landscape, which features in several movies. Northwest is the fortified red-earth city of Aït Ben Haddou. Northeast is the rocky Todra Gorge. A road winds southeast through the Draa Valley’s lush palm groves to the desert"]
+
+},{ "tag":" How to reach Ouarzazate",
+    "patterns":["how to reach ouarzazate","how to get to ouarzazate "],
+    "responses":["  Ouarzazate is well served by the country’s bus network, and buses arrive at least once a day from Agadir"]
+
+},{ "tag":"visiting Ouarzazate",
+    "patterns":["what's there to see in ouarzazate","visit ouarzazate ","tourism in ouarzazate","why visiting ouarzazate"],
+    "responses":[" In ouarzazate you can touring the sets of Hollywood,or the cinema museum "]
+
+},{ "tag":"things to do in Ouarzazate",
+    "patterns":["what can i do  in ouarzazate","things to do in ouarzazate ","activities in ouarzazate"],
+    "responses":["Things to do in ouarzazate:\nTake a tour of the Atlas Film Studios where movies like Cleopatra and Kingdom of Heaven were shot\nExplore the restaurants and shops in the Main Square\nVisit the settlement of Ait Ben Haddou\nVisit the Movie Studios"]
+
+},{ "tag":"Kasbah Ait ben Haddou of Ouarzazate",
+    "patterns":["Kasbah Ait ben Haddou of Ouarzazate","Kasbah Ait ben Haddou"],
+    "responses":["Kasbah Ait ben Haddou is a small village located 30 km from Ouarzazate, on the road to Marrakech. Thousands of these magical buildings are planted throughout Morocco, but in the South they are not merely relicts of the history, but living places that still shelter many families."]
+
+},{ "tag":" the Movie Studios in ouarzazate",
+    "patterns":["Visit the Movie Studios","the Movie Studios"," the Movie Studios in ouarzazate"],
+    "responses":["You can visit the Kasbah in Ouarzazate as well as the movie Studios (Atlas Studios,  entry 50 dh/person, 8:30am till 6pm – depending on the season) and the Museum of Cinema (entry 30 dh/person, +212 524 89 03 46, 8am-6pm). "]
+
+},{ "tag":"Marrakech",
+    "patterns":["what is Marrakech","what's so special about marrakech"],
+    "responses":["Located north of the foothills of the Atlas Mountains, Marrakech is a bustling city with a large medina, and one of the popular Morocco tourist attractions. From the central square of Djemma El-Fna to the El Badi Palace, and the bustling souks or bazaars, there’s a lot to do and see here! Shopping is one of the best things to do in Morocco, and Marrakech the most ideal place for it. In fact, Marrakech is also considered the safest city to visit in Morocco beside Agadir. This is surely one of the best places to go in Morocco."]
+
+},{ "tag":"how to reach Marrakech",
+    "patterns":["how to reach Marrakech","how to get to Marrakech "],
+    "responses":["  The place is well-connected to the other part of the world and welcomes numerous major airports to Marrakesh Menara airport "]
+
+},{ "tag":"visiting Marrakech",
+    "patterns":["why visiting  Marrakech","visit Marrakech "],
+    "responses":["there is a great mix of culture, food, and red old architecture"]
+
+},{ "tag":"things to do in Marrakech",
+    "patterns":["things to do in   Marrakech"],
+    "responses":["Things to do in Marrakech:\nVisit the Jemaa El Fna and shop at the souks\nLearn about Morocco’s culture through the Dar Si Said Museum\nGrab a drink at Kechmara or have a fancy dinner at Hotel La Maison Arabe\nVisit Marrakech House of Photography\nVisit Majorelle Gardens\nVisit Dar Si Said Museum of Moroccan Arts and Crafts.\nVisit a Hammam Hot Steam Spa    "]
+
+},{ "tag":"Majorelle Gardens in Marrakech",
+    "patterns":["Majorelle Gardens","Majorelle Gardens in Marrakech","Gardens in Marrakech"],
+    "responses":["The botanical garden is an artist’s landscape garden, which has been inspired by travels to various villages around the country. This means that you’ll experience aspects of village life as well as traditional illustrations and portraits.\nPrice: 70 DH (US$ 7.8) + 30 DH (US$ 3.5) for museum entrance\nTime: Open every day – October to May: 8 am to 5 pm. June to September 8 am to 6 pm"]
+
+},{ "tag":"Marrakech House of Photography",
+    "patterns":["what is Marrakech House of Photography","Marrakech House of Photography","photography in marrakech"],
+    "responses":["Museum of Moroccan photography housing a permanent collection & offering rotating exhibitions.\nPrice: 50 DH (US$5.50) .\nTimes: Open daily from 9:30 am to 7pm"]
+
+},{ "tag":"Dar Si Said Museum of Moroccan Arts and Crafts",
+    "patterns":["Dar Si Said Museum of Moroccan Arts and Crafts","Museums in Marrakech"],
+    "responses":["The Dar Si Said Museum of Moroccan Arts and Crafts is the oldest museum in Marrakech, and probably the most beautiful. It’s a calm and tranquil place to spend a couple of hours of your day. \nPrice: 70 DH (US$ 7.80)nTime: Every day from 9 am to 12 pm, and 3 pm to 6 pm"]
+
+},{ "tag":"Visit a Hammam Hot Steam Spa",
+    "patterns":["Visit a Hammam Hot Steam Spa","public baths in Marrakech"],
+    "responses":["You can visit the baths at Hammam Dar el-Bacha, Hammam de la Rose, Heritage Spa, and Hammam Mouassine. All of these spas show off the most wonderful architecture and traditional baths. You always have the choice of the community hammam or visit a private hammam. Each has its own unique appeal."]
+
+},{ "tag":"Tinghir",
+    "patterns":["what's tinghir","visit ouarzazate ","what's so special about tinghir"],
+    "responses":[" Tucked between the High Atlas Mountains and the gorgeous Sahara Desert, Tinghir is Morocco’s crown jewel that sits snugly in the center of the Todra Valley and is probably one of the best places to see in Morocco for couples. Unlike other places in this country, Tinghir happens to be an old French town which has now turned into a sprawling city entertaining tourists with splendid flower gardens, Kasbahs, and rustic narrow streets. "]
+
+},{ "tag":" location of Tinghir ",
+    "patterns":[" location of Tinghir ","where is Tinghir located "],
+    "responses":["Tinghir is tucked between the High Atlas Mountains and the gorgeous Sahara Desert"]
+
+},{ "tag":"Tinghir",
+    "patterns":["what is tinghir","tinghir"],
+    "responses":["Tinerhir as pronounced or Tinghir as usually written is a city in the region of Drâa-Tafilalet, south of the High Atlas and north of the Little Atlas in central Morocco. It is the capital of Tinghir Province."]
+
+},{ "tag":"how to reach Tinghir ",
+    "patterns":[" how to reach Tinghir ","how can i get to tinghir","how do i go to tinghir"],
+    "responses":[" As the place is located in proximity to the popular attractions, you can take a taxi from Dades Gorge or Merzouga to reach here. "]
+
+},{ "tag":" why visiting Tinghir ",
+    "patterns":["visiting Tinghir ","what's so special about tinghir"],
+    "responses":["Tinghir is is where you can find : blooming flower gardens,Todgha Gorge, fabulous Kasbahs, and hiking ."]
+
+},{ "tag":" things to do in Tinghir ",
+    "patterns":["what can i do in Tinghir ","things to do in tinghir"],
+    "responses":["Things to do in Tinghir:\nHike to Glaoui Palace\nGo souvenir shopping at the Crafts Market\nTake a camel ride\nHiking in Todra Gorge"]
+
+},{ "tag":"KASBAH OF PASHA EL GLAOUI",
+    "patterns":["gnaoui palace in tinghir "," palace in tinghir","gnaoui palace","kasbah in tinghir"],
+    "responses":["The kasbah of pasha el gnaoui is located in the small Berber village of Telouet in the mountains of the High Atlas of Morocco.The Kasbah is accessible by road between Marrakech and Ouarzazate. The interior of the Kasbah can still be visited today as several rooms have retained their splendour. It is a rich and interesting heritage site."]
+
+},{ "tag":"TODRA GORGE ",
+    "patterns":["TODRA GORGE in Tinghir ","TODRA GORGE","hiking in tinghir"],
+    "responses":["The gorge is the departure point for many hikes, from walking around for a few hours in the palm groves to treks lasting several days."]
+
+},{ "tag":" Agadir ",
+    "patterns":["what is Agadir ","what is agadir known for"],
+    "responses":["Agadir, a city along Morocco’s southern Atlantic coast, in the foothills of the Anti-Atlas Mountains, is the capital of Agadir-Ida Ou Tanane province. A resort destination, it's known for its golf courses, wide crescent beach and seaside promenade lined with cafes, restaurants and bars. Agadir's hilltop kasbah was destroyed in a 1960 earthquake, but its original old wall remains standing."]
+
+},{ "tag":" how to reach agadir ",
+    "patterns":["how to reach agadir","how to get to agadir"],
+    "responses":[" Board a train to reach Marrakech  and then hire a taxi to reach here"]
+
+},{ "tag":" why visiting Agadir ",
+    "patterns":["visiting Agadir ","what's so special about Agadir"],
+    "responses":["you can visit Agadir for the town’s laid-back beachfront boulevard , also people are mostly attracted to Agadir Birds Valley"]
+
+},{ "tag":" things to do in Agadir ",
+    "patterns":["what can i do in Agadir ","things to do in Agadir"],
+    "responses":["Things to do in Agadir \nStroll on the Agadir Beach\nHike to the Souss-Massa National Park\nDive into Morocco’s history at the Agadir Museum\nGo in a Half-Day Agadir Tour \nVisit Sidi R’bat Near Agadir"]
+
+},{ "tag":" Half-Day Agadir Tour ",
+    "patterns":["tours in agadir","Half-Day Agadir Tour"],
+    "responses":["If you just want to see the highlights of Agadir this might be a good option to consider. It also makes for a good Agadir shore excursion if you’re arriving by ship. This is a small group tour that gives you an overview of the city and its history."]
+
+},{ "tag":" Visit Sidi R’bat Near Agadir",
+    "patterns":["Visit Sidi R’bat Near Agadir"," Sidi R’bat Near Agadir"," Sidi R’bat ","places near Agadir","Village near agadir","how to get to Sidi R’bat","way to Sidi R’bat"],
+    "responses":["To get to Sidi R'bat you have to leave  the autoroute in Agadir you’ll have to drive for over an hour through city traffic and then on to the National highway headed south out of Agadir. Eventually you’ll see signs for Sidi R’bat or you can find it on google maps to see directions."]
+
+},{ "tag":" Fez ",
+    "patterns":["what is fes","what's so special about fez"],
+    "responses":[" One of the fascinating Morocco attractions, Fez possesses everything you need out of a 1,200-year-old Maghreb city in the Middle Eastern deserts. It’s among the most exciting places in Morocco where you’ll find a Fès el-Bali, which happens to be the historic heart of this city with a deep and mysterious labyrinth of lanes and staircases set amidst colorful tanneries and cottages will blow your mind."]
+
+},{ "tag":" attractions in fez  ",
+    "patterns":["attractions in fez","tourism in fez","tourist attraction in fez","what can i visit in fez "],
+    "responses":[" A great attraction of Fez is the elegant boulevards of Ville Nouvelle where the French had created stunning palm-fringed avenues and refreshing fountains alongside lavish hotels and Parisian-flavoured streets.","In Fez you can visit Fès el-Bali, which happens to be the historic heart of this city with a deep and mysterious labyrinth of lanes and staircases set amidst colorful tanneries and cottages will blow your mind."]
+
+},{ "tag":" how to reach Fez ",
+    "patterns":["how to reach Fez","how to get to Fez"],
+    "responses":[" Fes-Saiss Airport is the nearest airport to Fez. If you are traveling via train then deboard the train at Fès-Ville railway station. "]
+
+},{ "tag":" what is special about Fez ",
+    "patterns":["what is so special about fez","why visiting fez","what is so great about fez","why would i visit fez","architecture and modernism"],
+    "responses":[" If you love  ancient architecture and modernism , Fez is the best destination for you "]
+
+},{ "tag":" Things to do in Fez ",
+    "patterns":["Things to do in fez","activities in fez"],
+    "responses":["Things to do in Fez:\ntaste luxury in the many hotels\nAdmire the architecture\nVisit Fès el-Bali\nVisit Al-Attarine Madrasa\nVisit the colourful  Tanneries"]
+
+},{ "tag":" Al-Attarine Madrasa in Fez ",
+    "patterns":["Al-Attarine Madrasa in fez","Al-Attarine Madrasa","old school in fez"],
+    "responses":["Located near the famous Karouine mosque and university,Al-Attarine Madrasa was built in 1323. The spice and perfume market is on the edge of the spice and perfume market. Inside you’ll find a gorgeously designed courtyard and hand-laid tiles adorning the floors and walls."]
+
+},{ "tag":" The Tanneries in Fez ",
+    "patterns":["The Tanneries in fez","The Tanneries"],
+    "responses":[" The Tanneries is one of the most visited sites in the city. You’ll want to brace yourself for an overwhelming smell, especially in warmer months but it’s a step back in time to see leather being prepared as it has for centuries."]
+
+},{ "tag":" Oudaias Kasbah",
+    "patterns":["what is  Oudaias Kasbah","Oudaias Kasbah","where is Oudaias Kasbah is located","location of Oudaias Kasbah"],
+    "responses":["The Kasbah of the Udayas, also spelled Kasbah of the Oudaias or of the Oudayas, is a kasbah in Rabat, Morocco. It is located at the mouth of the Bou Regreg river, opposite Salé, and adjacent to the old medina of Rabat. It is listed, along with other sites in Rabat, as a UNESCO World Heritage Site."]
+
+},{ "tag":"what is special about Oudaias Kasbah",
+    "patterns":["what is special about Oudaias Kasbah"],
+    "responses":["Its peaceful and quaint vibes also make it a big crowd puller as well as one of the best Morocco points of interest set in the heart of the main city. You will find inside the high walls of this age-old old fortress white and blue houses and colorful flower pots studded on either side of a neat lane."]
+
+},{ "tag":"How To Reach Oudaias Kasbah",
+    "patterns":["How to reach Oudaias Kasbah","how can i get to Oudaias Kasbah"],
+    "responses":["to reach  Oudaias Kasbah  take a local tram from any of the major city to reach here. "]
+
+},{ "tag":"why visiting Oudaias Kasbah",
+    "patterns":["why visiting Oudaias Kasbah"],
+    "responses":["Visiting Oudaias Kasbah is for the people who are searching for seclusion, beauty, and peace, and love blue houses "]
+
+},{ "tag":"things to do in Oudaias Kasbah",
+    "patterns":["what can i do in Oudaias Kasbah ","activities in Oudaias Kasbah"],
+    "responses":["Things to do in Oudaias Kasbah:\nWalk around\nClick pictures\nRelax "]
+
+},{ "tag":"Tangier",
+    "patterns":["what is Tangier ","what's so special about tangier"],
+    "responses":["Tangier has been the summer site of the Moroccan royal residence since 1962. An important port and trade centre, the city has excellent road and rail connections with Fès, Meknès, Rabat, and Casablanca, as well as an international airport and regular shipping services to Europe. "]
+
+},{ "tag":" how to reach tangier ",
+    "patterns":["how to reach Tangier ","how can i get to tangier"],
+    "responses":["One of the most popular ways to reach Tangier is by ferry. It takes just over 30 minutes. "]
+
+},{ "tag":"why visiting tangier",
+    "patterns":["why visitng tangier"],
+    "responses":["People visit Tangier for ita Caves of Hercules and its history  "]
+
+},{ "tag":"Cap Spartel and the Caves of Hercules in tangier",
+    "patterns":["Cap Spartel and the Caves of Hercules","Cap Spartel and the Caves of Hercules in tangier","caves in morocco","caves in tangier"],
+    "responses":["One of the most popular locations just outside of Tangier is the beautiful Cap Spartel and the Caves of Hercules. Located just nine miles outside of Tangier, Cap Spartel sits at the entrance to the Strait of Gibraltar, about 1000 feet above sea level "]
+
+},{ "tag":"Tangier Kasbah",
+    "patterns":["Tangier Kasbah","Kasbahs in Tangier"],
+    "responses":["One of the must-see locations in Tangier is the Kasbah. The old walled city is the quintessential Tangier experience, with meandering walkways leading from area to another. It is quite easy to get lost in the Kasbah, but getting lost is truly half the fun , but don't worry  there are always tours available "]
+
+},{ "tag":"Cape Malabata in tangier",
+    "patterns":["Cape Malabata","Cape Malabata in Tangier","capes in tangier"],
+    "responses":["Cape Malabata is a beautiful cape located six miles east of Tangier. In addition to amazing views across the Strait of Gibraltar, the location features a lovely lighthouse. There is also a medieval-style castle which was built in the early 20th century. If you love lighthouses and a stunning view with great picture-taking potential, Cape Malabata is worth a visit. "]
+
+},{ "tag":"things to do in tangier",
+    "patterns":["things to do in tangier","activities in tangier"],
+    "responses":[" Things to do in Tangier:\nSee the Cap Spartel and the Caves of Hercules\nVisit the  Cape Malabata\nVisit Tangier Kasbah\nDine at the cafes\nLearn about the rich history"]
+
+},{ "tag":"Dades Valley",
+    "patterns":["what is Dades Valley"],
+    "responses":["The Dadès Gorges are a series of rugged wadi gorges carved out by the Dadès River in Morocco. The river originates in the High Atlas range of the Atlas mountains, flowing some 350 kilometres southwest before joining the Draa River at the edge of the Sahara."]
+
+},{ "tag":"how to reach Dades Valley",
+    "patterns":["how to reach  Dades Valley ","how can i get to Dades Valley"],
+    "responses":[" Take bus to Boumalne. From there take a grand taxi or Mini Bus to the Gorge. The Mini Bus goes all the way (60+ km) to Messina. "]
+
+},{ "tag":"visiting Dades Valley ",
+    "patterns":["why visiting Dades Valley ","what's so special about Dades Valley"],
+    "responses":[" People choose Dades Valley for its Panoramic sights and to see Todra Gorge"]
+
+},{ "tag":"things to do in Dades Valley ",
+    "patterns":["things to do in Dades Valley ","activities in Dades Valley"],
+    "responses":[" Things to do in Dades Valley: Capture the mesmerizing sights of this valley and you can also explore numerous kasbahs (traditional forts) "]
+
+},{ "tag":"Aït Ben Haddou",
+    "patterns":["what is Aït Ben Haddou","Aït Ben Haddou"],
+    "responses":["  Ksar Aït Ben Haddou is an ancient village that is home to a number of houses that have been built on a hillside , it is the film set of the Hollywood blockbuster ‘Gladiator’, this place teleports one to the golden days"]
+
+},{ "tag":"how to reach Aït Ben Haddou",
+    "patterns":["how to reach  Aït Ben Haddou ","how can i get to  Aït Ben Haddou"],
+    "responses":[" To reach Aït Ben Haddou you can board a local bus or hire a taxi to reach AÏt Ben Haddou from Ouarzazate."]
+
+},{ "tag":"visiting Aït Ben Haddou",
+    "patterns":["why visiting Aït Ben Haddou ","what's so special about Aït Ben Haddou"],
+    "responses":[" People visit Aït Ben Haddou  to explore  the timeless ruins, historical remnants, and the cafe views. Embrace the ancient vibes that reek from this village."]
+
+},{ "tag":"things to do in Aït Ben Haddou",
+    "patterns":["things to do in Aït Ben Haddou ","activities in Aït Ben Haddou"],
+    "responses":[" Things to do in Aït Ben Haddou:\nGet an insight into the culture of Morocco\nExplore the architecture of well-preserved Kasbahs that were constructed to protect against raids\nCapture the magnificence of Moroccan architecture"]
+
+},{ "tag":"Rose Valley",
+    "patterns":["what is Rose Valley ","what's so special about Rose Valley"],
+    "responses":["  Rose Valley is as beautiful as it can get. With various hues of green, pristine blue waters, snow-capped Atlas Mountains, and vast patches of olive and fig trees forming its landscape, Rose Valley is truly a sight to behold. An escape for the adventure junkies, this valley got its name from the vast pink gardens of roses that cover the floors of Morocco."]
+
+},{ "tag":"what is special about  Rose Valley",
+    "patterns":["what's so special about Rose Valley","what can i see in Rose Valley"],
+    "responses":[" The sweet and overwhelming fragrance, pink views if visited in the perfect month, and oil factories combine to form an experience in this valley in May. One can simply spend hours and hours taking in the beauty that this place has to offer."]
+
+},{ "tag":"how to reach Rose Valley",
+    "patterns":["how to reach  Rose Valley ","how can i get to  Rose Valley"],
+    "responses":["Join the trek tour that starts from Marrakech and ends in Rose Valley "]
+
+},{ "tag":"visiting Rose Valley",
+    "patterns":["why visiting Rose Valley ","what's there to see in Rose Valley"],
+    "responses":[" people visit Rose Valley for the festival of Roses that takes place during the blooming season , and the vast patches of pink roses"]
+
+},{ "tag":"things to do in Rose Valley",
+    "patterns":["things to do in Rose Valley","activities in Rose Valley"],
+    "responses":["Things to do in Rose Valley :\nGo for trekking\nSoak in the beauty of mother nature"]
+
+},{ "tag":" Dakhla",
+    "patterns":["what is  Dakhla"],
+    "responses":["  Dakhla is a place that is one of its kind. Established in the year 1844 by the Spanish, Dhakla is a 40 kms stretch sitting on the sandy peninsula of the Tropic of Cancer. The desert spread as far as the eye can see is a significant part of this spot in Morocco."]
+
+},{ "tag":"what's so special about Dakhla",
+    "patterns":["what's so special about Dakhla"],
+    "responses":["thanks to some great hotels, restaurants, and facilities of thrilling sports, Dakhla is developing to be a favorite amidst locals and tourists alike."]
+
+},{ "tag":"how to reach Dakhla ",
+    "patterns":["how to reach Dakhla","how can i get to Dakhla "],
+    "responses":["Take a cab or hire a self-driving car from Marrakech to Laayoune. Spend a night in Laayoune and then continue the journey to Dhakla."]
+
+},{ "tag":"why visiting Dakhla",
+    "patterns":["why visiting Dakhla","why Dakhla"],
+    "responses":["People visit Dakhla for to engage in Kitesurfing and surfing "]
+
+},{ "tag":"things to do in Dakhla ",
+    "patterns":["things to do in Dakhla","activities in Dakhla"],
+    "responses":["Things to do in Dakhla :\nTake part in various water sports available here, especially kite surfing\nGet the traditional Moroccon spa treatment\nIndulge in the authentic and fresh seafood"]
+
+},{ "tag":"kite surfing in Dakhla",
+    "patterns":["kite surfing in Dakhla","surfing in dakhla"],
+    "responses":["Whether you’re a beginner or advanced there really is something for everyone. If you plan to kite surf look into package deals that combine room, board and your equipment to save a little bit of money. For example an option we had was to do 8 hours of kite surfing lessons for 300€ or pay about 80€ an hour if we didn’t want the package."]
+
+}]}
+

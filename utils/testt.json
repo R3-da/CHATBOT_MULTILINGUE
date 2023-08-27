@@ -1,0 +1,30 @@
+{"intents":[
+    { "tag":"grestarting",
+    "patterns":["hey","hello","hi","what's up ?","good day","good morning"],
+    "responses":["Hi there, you're looking for restaurants right ?"]}
+,{ "tag":"not_searching_restaurant",
+    "patterns":["greeting no","greeting not now","greeting not exactly", "greeting no, i am not"],
+    "responses":["well then i am afraid i can not help you"]
+},
+{ "tag":"searching_restaurant",
+    "patterns":["greeting yes","greeting right","greeting yeah", "greeting yes, i am", "greeting affirmative", "greeting true"],
+    "responses":["Tell me the direction where you want the restaurant: North , South , West , Centre of Morocco "]
+},{ "tag":"North",
+    "patterns":["searching_restaurant North of Morocco","searching_restaurant North","searching_restaurant near Tangier","searching_restaurant near fes","searching_restaurant near meknes","searching_restaurant near asilah  ","searching_restaurant near chefchaouen","searching_restaurant near ouarzazate","searching_restaurant near Rose Valley"],
+    "responses":["Okay , let me show you a list of places : Tangier \nFes\nMeknes\nAsilah\nChefchaouen\nOuarzazate\nRose ValleyValley\ntell me the city where you want the hotel and how much stars ( the stars  4 stars  3 stars   5 stars)"]
+},{ "tag":"West",
+    "patterns":["searching_restaurant West of Morocco","searching_restaurant West","searching_restaurant near Tangier","searching_restaurant near fes","searching_restaurant near meknes","searching_restaurant near asilah  ","searching_restaurant near chefchaouen","searching_restaurant near ouarzazate","searching_restaurant near Rose Valley"],
+    "responses":["Okay , let me show you a list of places : Tangier \nFes\nMeknes\nAsilah\nChefchaouen\nOuarzazate\nRose ValleyValley\ntell me the city where you want the hotel and how much stars ( the stars  4 stars  3 stars   5 stars)"]
+},{ "tag":"Fez 5 start",
+    "patterns":["searching_restaurant Fez 5 start","searching_restaurant West","searching_restaurant near Tangier","searching_restaurant near fes","searching_restaurant near meknes","searching_restaurant near asilah  ","searching_restaurant near chefchaouen","searching_restaurant near ouarzazate","searching_restaurant near Rose Valley"],
+    "responses":["Okay , let me show you a list of places : Tangier \nFes\nMeknes\nAsilah\nChefchaouen\nOuarzazate\nRose ValleyValley\ntell me the city where you want the hotel and how much stars ( the stars  4 stars  3 stars   5 stars)"]
+},{ "tag":"Fez 4 start",
+    "patterns":["searching_restaurant West of Morocco","searching_restaurant West","searching_restaurant near Tangier","searching_restaurant near fes","searching_restaurant near meknes","searching_restaurant near asilah  ","searching_restaurant near chefchaouen","searching_restaurant near ouarzazate","searching_restaurant near Rose Valley"],
+    "responses":["Okay , let me show you a list of places : Tangier \nFes\nMeknes\nAsilah\nChefchaouen\nOuarzazate\nRose ValleyValley\ntell me the city where you want the hotel and how much stars ( the stars  4 stars  3 stars   5 stars)"]
+},{ "tag":"Phone number 4",
+    "patterns":["Fez 4 start Phone number","fez 4 start West","fez 4 start near Tangier","fez 4 start near fes","fez 4 start near meknes","fez 4 start near asilah  ","Fez 4 start near chefchaouen","Fez 4 start near ouarzazate","Casa 4 start near Rose Valley"],
+    "responses":["Okay , let me show you a list of places : Tangier \nFes\nMeknes\nAsilah\nChefchaouen\nOuarzazate\nRose ValleyValley\ntell me the city where you want the hotel and how much stars ( the stars  4 stars  3 stars   5 stars)"]
+},{ "tag":"Phone number 3",
+    "patterns":["Fez 3 start Phone number","fez 3 start West","fez 3 start near Tangier","fez 3 start fes","fez 3 start near meknes","fez 3 start near asilah  ","fez 3 start near chefchaouen","fez 3 start near ouarzazate","fez 3 start near Rose Valley"],
+    "responses":["Okay , let me show you a list of places : Tangier \nFes\nMeknes\nAsilah\nChefchaouen\nOuarzazate\nRose ValleyValley\ntell me the city where you want the hotel and how much stars ( the stars  4 stars  3 stars   5 stars)"]
+}]}
