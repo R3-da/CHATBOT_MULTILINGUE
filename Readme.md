@@ -6,7 +6,7 @@
 
 ## Overview
 
-A chatbot for Pizza ordering service, as per user customization, supporting queries and the responses in more than one language.
+A chatbot, as per user customization, supporting queries and the responses in more than one language.
 
 Conventional Chatbots though are very useful, lack support for local languages. The goal of this project is to overcome that disadvantage and create a multilingual chatbot supporting at least 2-3 languages.
 
